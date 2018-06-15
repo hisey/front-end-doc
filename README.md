@@ -6,7 +6,7 @@
 
 ## 编写步骤
  ```bash
-git clone https://github.com/PanJiaChen/vueAdmin-template.git
+git clone https://github.com/hisey/front-end-doc.git
 ```
 ```bash
 $ npm i -g docute-cli
