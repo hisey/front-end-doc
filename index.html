@@ -12,7 +12,7 @@
 <body>
   <div id="app"></div>
   <script src="https://unpkg.com/docute@3/dist/docute.js"></script>
-  <script src="https://unpkg.com/docute/plugins/docsearch.js"></script>
+  <!-- <script src="https://unpkg.com/docute/plugins/docsearch.js"></script> -->
   <script>
     docute.init({
       nav: [
@@ -21,16 +21,16 @@
         { title: '多页面开发', path: '/multiPage/' },
         { title: '前后端分离方案', path: '/webSplit/' },
       ],
-      plugins: [
-        docsearch({
-          apiKey: '',
-          indexName: 'index',
-          url: 'https://hisey.github.io/front-end-doc'
-          // docsearch 允许你把抓取的内容按照 tag 分类
-          // 详情请联系 algolia 客服，这里你只需要把你想搜索的 tag 填进来就行了
-          // tags: ['english', 'zh-Hans', 'zh-Hant']
-        })
-      ],
+      // plugins: [
+      //   docsearch({
+      //     apiKey: '',
+      //     indexName: 'index',
+      //     url: 'https://hisey.github.io/front-end-doc'
+      //     // docsearch 允许你把抓取的内容按照 tag 分类
+      //     // 详情请联系 algolia 客服，这里你只需要把你想搜索的 tag 填进来就行了
+      //     // tags: ['english', 'zh-Hans', 'zh-Hant']
+      //   })
+      // ],
     })
   </script>
 </body>
