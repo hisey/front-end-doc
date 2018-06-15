@@ -5,12 +5,14 @@
 [1]: https://v3.docute.org/#/ "文档展示工具"
 
 ## 编写步骤
-
-   ```bash
+ ```bash
+git clone https://github.com/PanJiaChen/vueAdmin-template.git
+```
+```bash
 $ npm i -g docute-cli
 ```
    ```bash
-$ ndocute init ./
+$ docute init ./
 ```
 打开 http://localhost:8080
 
