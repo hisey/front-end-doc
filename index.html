@@ -3,14 +3,25 @@
 
 <head>
   <meta charset="utf-8">
-  <title>vueadmin</title>
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=0" />
+  <title>./docs</title>
+  <link rel="stylesheet" href="https://unpkg.com/docute@3/dist/docute.css">
 </head>
 
 <body>
-  <div id="app">
-
-  </div>
-  <!-- built files will be auto injected -->
+  <div id="app"></div>
+  <script src="https://unpkg.com/docute@3/dist/docute.js"></script>
+  <script>
+    docute.init({
+      nav: [
+        { title: '首页', path: '/' },
+        { title: '代码规范', path: '/codeStyle/' },
+        { title: '多页面开发', path: '/multiPage/' },
+        { title: '前后端分离方案', path: '/webSplit/' },
+      ]
+    })
+  </script>
 </body>
 
 </html>
