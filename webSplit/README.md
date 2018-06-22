@@ -148,3 +148,9 @@ nodejs本身有着独特的异步、非阻塞I/O的特点，这也就意味着�
 ![](https://www.showdoc.cc/server/api/common/visitfile/sign/9ba7ba9d390c8eac2c0c509d6a20e027?showdoc=.jpg)
 ![](https://www.showdoc.cc/server/api/common/visitfile/sign/72bd2940ea0143534c373f5cc84816e2?showdoc=.jpg)
 ![](https://www.showdoc.cc/server/api/common/visitfile/sign/70369b0ac33fa757de9af9ee936385b3?showdoc=.jpg)
+
+## 前端框架及组件推荐
+js框架 [Vue](https://cn.vuejs.org/):易用、灵活、高效
+pc端组件库：[element](http://element.eleme.io/#/zh-CN) Element，一套为开发者、设计师和产品经理准备的基于 Vue 2.0 的桌面端组件库
+移动端组件库：[vux](https://vux.li/) 一个凑合的 Vue.js 移动端 UI 组件库
+vue资源：[awesome-vue](https://github.com/vuejs/awesome-vue) 简直就是海量
