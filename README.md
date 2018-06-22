@@ -9,8 +9,8 @@
 
 ## 预览地址
  [Preview](https://hisey.github.io/front-end-doc)<br>
- 
- ![avatar](/img/code.png)
+
+ ![avatar](./img/code.png)
 
 ## 编写及构建步骤
  ```bash
