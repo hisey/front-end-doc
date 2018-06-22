@@ -1,6 +1,6 @@
-## 前端技术文档说明
+## 文档说明
 
-该文档通过利用mackdown编写，文档展示工具用 [Docute][1]
+该文档利用mackdown编写，文档展示工具用 [Docute][1]
 
 [1]: https://v3.docute.org/#/ "文档展示工具"
 
@@ -19,8 +19,12 @@ git clone https://github.com/hisey/front-end-doc.git
 ```bash
 $ npm i -g docute-cli
 ```
+选择一个空目录
    ```bash
 $ docute init ./
+```
+```bash
+$ docute ./
 ```
 打开 http://localhost:8080
 
