@@ -130,7 +130,71 @@
 
 我觉得引入nodejs主要是为了分层开发，职责划分，nodejs作为前端服务器，由前端开发人员负责，前端开发人员不需要知道java后台是如何实现的，也不需要知道API接口是如何实现的，我们只需要关心我们前端的开发工作，并且管理好nodejs前端服务器，而后台开发人员也不需要考虑如何前端是如何部署的，他只需要做好自己擅长的部分，提供好API接口就可以；
 nodejs本身有着独特的异步、非阻塞I/O的特点，这也就意味着他特别适合I/O密集型操作，在处理并发量比较大的请求上能力比较强，因此，利用它来充当前端服务器，向客户端提供静态文件以及响应客户端的请求，我觉得这是一个很不错的选择。
-
+### 项目目录
+  node后端(简易版)：<br>
+│  api.js <br>
+│  app.js<br>
+│  gulpfile.js<br>
+│  package.json<br>
+│  README.md<br>
+│  sftpConfig.js<br>
+│<br>
+├─configs<br>
+│ &nbsp;     db.js<br>
+│<br>
+├─controls<br>
+│ &nbsp;     goods.js<br>
+│ &nbsp;      user.js<br>
+│<br>
+├─routes<br>
+│    &nbsp;  router.js<br>
+│<br>
+├─sql<br>
+│   &nbsp;   func.js<br>
+│  &nbsp;    sql.js<br>
+│  &nbsp;      vue-admin.sql<br>
+│<br>
+└─utils<br>
+      &nbsp;  addOne.js<br>
+      &nbsp;  dateTime.js<br>
+      &nbsp;  dir.js<br>
+      &nbsp;  paging.js<br>
+      &nbsp;  upload.js<br>
+ 前端：<br>
+├─build <br>
+├─config<br>
+├─dist<br>
+│  └─static<br>
+│      ├─css<br>
+│      ├─fonts<br>
+│      ├─img<br>
+│      └─js<br>
+├─src<br>
+│  ├─api<br>
+│  ├─assets<br>
+│  │  └─404_images<br>
+│  ├─components<br>
+│  │  ├─Breadcrumb<br>
+│  │  ├─Hamburger<br>
+│  │  └─SvgIcon<br>
+│  ├─filters<br>
+│  ├─icons<br>
+│  │  └─svg<br>
+│  ├─router<br>
+│  ├─store<br>
+│  │  └─modules<br>
+│  ├─styles<br>
+│  ├─utils<br>
+│  └─views<br>
+│      ├─dashboard<br>
+│      ├─goodsManage<br>
+│      ├─layout<br>
+│      │  ├─components<br>
+│      │  │  └─Sidebar<br>
+│      │  └─mixin<br>
+│      ├─login<br>
+│      └─userManage<br>
+└─static<br>
 ## 前端服务器部署
 
 ### nodejs前端服务器
