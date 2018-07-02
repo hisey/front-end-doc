@@ -1,31 +1,14 @@
-## 文档说明
-
-该文档利用mackdown编写，文档展示工具用 [Docute][1]
-
-[1]: https://v3.docute.org/#/ "文档展示工具"
-
-## 文档仓库地址
- [Document](https://github.com/hisey/front-end-doc "文档仓库")
-
-## 预览地址
- [Preview](https://hisey.github.io/front-end-doc)<br>
-
- ![avatar](./img/code.png)
-
-## 编写及构建步骤
- ```bash
-git clone https://github.com/hisey/front-end-doc.git
-```
-```bash
-$ npm i -g docute-cli
-```
-选择一个空目录
-   ```bash
-$ docute init ./
-```
-```bash
-$ docute ./
-```
-打开 http://localhost:8080
-
- 
+---
+home: true
+heroImage: /hero.jpg
+actionText: 开始吧 →
+actionLink: /codeStyle/
+features:
+- title: 简洁明了
+  details: 没什么谈得比较复杂的东西，几年下来的一些个人积累.
+- title: 谈点什么
+  details: 个人感悟，工作、生活呀.
+- title: 后面的路是什么
+  details: 码农不能当一辈子，哈哈哈
+footer: MIT Licensed | Copyright © 2018-present Evan You
+---

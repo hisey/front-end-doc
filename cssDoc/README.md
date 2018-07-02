@@ -24,10 +24,10 @@
     height: 100px;
 }
 ```
-<img src="./img/center.png" style="height:200px;width:200px">  
-<p class="warning">
+<img :src="$withBase('/center.png')" style="height:200px;width:200px">  
+<!-- <p class="warning">
 Internet Explorer(甚至 IE8 beta)中无效
-<p>  
+<p>   -->
 ### 垂直居中
 
 ```html
@@ -46,9 +46,9 @@ Internet Explorer(甚至 IE8 beta)中无效
     vertical-align: middle;
 }
 ```
-<p class="warning">
+<!-- <p class="warning">
 Internet Explorer(甚至 IE8 beta)中无效
-<p>   
+<p>    -->
 
 ### 多元素水平居中
 
@@ -74,7 +74,7 @@ div{
   padding:20px;
 }
 ```
-<img src="./img/hr-center.png">
+<img  :src="$withBase('/hr-center.png')" >
 
 ## 文本
 ### 单行省略
