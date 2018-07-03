@@ -1,7 +1,7 @@
 module.exports = {
     title: 'hisey个人站点',
     description: '算是闲谈吧',
-    base:'front-end-doc/doc/',
+    // base:'./',
     port:4864,
     dest:"./doc",
     themeConfig: {
