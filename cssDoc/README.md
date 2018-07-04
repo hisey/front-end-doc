@@ -76,6 +76,16 @@ div{
 ```
 <img  :src="$withBase('/hr-center.png')" >
 
+### 垂直居中
+```css
+.verticalcenter{
+    position: relative;
+    top: 50%;
+    -webkit-transform: translateY(-50%);
+    -o-transform: translateY(-50%);
+    transform: translateY(-50%);
+}
+```
 ## 文本
 ### 单行省略
 ```css
@@ -94,6 +104,14 @@ div{
     -webkit-box-orient: vertical;
     -webkit-line-clamp:2;
 } 
+```
+### 内容垂直居中
+```css
+ .container {
+    min-height: 6.5em;
+    display: table-cell;
+    vertical-align: middle;
+}
 ```
 ### 常见单位
 1.px：绝对单位，页面按精确像素展示
