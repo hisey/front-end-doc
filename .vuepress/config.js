@@ -9,6 +9,7 @@ module.exports = {
           { text: '首页', link: '/' },
           { text: 'es6代码风格', link: '/codeStyle/' },
           { text: 'css干货', link: '/cssDoc/' },
+          { text: 'js干货', link: '/jsDoc/' },
           { text: '前后端分离解决方案', link: '/webSplit/' },
           { text: '多页面开发', link: '/multiPage/' },
         ],
