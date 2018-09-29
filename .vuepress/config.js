@@ -12,6 +12,7 @@ module.exports = {
           { text: 'js干货', link: '/jsDoc/' },
           { text: '前后端分离解决方案', link: '/webSplit/' },
           { text: '多页面开发', link: '/multiPage/' },
+		  { text: 'mpvue搭建小程序', link: '/mpvue/' },
         ],
         sidebar: 'auto',
         repo: '/hisey/front-end-doc',
