@@ -2,7 +2,7 @@
 home: true
 heroImage: /hero.jpg
 actionText: 开始吧 →
-actionLink: /codeStyle/
+actionLink: /base/codeStyle/
 features:
 - title: 简洁明了
   details: 没什么谈得比较复杂的东西，几年下来的一些个人积累.

@@ -150,4 +150,17 @@ function formatRemainTime(endTime) {
 } 
 ```
 
+## 异步遍历器 for await…of
+``` javascript
+async function () {
+  try {
+    for await (const x of createAsyncIterable(['a', 'b'])) {
+      console.log(x);
+    }
+  } catch (e) {
+    console.error(e);
+  }
+}
+```
+
 
