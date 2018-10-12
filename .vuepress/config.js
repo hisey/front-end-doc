@@ -1,7 +1,7 @@
 module.exports = {
   title: 'hisey',
   description: '一路走来',
-  base: './',
+  base: '/front-end-doc/docs/',
   port: 4864,
   dest: "./docs",
   themeConfig: {
