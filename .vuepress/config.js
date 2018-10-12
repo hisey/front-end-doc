@@ -1,9 +1,9 @@
 module.exports = {
   title: 'hisey',
   description: '一路走来',
-  base: '/front-end-doc/doc/',
+  base: '/',
   port: 4864,
-  dest: "./doc",
+  dest: "./docs",
   themeConfig: {
     nav: [{
         text: '首页',
