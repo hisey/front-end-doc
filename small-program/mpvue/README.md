@@ -1,9 +1,9 @@
-## 基于mpvue搭建小程序项目框架
-### 简介：
+
+## 简介
 
 　　mpvue框架对于从没有接触过小程序又要尝试小程序开发的人员来说，无疑是目前最好的选择。mpvue从底层支持 Vue.js 语法和构建工具体系，同时再结合相关UI组件库，便可以高效的实现小程序开发
 
-### 前言：
+## 前言
 
 　　本文讲述如何搭建完整的小程序项目框架，因为是第一次使用，有不完善的地方请大佬指正。
 
@@ -19,12 +19,35 @@
 
 　　5、使用flyio进行数据交互：GitHub地址
 
-### 项目结构：
+## 快速开始
 
-### 讲解：
+### 一、初始化一个mpvue项目
+```bash
+# 1. 先检查下 Node.js 是否安装成功
+$ node -v
+v8.9.0
 
-　　一、使用scss语法
+$ npm -v
+5.6.0
 
+# 2. 由于众所周知的原因，可以考虑切换源为 taobao 源
+$ npm set registry https://registry.npm.taobao.org/
+
+# 3. 全局安装 vue-cli
+# 一般是要 sudo 权限的
+$ npm install --global vue-cli@2.9
+
+# 4. 创建一个基于 mpvue-quickstart 模板的新项目
+# 新手一路回车选择默认就可以了
+$ vue init mpvue/mpvue-quickstart my-project
+
+# 5. 安装依赖，走你
+$ cd my-project
+$ npm install
+$ npm run dev
+```
+### 二、使用scss语法
+	
 　　1、安装依赖
 
 　　cnpm install node-sass sass-loader --save-dev
@@ -33,7 +56,7 @@
 
 　　2、在.vue文件中的style节点加上lang=”scss”，这样就可以愉快地使用sass进行开发了，无需再webpack.base.config.js中配置loader，webpack会自动识别.scss文件以及.vue中的scss代码。
 
-　　二、像vue一样使用路由
+### 三、像vue一样使用路由
 
 　　在使用mpvue提供的命令 vue init mpvue/mpvue-quickstart my-project 创建项目后，会发现每个页面都要配置main.js 文件，不仅繁琐而且显得多余，所以我们是否可以改造成像vue一样使用路由的方式呢，答案是可以的，需要用到mpvue-entry 和 mpvue-router-patch插件（集中式页面配置，自动生成各页面的入口文件，优化目录结构，支持新增页面热更新）和
 
@@ -104,7 +127,7 @@ module.exports = [{
 
  
 
-　　三、使用小程序UI组件
+### 四、使用小程序UI组件
 
 　　1、将UI组件库克隆到本地
 
@@ -151,7 +174,7 @@ module.exports = [{
 
  
 
-　　四、使用vuex进行状态管理
+### 五、使用vuex进行状态管理
 
 　　1、安装
 
@@ -166,7 +189,7 @@ module.exports = [{
 ```
  
 
-　　五、使用flyio进行数据交互
+### 六、使用flyio进行数据交互
 
 　　1、安装
 ```javascript
@@ -199,7 +222,7 @@ module.exports = [{
                     });
             }
 ```			
-   六、  配置fly
+### 七、  配置fly
    1、配置公共设置 src/http/config.js
 ```javascript
 	 /*
