@@ -1,6 +1,6 @@
 module.exports = {
-  title: 'hisey',
-  description: '一路走来',
+  title: '木林',
+  description: '个人站点',
   base: '/front-end-doc/',
   port: 4864,
   dest: "./docs",
@@ -54,6 +54,8 @@ module.exports = {
           text: 'vue组件示例',
           link: '/vue/vueCompont/'
         }, ]
+      },{
+        text:"关于我",link:"/aboutMe/"
       }
     ],
     sidebar: 'auto',

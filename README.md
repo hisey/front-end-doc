@@ -4,11 +4,11 @@ heroImage: /hero.jpg
 actionText: 开始吧 →
 actionLink: /base/codeStyle/
 features:
-- title: 简洁明了
-  details: 没什么谈得比较复杂的东西，几年下来的一些个人积累.
-- title: 谈点什么
-  details: 个人感悟，工作、生活呀.
-- title: 后面的路是什么
-  details: 码农不能当一辈子，哈哈哈
+- title: 内容包含
+  details: 基础知识、解决方案、小程序、vue
+- title: 文档编写
+  details: vuepress
+- title: 所需环境
+  details: node
 footer: MIT Licensed | Copyright © 2018-present Evan You
 ---
