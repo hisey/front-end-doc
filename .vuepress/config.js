@@ -10,6 +10,13 @@ module.exports = {
         link: '/'
       },
       {
+        text: "Git指南",
+        items: [{
+          text: 'Git工作流',
+          link: '/base/git/flow'
+        },]
+      },
+      {
         text: '基础知识',
         items: [{
             text: 'es6代码风格',
