@@ -52,7 +52,7 @@ module.exports = {
       text: '小程序',
       items: [{
         text: 'mpvue搭建小程序',
-        link: '/src/small-program/mpvue/'
+        link: '/src/smallProgram/mpvue/'
       },],
     },
     {
