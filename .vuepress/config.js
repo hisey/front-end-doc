@@ -14,7 +14,12 @@ module.exports = {
       items: [{
         text: 'Git工作流',
         link: '/src/base/git/flow'
-      },]
+      },
+      {
+        text: '常用命令行',
+        link: '/src/base/git/bash'
+      },
+      ]
     },
     {
       text: '基础知识',
