@@ -364,7 +364,7 @@ add() {
 
 <img :src="$withBase('/remind-02.jpg')">
 
-#### 分包配置（app.json配置）  
+### 分包配置（app.json配置）  
 
 1、 	在subPackages下建多个对象（子包的目录）， 最重要的一点： root对应的配置一定要是 **pages/packageOther/** 。 </br>
 
