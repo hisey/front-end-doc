@@ -1,5 +1,5 @@
 module.exports = {
-  title: "hisey",
+  title: "凉薄青年",
   description: "不一样的世界，等你去发现",
   base: "/front-end-doc/",
   port: 4864,
