@@ -24,7 +24,7 @@
     height: 100px;
 }
 ```
-<img :src="$withBase('/center.png')" style="height:200px;width:200px">  
+<img :src="$withBase('/img/center.png')" style="height:200px;width:200px">  
 <!-- <p class="warning">
 Internet Explorer(甚至 IE8 beta)中无效
 <p>   -->
@@ -74,7 +74,7 @@ div{
   padding:20px;
 }
 ```
-<img  :src="$withBase('/hr-center.png')" >
+<img  :src="$withBase('/img/hr-center.png')" >
 
 ### 垂直居中
 ```css

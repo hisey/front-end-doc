@@ -2,6 +2,10 @@ module.exports = {
   title: "hisey",
   description: "不一样的世界，等你去发现",
   base: "/front-end-doc/",
+  head: [
+    ["link", { rel: "stylesheet", href: "/font/iconfont.css" }],
+    ["link", { rel: "stylesheet", href: "/style/index.css" }],
+  ],
   port: 4864,
   dest: "./docs",
   themeConfig: {
@@ -80,6 +84,15 @@ module.exports = {
           {
             text: "vue组件示例",
             link: "/src/vue/vueCompont/"
+          }
+        ]
+      },
+      {
+        text: "工具",
+        items: [
+          {
+            text: "基础",
+            link: "/src/vue/"
           }
         ]
       },

@@ -53,5 +53,5 @@ Gitflow工作流仍然用中央仓库作为所有开发者的交互中心。和�
 ### SourceTree(个人推荐)
 完美解决这一复杂流程
 
-<img :src="$withBase('/SourceTree-git.jpg')">  
+<img :src="$withBase('/img/SourceTree-git.jpg')">  
 

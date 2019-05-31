@@ -54,7 +54,7 @@ CSS3 弹性盒（ Flexible Box 或 flexbox），是一种当页面需要适应�
 </body>
 </html>
 ```
-<img :src="$withBase('/fixbox1.jpg')">  
+<img :src="$withBase('/img/fixbox1.jpg')">  
 
 ### CSS3 弹性盒子常用属性
 | 属性        | 描述        | 
@@ -74,7 +74,7 @@ CSS3 弹性盒（ Flexible Box 或 flexbox），是一种当页面需要适应�
 ```css
 .flex-container { flex-direction: row | row-reverse | column | column-reverse; }
 ```
-<img :src="$withBase('/fixbox2.png')">  
+<img :src="$withBase('/img/img/fixbox2.png')">  
 
 | 值        | 描述        | 
 | --------   | -----   | 
@@ -95,11 +95,11 @@ flex-wrap 属性规定flex容器是单行或者多行，同时横轴的方向决
 ```
 可以取三个值：
 （1） nowrap (默认)：不换行。
-<img :src="$withBase('/fixbox3.png')">  
+<img :src="$withBase('/img/fixbox3.png')">  
 （2）wrap：换行，第一行在上方。
-<img :src="$withBase('/fixbox4.png')">  
+<img :src="$withBase('/img/fixbox4.png')">  
 （3）wrap-reverse：换行，第一行在下方。
-<img :src="$withBase('/fixbox5.png')">  
+<img :src="$withBase('/img/fixbox5.png')">  
 
 #### 3. flex-flow 属性
 flex-flow属性是flex-direction属性和flex-wrap属性的简写形式，默认值为row nowrap。
@@ -117,7 +117,7 @@ align-items 属性定义flex子项在flex容器的当前行的侧轴（纵轴）
 | flex-end      | 项目位于容器的结尾。     |  
 | baseline      | 项目位于容器的基线上。     |  
 
-<img :src="$withBase('/fixbox6.png')">  
+<img :src="$withBase('/img/fixbox6.png')">  
 
 #### 5. justify-content属性
 justify-content 用于设置或检索弹性盒子元素在主轴（横轴）方向上的对齐方式。
@@ -130,7 +130,7 @@ justify-content 用于设置或检索弹性盒子元素在主轴（横轴）方�
 | space-between	      | 项目位于各行之间留有空白的容器内。|  
 | space-around      | 项目位于各行之前、之间、之后都留有空白的容器内。     |  
 
-<img :src="$withBase('/fixbox9.png')">  
+<img :src="$withBase('/img/fixbox9.png')">  
 
 ### 弹性子元素属性
 
@@ -148,21 +148,21 @@ justify-content 用于设置或检索弹性盒子元素在主轴（横轴）方�
 .flex-container .flex-item { order: <integer>; }
 ```
 integer：用整数值来定义排列顺序，数值小的排在前面。可以为负值，默认为0。
-<img :src="$withBase('/fixbox10.png')">  
+<img :src="$withBase('/img/fixbox10.png')">  
 
 ####  2. flex-grow属性
 ```css
 .flex-container .flex-item { flex-grow: <integer>; }
 ```
 integer：一个数字，规定项目将相对于其他灵活的项目进行扩展的量。默认值是 0。
-<img :src="$withBase('/fixbox11.png')">  
+<img :src="$withBase('/img/fixbox11.png')">  
 
 #### 3. flex-shrink属性
 ```css
 .flex-container .flex-item { flex-shrink: <integer>; }
 ```
 integer：一个数字，规定项目将相对于其他灵活的项目进行收缩的量。默认值是 1。
-<img :src="$withBase('/fixbox12.png')">  
+<img :src="$withBase('/img/fixbox12.png')">  
 
 #### 4. flex-basis属性
 ```css
@@ -206,5 +206,5 @@ flex 属性是 flex-grow、flex-shrink 和 flex-basis 属性的简写属性。
 | initial      | 设置该属性为它的默认值。     |  
 | inherit      | 从父元素继承该属性。     |  
 
-<img :src="$withBase('/fixbox13.png')">  
+<img :src="$withBase('/img/fixbox13.png')">  
 取值同 align-items。

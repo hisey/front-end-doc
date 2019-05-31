@@ -1,0 +1,29 @@
+<?xml version="1.0" standalone="no"?>
+<!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN" "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd" >
+<!--
+2013-9-30: Created.
+-->
+<svg>
+<metadata>
+Created by iconfont
+</metadata>
+<defs>
+
+<font id="iconfont" horiz-adv-x="1024" >
+  <font-face
+    font-family="iconfont"
+    font-weight="500"
+    font-stretch="normal"
+    units-per-em="1024"
+    ascent="896"
+    descent="-128"
+  />
+    <missing-glyph />
+    
+    <glyph glyph-name="loading" unicode="&#58880;" d="M910.222 440.889V384H682.667v56.889h227.555z m-625.778 0V384H56.89v56.889h227.555z m170.667-227.556H512v-227.555h-56.889V213.333z m0 625.778H512v-227.555h-56.889V839.11z m341.333-699.733l-39.822-39.822-159.289 159.288 39.823 39.823 159.288-159.29zM369.778 566.044l-39.822-39.822-159.29 159.29 39.823 39.821 159.289-159.289z m-39.822-267.377l39.822-39.823-159.29-159.288-39.821 39.822 159.289 159.289z m426.666 426.666l39.822-39.822-159.288-159.289-39.823 39.822 159.29 159.29z"  horiz-adv-x="1024" />
+
+    
+
+
+  </font>
+</defs></svg>

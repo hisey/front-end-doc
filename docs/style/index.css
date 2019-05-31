@@ -1,0 +1,389 @@
+.icon {
+  font-size: 24px;
+  color: #333;
+  -webkit-transition: font-size 0.25s linear, width 0.25s linear;
+  -moz-transition: font-size 0.25s linear, width 0.25s linear;
+  transition: font-size 0.25s linear, width 0.25s linear;
+}
+
+
+.clearfix:after {
+    content: ".";
+    display: block;
+    clear: both;
+    visibility: hidden;
+    height: 0;
+    font-size: 0;
+  }
+  
+  body {
+    padding: 0;
+    margin: 0;
+    /* background-color: #f0f2f5; */
+    min-height: 100vh;
+  }
+
+  a,
+img {
+  -webkit-touch-callout: none;
+}
+
+a {
+  text-decoration: none;
+  color: #333333;
+}
+
+a:visited {
+  text-decoration: none;
+}
+
+a:hover {
+  text-decoration: none;
+}
+
+img {
+  vertical-align: middle;
+  max-width: 100%;
+}
+
+i,
+em {
+  font-style: normal;
+}
+
+ol,
+ul {
+  list-style: none;
+}
+
+section,
+article,
+aside,
+header,
+footer,
+nav,
+figure,
+menu {
+  display: block;
+  padding: 0;
+  margin: 0 0 0px;
+}
+
+input {
+  -webkit-appearance: none;
+}
+
+input,
+button,
+select,
+textarea {
+  outline: none;
+}
+
+input {
+  border: none;
+}
+
+input[type="submit"],
+input[type="reset"],
+input[type="button"],
+textarea,
+select,
+button {
+  -webkit-appearance: none;
+}
+
+input[type="number"]::-webkit-outer-spin-button,
+input[type="number"]::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+input[type="number"] {
+  -moz-appearance: textfield;
+}
+
+p {
+  word-wrap: break-word
+}
+  
+  .f-r {
+    float: right;
+  }
+  
+  .f-l {
+    float: left;
+  }
+  
+  /**对齐方式**/
+  
+  .ta_l {
+    text-align: left;
+  }
+  
+  .ta_c {
+    text-align: center;
+  }
+  
+  .ta_r {
+    text-align: right;
+  }
+  
+  /**边框**/
+  
+  .bor_n {
+    border: none !important;
+  }
+  
+  /**外边距**/
+  
+  .m0 {
+    margin: 0px;
+  }
+  
+  .m5 {
+    margin: 5px;
+  }
+  
+  .m10 {
+    margin: 10px;
+  }
+  
+  .m15 {
+    margin: 15px;
+  }
+  
+  .m20 {
+    margin: 20px;
+  }
+  
+  .mt5 {
+    margin-top: 5px;
+  }
+  
+  .mt10 {
+    margin-top: 10px;
+  }
+  
+  .mt15 {
+    margin-top: 15px;
+  }
+  
+  .mt20 {
+    margin-top: 20px;
+  }
+  
+  .mt25 {
+    margin-top: 25px;
+  }
+  
+  .mr5 {
+    margin-right: 5px;
+  }
+  
+  .mr10 {
+    margin-right: 10px;
+  }
+  
+  .mr15 {
+    margin-right: 15px;
+  }
+  
+  .mr20 {
+    margin-right: 20px;
+  }
+  
+  .mr25 {
+    margin-right: 25px;
+  }
+  
+  .mb5 {
+    margin-bottom: 5px;
+  }
+  
+  .mb10 {
+    margin-bottom: 10px;
+  }
+  
+  .mb15 {
+    margin-bottom: 15px;
+  }
+  
+  .mb20 {
+    margin-bottom: 20px;
+  }
+  
+  .mb25 {
+    margin-bottom: 25px;
+  }
+  
+  .ml5 {
+    margin-left: 5px;
+  }
+  
+  .ml10 {
+    margin-left: 10px;
+  }
+  
+  .ml15 {
+    margin-left: 15px;
+  }
+  
+  .ml20 {
+    margin-left: 20px;
+  }
+  
+  .ml25 {
+    margin-left: 25px;
+  }
+  
+  /**padding**/
+  
+  .p0 {
+    padding: 0px;
+  }
+  
+  .p5 {
+    padding: 5px;
+  }
+  
+  .p10 {
+    padding: 10px;
+  }
+  
+  .p15 {
+    padding: 15px;
+  }
+  
+  .p20 {
+    padding: 20px;
+  }
+  
+  .p30 {
+    padding: 30px;
+  }
+  
+  .pt0 {
+    padding-top: 0;
+  }
+  
+  .pt5 {
+    padding-top: 5px;
+  }
+  
+  .pt10 {
+    padding-top: 10px;
+  }
+  
+  .pt15 {
+    padding-top: 15px;
+  }
+  
+  .pt20 {
+    padding-top: 20px;
+  }
+  
+  .pt25 {
+    padding-top: 25px;
+  }
+  
+  .pl0 {
+    padding-left: 0px;
+  }
+  
+  .pr5 {
+    padding-right: 5px;
+  }
+  
+  .pr10 {
+    padding-right: 10px;
+  }
+  
+  .pr15 {
+    padding-right: 15px;
+  }
+  
+  .pr20 {
+    padding-right: 20px;
+  }
+  
+  .pr25 {
+    padding-right: 25px;
+  }
+  
+  .pb5 {
+    padding-bottom: 5px;
+  }
+  
+  .pb10 {
+    padding-bottom: 10px;
+  }
+  
+  .pb15 {
+    padding-bottom: 15px;
+  }
+  
+  .pb20 {
+    padding-bottom: 20px;
+  }
+  
+  .pb25 {
+    padding-bottom: 25px;
+  }
+  
+  .pl5 {
+    padding-left: 5px;
+  }
+  
+  .pl10 {
+    padding-left: 10px;
+  }
+  
+  .pl15 {
+    padding-left: 15px;
+  }
+  
+  .pl20 {
+    padding-left: 20px;
+  }
+  
+  .pl25 {
+    padding-left: 25px;
+  }
+  
+  .pointer {
+    cursor: pointer;
+  }
+  
+  .display-none {
+    display: none !important;
+  }
+  
+  .display-block {
+    display: block !important;
+  }
+  
+  .display-inline-block {
+    display: inline-block !important;
+  }
+  
+  .cursor_pointer {
+    cursor: pointer;
+  }
+  
+  .blue {
+    color: #409EFF;
+  }
+  
+  .gray {
+    color: #999;
+  }
+  
+  .error {
+    color: red;
+  }
+  
+  .help-color {
+    background-color: rgba(38, 136, 252, 0.09);
+  }
+

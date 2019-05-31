@@ -66,7 +66,7 @@ $ npm run dev
 #### 2、 在。vue文件中的style节点加上lang=”scss"  
 
   <br>
-<img :src="$withBase('/remind-04.jpg')">
+<img :src="$withBase('/img/remind-04.jpg')">
 
 ### 三、 像vue一样使用路由
 
@@ -85,7 +85,7 @@ $ npm run dev
 #### 2、 项目src文件夹下创建router文件夹和router.js文件
 
 <br>
-<img :src="$withBase('/project-dir.png')">  
+<img :src="$withBase('/img/project-dir.png')">  
 　　
 
 #### 3、 项目引入src下的main.js文件　
@@ -362,7 +362,7 @@ add() {
 
 2、 	将子包页面移入packageOther文件夹下， （一般非tabbar里面的页面）目录改造完成， 如图： </br>
 
-<img :src="$withBase('/remind-02.jpg')">
+<img :src="$withBase('/img/remind-02.jpg')">
 
 ### 分包配置（app.json配置）  
 
@@ -370,7 +370,7 @@ add() {
 
 2、 	最终配置如下图： 
 
-<img :src="$withBase('/remind-01.jpg')">
+<img :src="$withBase('/img/remind-01.jpg')">
 
 3、 	**删掉项目dist文件**， 然后重启项目：
 
@@ -380,5 +380,5 @@ npm run dev
 
 4、 	查看微信开发工具面板的详情， 成功分包后： 主包减少、 分包增大， 如图
 
-<img :src="$withBase('/remind-03.jpg')">
+<img :src="$withBase('/img/remind-03.jpg')">
 
