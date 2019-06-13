@@ -25,6 +25,7 @@ if (true) {
   console.log(x); // ReferenceError
   let x = 'hello';
 }
+
 ```
 上面代码如果使用var替代let，console.log那一行就不会报错，而是会输出undefined，因为变量声明提升到代码块的头部。这违反了变量先声明后使用的原则。
 

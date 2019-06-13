@@ -88,13 +88,8 @@ module.exports = {
         ]
       },
       {
-        text: "工具",
-        items: [
-          {
-            text: "基础",
-            link: "/src/vue/"
-          }
-        ]
+        text: "收藏夹",
+        link:"/src/favorites/"
       },
       {
         text: "关于我",

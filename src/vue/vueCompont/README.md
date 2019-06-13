@@ -15,3 +15,7 @@
 scroll.vue
  
 <<< @/.vuepress/components/scroll.vue
+
+## 图片上传
+### 组件源码
+<<< @/.vuepress/components/pic-upload.vue
