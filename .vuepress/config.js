@@ -84,6 +84,10 @@ module.exports = {
           {
             text: "vue组件示例",
             link: "/src/vue/vueCompont/"
+          },
+          {
+            text: "断点调试",
+            link: "/src/vue/debug"
           }
         ]
       },
