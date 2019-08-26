@@ -82,12 +82,16 @@ module.exports = {
             link: "/src/vue/"
           },
           {
-            text: "vue组件示例",
+            text: "组件示例",
             link: "/src/vue/vueCompont/"
           },
           {
             text: "断点调试",
             link: "/src/vue/debug"
+          },
+          {
+            text: "优雅写法",
+            link: "/src/vue/elegant"
           }
         ]
       },
