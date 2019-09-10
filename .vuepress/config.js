@@ -92,6 +92,10 @@ module.exports = {
           {
             text: "优雅写法",
             link: "/src/vue/elegant"
+          },
+          {
+            text:"实用骚操作",
+            link:"/src/vue/slill.md"
           }
         ]
       },
