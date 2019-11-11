@@ -62,6 +62,10 @@ module.exports = {
           {
             text: "代码部署",
             link: "/src/case/autoDeploy/"
+          },
+          {
+            text:"websocket",
+            link:"/src/case/websocket/"
           }
         ]
       },

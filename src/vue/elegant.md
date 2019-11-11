@@ -114,3 +114,20 @@ arr.every(d => d > 2) // false 每一项都满足条件则返回 true
 
 arr.some(d => d > 2) // true 只要有一项满足条件则返回 true
 ```
+## element 使用技巧
+
+### 解决form表单嵌套的问题
+```javascript
+   async validate() {
+      let valid = await new Promise(resolve =>
+        this.$refs.form.validate(resolve)
+      );
+      if (valid) {
+        // 返回处理后的参数
+        return this.handleParam();
+      } else {
+        //返回假值
+        return valid;
+      }
+    }
+```
