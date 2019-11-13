@@ -100,6 +100,10 @@ module.exports = {
           {
             text:"实用骚操作",
             link:"/src/vue/slill.md"
+          },
+          {
+            text:"代码规范",
+            link:"/src/vue/standards.md"
           }
         ]
       },

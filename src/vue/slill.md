@@ -262,7 +262,7 @@ methods: {
 ```
 还可以在其后加 ++newDate()时间戳，保证独一无二。
 
-感谢网友 @rolitter 的提醒，如果组件被放在 <keep-alive>中的话，可以把获取新数据的方法放在 activated 钩子，代替原来在 created、mounted 钩子中获取数据的任务。
+感谢网友 @rolitter 的提醒，如果组件被放在 "keep-Alive"中的话，可以把获取新数据的方法放在 activated 钩子，代替原来在 created、mounted 钩子中获取数据的任务。
 
 ## 5. 组件事件属性穿透
 ### 5.1 一般情况
