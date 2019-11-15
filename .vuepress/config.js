@@ -4,7 +4,7 @@ module.exports = {
   base: "/front-end-doc/",
   head: [
     ["link", { rel: "stylesheet", href: "/font/iconfont.css" }],
-    ["link", { rel: "stylesheet", href: "/style/index.css" }],
+    ["link", { rel: "stylesheet", href: "/style/index.css" }]
   ],
   port: 4864,
   dest: "./docs",
@@ -64,8 +64,8 @@ module.exports = {
             link: "/src/case/autoDeploy/"
           },
           {
-            text:"websocket",
-            link:"/src/case/websocket/"
+            text: "websocket",
+            link: "/src/case/websocket/"
           }
         ]
       },
@@ -98,18 +98,18 @@ module.exports = {
             link: "/src/vue/elegant"
           },
           {
-            text:"实用骚操作",
-            link:"/src/vue/slill.md"
+            text: "实用骚操作",
+            link: "/src/vue/slill.md"
           },
           {
-            text:"代码规范",
-            link:"/src/vue/standards.md"
+            text: "代码规范",
+            link: "/src/vue/standards.md"
           }
         ]
       },
       {
         text: "收藏夹",
-        link:"/src/favorites/"
+        link: "/src/favorites/"
       },
       {
         text: "关于我",

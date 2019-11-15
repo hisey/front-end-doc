@@ -30,7 +30,7 @@ class WebSocketClass {
     this.pingInterval = setInterval(() => {
       if (this.ws.readyState === 1) {
         // 检查ws为链接状态 才可发送
-        // this.ws.send('ping'); // 客户端发送ping
+        this.ws.send('ping'); // 客户端发送ping
       } else {
         this.ws.close();
         this.connect();
