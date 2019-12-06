@@ -25,10 +25,13 @@ Vue 2.0 的桌面端组件库
 [direction-reveal](https://github.com/NigelOToole/direction-reveal)根据鼠标进入位置，展现从不同方向 展现 hover 效果
 [laxxx](https://github.com/alexfoxy/laxxx) 滚动特效库 轻量级 压缩完 2kb
 [cssfx](https://cssfx.dev/)优雅的 CSS 动画效果，开箱即用
+[Vue2-animate](https://the-allstars.com/vue2-animate/)A Vue.js 2.0 port of Animate.css. For use with Vue's built-in transitions
 
 ## vue 
 [Vue.Draggable](https://github.com/SortableJS/Vue.Draggable)DnD 拖拽组件 基于 Sortable.js 的 vue 版本
 [vue-content-placeholders](https://github.com/michalsnik/vue-content-placeholders) 页面龙骨 skeleton
+[vue-content-loader](http://danilowoz.com/create-vue-content-loader/) 页面龙骨
+[vuex-persistedstate](https://github.com/robinvdvleuten/vuex-persistedstate) vuex 数据持久化
 
 ## 推荐插件
 [dplayer](http://dplayer.js.org/zh/guide.html#webtorrent)一款H5播放器  
