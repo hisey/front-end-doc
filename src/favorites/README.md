@@ -3,7 +3,7 @@
 Vue 2.0 的桌面端组件库  
 [VUX](https://vux.li/)  一个凑合的 Vue.js 移动端 UI 组件库  
 [vant](https://youzan.github.io/vant/#/zh-CN/intro) 轻量、可靠的移动端 Vue 组件库  
-[Tailwind ](https://tailwindcss.com/) 实用程序优先的CSS框架，用于快速构建自定义设计
+[Tailwind ](https://tailwindcss.com/) 实用程序优先的CSS框架，用于快速构建自定义设计  
 
 ## 推荐库
 [img-2](https://revillweb.github.io/img-2/)一个提高图片加载性能和体验的库，懒加载使用 web worker 模糊预览  
@@ -20,21 +20,21 @@ Vue 2.0 的桌面端组件库
 [grade](https://github.com/benhowdle89/grade)一个可以根据你的 图片 调整底色的插件
 
 ## Css && 动画
-[animate.css](https://github.com/daneden/animate.css)最有名的动画效果库
-[magic.css](https://github.com/miniMAC/magic)css 动画效果库 类似 animate.css
-[direction-reveal](https://github.com/NigelOToole/direction-reveal)根据鼠标进入位置，展现从不同方向 展现 hover 效果
-[laxxx](https://github.com/alexfoxy/laxxx) 滚动特效库 轻量级 压缩完 2kb
-[cssfx](https://cssfx.dev/)优雅的 CSS 动画效果，开箱即用
-[Vue2-animate](https://the-allstars.com/vue2-animate/)A Vue.js 2.0 port of Animate.css. For use with Vue's built-in transitions
+[animate.css](https://github.com/daneden/animate.css)最有名的动画效果库    
+[magic.css](https://github.com/miniMAC/magic)css 动画效果库 类似 animate.css    
+[direction-reveal](https://github.com/NigelOToole/direction-reveal)根据鼠标进入位置，展现从不同方向 展现 hover 效果  
+[laxxx](https://github.com/alexfoxy/laxxx) 滚动特效库 轻量级 压缩完 2kb   
+[cssfx](https://cssfx.dev/)优雅的 CSS 动画效果，开箱即用   
+[Vue2-animate](https://the-allstars.com/vue2-animate/)A Vue.js 2.0 port of Animate.css. For use with Vue's built-in transitions   
 
 ## vue 
-[Vue.Draggable](https://github.com/SortableJS/Vue.Draggable)DnD 拖拽组件 基于 Sortable.js 的 vue 版本
-[vue-content-placeholders](https://github.com/michalsnik/vue-content-placeholders) 页面龙骨 skeleton
-[vue-content-loader](http://danilowoz.com/create-vue-content-loader/) 页面龙骨
-[vuex-persistedstate](https://github.com/robinvdvleuten/vuex-persistedstate) vuex 数据持久化
+[Vue.Draggable](https://github.com/SortableJS/Vue.Draggable)DnD 拖拽组件 基于 Sortable.js 的 vue 版本     
+[vue-content-placeholders](https://github.com/michalsnik/vue-content-placeholders) 页面龙骨 skeleton    
+[vue-content-loader](http://danilowoz.com/create-vue-content-loader/) 页面龙骨    
+[vuex-persistedstate](https://github.com/robinvdvleuten/vuex-persistedstate) vuex 数据持久化    
 
 ## 推荐插件
-[dplayer](http://dplayer.js.org/zh/guide.html#webtorrent)一款H5播放器  
-[xgplayer](http://h5player.bytedance.com/) 西瓜视频播放器
-[store](https://github.com/marcuswestin/store.js) 本地储存
-[bignumber](https://github.com/MikeMcl/bignumber.js) 解决 js 浮点数问题。 主要就是 Big Number 或者小数点温柔
+[dplayer](http://dplayer.js.org/zh/guide.html#webtorrent)一款H5播放器    
+[xgplayer](http://h5player.bytedance.com/) 西瓜视频播放器   
+[store](https://github.com/marcuswestin/store.js) 本地储存  
+[bignumber](https://github.com/MikeMcl/bignumber.js) 解决 js 浮点数问题。 主要就是 Big Number 或者小数点温柔  
