@@ -7,15 +7,9 @@
 
 [这里](https://ustbhuangyi.github.io/better-scroll/doc/zh-hans/)  
 
-### demo源码展示
-
+### scroll.vue
 <<< @/.vuepress/components/scroll-demo.vue
 
-### 组件源码
-scroll.vue
- 
-<<< @/.vuepress/components/scroll.vue
 
 ## 图片上传
 ### 组件源码
-<<< @/.vuepress/components/pic-upload.vue
