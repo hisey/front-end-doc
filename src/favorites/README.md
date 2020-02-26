@@ -32,9 +32,18 @@ Vue 2.0 的桌面端组件库
 [vue-content-placeholders](https://github.com/michalsnik/vue-content-placeholders) 页面龙骨 skeleton    
 [vue-content-loader](http://danilowoz.com/create-vue-content-loader/) 页面龙骨    
 [vuex-persistedstate](https://github.com/robinvdvleuten/vuex-persistedstate) vuex 数据持久化    
+[v-charts](https://github.com/ElemeFE/v-charts) 基于 Vue2.x 封装的 Echarts 图表组件
+[vue-amap](https://github.com/ElemeFE/vue-amap) 基于 Vue 2.x 和高德地图的地图组件
+[vue-baidu-map](https://github.com/Dafrok/vue-baidu-map) 基于 VUE 2.x 的百度地图组件
+[vue-ueditor](https://github.com/SilentTiger/vue-ueditor) 基于UEditor的富文本
+[vue-meta-info](https://github.com/muwoo/vue-meta-info) 设置vue 单页面meta info信息
 
 ## 推荐插件
 [dplayer](http://dplayer.js.org/zh/guide.html#webtorrent)一款H5播放器    
 [xgplayer](http://h5player.bytedance.com/) 西瓜视频播放器   
-[store](https://github.com/marcuswestin/store.js) 本地储存  
+[localForage-cn](https://github.com/xmoyking/localForage-cn) 本地储存  
 [bignumber](https://github.com/MikeMcl/bignumber.js) 解决 js 浮点数问题。 主要就是 Big Number 或者小数点温柔  
+[localResizeIMG](https://github.com/think2011/localResizeIMG) 前端图片压缩，兼容IOS，Android，PC、自动按需加载文件
+
+## webpack
+[](https://github.com/chrisvfritz/prerender-spa-plugin) vue预渲染，vue 解决seo优化
