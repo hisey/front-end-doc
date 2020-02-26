@@ -44,6 +44,10 @@ Vue 2.0 的桌面端组件库
 [localForage-cn](https://github.com/xmoyking/localForage-cn) 本地储存  
 [bignumber](https://github.com/MikeMcl/bignumber.js) 解决 js 浮点数问题。 主要就是 Big Number 或者小数点温柔  
 [localResizeIMG](https://github.com/think2011/localResizeIMG) 前端图片压缩，兼容IOS，Android，PC、自动按需加载文件
+[pulltorefresh.js](https://github.com/BoxFactura/pulltorefresh.js) 下拉刷新
+[scroll-out](https://github.com/scroll-out/scroll-out)滚动效果（滚动视差）的框架，框架大小不到 1KB,使用回调的方式将相关动画元素的属性进行实时分配
+[grade](https://github.com/benhowdle89/grade) 一个可以根据你的 图片 调整底色的插件
+[photoswipe](https://github.com/dimsemenov/photoswipe) 图片预览组件，支持移动端
 
 ## webpack
 [](https://github.com/chrisvfritz/prerender-spa-plugin) vue预渲染，vue 解决seo优化
