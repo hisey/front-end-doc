@@ -50,4 +50,12 @@ Vue 2.0 的桌面端组件库
 [photoswipe](https://github.com/dimsemenov/photoswipe) 图片预览组件，支持移动端
 
 ## webpack
-[](https://github.com/chrisvfritz/prerender-spa-plugin) vue预渲染，vue 解决seo优化
+[prerender-spa-plugin](https://github.com/chrisvfritz/prerender-spa-plugin) vue预渲染，vue 解决seo优化
+[npkill](https://github.com/voidcosmos/npkill) 列出并可以删除无用的 node_modules
+
+## node 
+[nestjs](https://github.com/nestjs/nest) Nest 是一个用于构建高效，可扩展的 Node.js 服务器端应用程序的框架
+
+## 网站
+[risingstars](https://risingstars.js.org/2019/zh/) javascript明星项目
+
