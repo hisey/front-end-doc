@@ -58,4 +58,8 @@ Vue 2.0 的桌面端组件库
 
 ## 网站
 [risingstars](https://risingstars.js.org/2019/zh/) javascript明星项目
+[tech.meituan.com](https://tech.meituan.com/) 美团技术团队
+
+## 文章 
+[微前端](https://tech.meituan.com/2020/02/27/meituan-waimai-micro-frontends-practice.html) 微前端在美团外卖的实践
 
