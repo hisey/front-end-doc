@@ -28,6 +28,7 @@
 <!-- <p class="warning">
 Internet Explorer(甚至 IE8 beta)中无效
 <p>   -->
+
 ### 垂直居中
 
 ```html
@@ -84,6 +85,12 @@ div{
     -webkit-transform: translateY(-50%);
     -o-transform: translateY(-50%);
     transform: translateY(-50%);
+}
+```
+### 响应式多列布局
+```css
+.content {
+  columns: 200px;
 }
 ```
 ## 文本
@@ -317,5 +324,81 @@ $fc:#fff;
 	justify-content: $type;
 
 }
+```
+## 滚动
+### 顺滑滚动
+
+```css
+html {
+  scroll-behavior: smooth;
+}
+```
+##  背景
+### 背景混合
+```css
+<div class="content">
+  <div class="one"></div>
+  <div class="two"></div>
+  <div class="three"></div>
+</div>
+
+<style>
+.one, .two, .three {
+  background-color: orange;
+  background-image: url(https://picsum.photos/id/1005/600/600);
+}
+.one { background-blend-mode: screen; }
+.two { background-blend-mode: multiply; }
+.three { background-blend-mode: overlay; }
+</style>
+```
+## 媒体查询
+### 基于媒体查询，改变 Grid 布局
+```css
+<div class="card">
+  <img src="https://i.pravatar.cc/125?image=3" alt="" class="profile-img">
+  <ul class="social-list">
+    <li><a href="#" class="social-link"><i class="fab fa-dribbble-square"></i></a></li>
+    <li><a href="#" class="social-link"><i class="fab fa-facebook-square"></i></a></li>
+    <li><a href="#" class="social-link"><i class="fab fa-twitter-square"></i></a></li>
+  </ul>
+  <h2 class="profile-name">Ramsey Harper</h2>
+  <p class="profile-position">Graphic Designer</p>
+  <p class="profile-info">Lorem ipsum dolor sit amet consectetur adipisicing elit. Facere a tempore, dignissimos odit accusantium repellat quidem, sit molestias dolorum placeat quas debitis ipsum esse rerum?</p>
+</div>
+
+<style>
+.card {
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-column-gap: 2em;
+  /* 默认采用垂直布局 */
+  grid-template-areas: 
+    "name"
+    "image"
+    "social"
+    "position"
+    "description";
+}
+
+/* 利用媒体查询，当视口宽度大于 600px 的时候， 
+   采用更易于阅读的双列布局方式 */
+@media (min-width: 600px) {
+  .card {
+    text-align: left;
+    grid-template-columns: 1fr 3fr;
+    grid-template-areas:
+      "image name"
+      "image position"
+      "social description";
+  }
+}
+
+.profile-name     { grid-area: name; }
+.profile-position { grid-area: position; }
+.profile-info     { grid-area: description; }
+.profile-img      { grid-area: image; }
+.social-list      { grid-area: social; }
+</style>
 ```
 
