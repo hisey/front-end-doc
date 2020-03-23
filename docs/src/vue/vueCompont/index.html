@@ -5,20 +5,97 @@
     <meta name="viewport" content="width=device-width,initial-scale=1">
     <title>滚动组件 | hisey</title>
     <meta name="description" content="不一样的世界，等你去发现">
+    <meta name="generator" content="VuePress 1.4.0">
     <link rel="stylesheet" href="/front-end-doc/font/iconfont.css">
   <link rel="stylesheet" href="/front-end-doc/style/index.css">
     
-    <link rel="preload" href="/front-end-doc/assets/css/0.styles.047a64fa.css" as="style"><link rel="preload" href="/front-end-doc/assets/js/app.7926626f.js" as="script"><link rel="preload" href="/front-end-doc/assets/js/27.a93324cd.js" as="script"><link rel="preload" href="/front-end-doc/assets/js/6.47ca6ee2.js" as="script"><link rel="preload" href="/front-end-doc/assets/js/4.dd026023.js" as="script"><link rel="prefetch" href="/front-end-doc/assets/js/1.80fa799c.js"><link rel="prefetch" href="/front-end-doc/assets/js/10.7787f290.js"><link rel="prefetch" href="/front-end-doc/assets/js/11.12573a5f.js"><link rel="prefetch" href="/front-end-doc/assets/js/12.9326d3b4.js"><link rel="prefetch" href="/front-end-doc/assets/js/13.3bffb7f0.js"><link rel="prefetch" href="/front-end-doc/assets/js/14.7d9360c3.js"><link rel="prefetch" href="/front-end-doc/assets/js/15.379c0b6f.js"><link rel="prefetch" href="/front-end-doc/assets/js/16.b5c28c25.js"><link rel="prefetch" href="/front-end-doc/assets/js/17.f0e220fd.js"><link rel="prefetch" href="/front-end-doc/assets/js/18.e4e6827d.js"><link rel="prefetch" href="/front-end-doc/assets/js/19.e120eb8c.js"><link rel="prefetch" href="/front-end-doc/assets/js/20.bdca3adb.js"><link rel="prefetch" href="/front-end-doc/assets/js/21.c6e5c6f6.js"><link rel="prefetch" href="/front-end-doc/assets/js/22.f3abc10e.js"><link rel="prefetch" href="/front-end-doc/assets/js/23.13df7863.js"><link rel="prefetch" href="/front-end-doc/assets/js/24.883a0aa1.js"><link rel="prefetch" href="/front-end-doc/assets/js/25.922f5b3a.js"><link rel="prefetch" href="/front-end-doc/assets/js/26.c4b50634.js"><link rel="prefetch" href="/front-end-doc/assets/js/28.a0512ec7.js"><link rel="prefetch" href="/front-end-doc/assets/js/3.c88ea40f.js"><link rel="prefetch" href="/front-end-doc/assets/js/5.27760a19.js"><link rel="prefetch" href="/front-end-doc/assets/js/7.4655b2ef.js"><link rel="prefetch" href="/front-end-doc/assets/js/8.135b63aa.js"><link rel="prefetch" href="/front-end-doc/assets/js/9.1c04ae80.js">
-    <link rel="stylesheet" href="/front-end-doc/assets/css/0.styles.047a64fa.css">
+    <link rel="preload" href="/front-end-doc/assets/css/0.styles.fc8083c6.css" as="style"><link rel="preload" href="/front-end-doc/assets/js/app.5739d68f.js" as="script"><link rel="preload" href="/front-end-doc/assets/js/3.ed1cc3f0.js" as="script"><link rel="preload" href="/front-end-doc/assets/js/29.c7368d6b.js" as="script"><link rel="preload" href="/front-end-doc/assets/js/6.6b14627d.js" as="script"><link rel="preload" href="/front-end-doc/assets/js/5.f7859594.js" as="script"><link rel="prefetch" href="/front-end-doc/assets/js/1.961cee41.js"><link rel="prefetch" href="/front-end-doc/assets/js/10.4ee481ef.js"><link rel="prefetch" href="/front-end-doc/assets/js/11.c92c9d1c.js"><link rel="prefetch" href="/front-end-doc/assets/js/12.1d905594.js"><link rel="prefetch" href="/front-end-doc/assets/js/13.c5790384.js"><link rel="prefetch" href="/front-end-doc/assets/js/14.fbe5c2c5.js"><link rel="prefetch" href="/front-end-doc/assets/js/15.f806d332.js"><link rel="prefetch" href="/front-end-doc/assets/js/16.f6367238.js"><link rel="prefetch" href="/front-end-doc/assets/js/17.5669d3d5.js"><link rel="prefetch" href="/front-end-doc/assets/js/18.ee654154.js"><link rel="prefetch" href="/front-end-doc/assets/js/19.0eb9afe9.js"><link rel="prefetch" href="/front-end-doc/assets/js/20.2d95a8a4.js"><link rel="prefetch" href="/front-end-doc/assets/js/21.d90d5579.js"><link rel="prefetch" href="/front-end-doc/assets/js/22.49de220b.js"><link rel="prefetch" href="/front-end-doc/assets/js/23.1efcc0ef.js"><link rel="prefetch" href="/front-end-doc/assets/js/24.d2622202.js"><link rel="prefetch" href="/front-end-doc/assets/js/25.3808f00d.js"><link rel="prefetch" href="/front-end-doc/assets/js/26.410812b2.js"><link rel="prefetch" href="/front-end-doc/assets/js/27.165eafdf.js"><link rel="prefetch" href="/front-end-doc/assets/js/28.af4733b6.js"><link rel="prefetch" href="/front-end-doc/assets/js/30.f6596b0d.js"><link rel="prefetch" href="/front-end-doc/assets/js/4.f89c6582.js"><link rel="prefetch" href="/front-end-doc/assets/js/7.b7cf6821.js"><link rel="prefetch" href="/front-end-doc/assets/js/8.337f3799.js"><link rel="prefetch" href="/front-end-doc/assets/js/9.9eca8d48.js">
+    <link rel="stylesheet" href="/front-end-doc/assets/css/0.styles.fc8083c6.css">
   </head>
   <body>
-    <div id="app" data-server-rendered="true"><div class="theme-container"><header class="navbar"><div class="sidebar-button"><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" role="img" viewBox="0 0 448 512" class="icon"><path fill="currentColor" d="M436 124H12c-6.627 0-12-5.373-12-12V80c0-6.627 5.373-12 12-12h424c6.627 0 12 5.373 12 12v32c0 6.627-5.373 12-12 12zm0 160H12c-6.627 0-12-5.373-12-12v-32c0-6.627 5.373-12 12-12h424c6.627 0 12 5.373 12 12v32c0 6.627-5.373 12-12 12zm0 160H12c-6.627 0-12-5.373-12-12v-32c0-6.627 5.373-12 12-12h424c6.627 0 12 5.373 12 12v32c0 6.627-5.373 12-12 12z"></path></svg></div> <a href="/front-end-doc/" class="home-link router-link-active"><!----> <span class="site-name">hisey</span></a> <div class="links" style="max-width:nullpx;"><div class="search-box"><input aria-label="Search" autocomplete="off" spellcheck="false" value=""> <!----></div> <nav class="nav-links can-hide"><div class="nav-item"><a href="/front-end-doc/" class="nav-link">首页</a></div><div class="nav-item"><div class="dropdown-wrapper"><a class="dropdown-title"><span class="title">Git指南</span> <span class="arrow right"></span></a> <ul class="nav-dropdown" style="display:none;"><li class="dropdown-item"><!----> <a href="/front-end-doc/src/base/git/flow.html" class="nav-link">Git工作流</a></li><li class="dropdown-item"><!----> <a href="/front-end-doc/src/base/git/bash.html" class="nav-link">常用命令行</a></li></ul></div></div><div class="nav-item"><div class="dropdown-wrapper"><a class="dropdown-title"><span class="title">基础知识</span> <span class="arrow right"></span></a> <ul class="nav-dropdown" style="display:none;"><li class="dropdown-item"><!----> <a href="/front-end-doc/src/base/codeStyle/" class="nav-link">es6代码风格</a></li><li class="dropdown-item"><!----> <a href="/front-end-doc/src/base/cssDoc/" class="nav-link">css干货</a></li><li class="dropdown-item"><!----> <a href="/front-end-doc/src/base/jsDoc/" class="nav-link">js干货</a></li><li class="dropdown-item"><!----> <a href="/front-end-doc/src/base/flexbox/" class="nav-link">弹性盒子布局</a></li></ul></div></div><div class="nav-item"><div class="dropdown-wrapper"><a class="dropdown-title"><span class="title">解决方案</span> <span class="arrow right"></span></a> <ul class="nav-dropdown" style="display:none;"><li class="dropdown-item"><!----> <a href="/front-end-doc/src/case/webSplit/" class="nav-link">前后端分离</a></li><li class="dropdown-item"><!----> <a href="/front-end-doc/src/case/autoDeploy/" class="nav-link">代码部署</a></li><li class="dropdown-item"><!----> <a href="/front-end-doc/src/case/websocket/" class="nav-link">websocket</a></li></ul></div></div><div class="nav-item"><div class="dropdown-wrapper"><a class="dropdown-title"><span class="title">小程序</span> <span class="arrow right"></span></a> <ul class="nav-dropdown" style="display:none;"><li class="dropdown-item"><!----> <a href="/front-end-doc/src/smallProgram/mpvue/" class="nav-link">mpvue搭建小程序</a></li></ul></div></div><div class="nav-item"><div class="dropdown-wrapper"><a class="dropdown-title"><span class="title">vue</span> <span class="arrow right"></span></a> <ul class="nav-dropdown" style="display:none;"><li class="dropdown-item"><!----> <a href="/front-end-doc/src/vue/" class="nav-link router-link-active">基础</a></li><li class="dropdown-item"><!----> <a href="/front-end-doc/src/vue/vueCompont/" class="nav-link router-link-exact-active router-link-active">组件示例</a></li><li class="dropdown-item"><!----> <a href="/front-end-doc/src/vue/debug.html" class="nav-link">断点调试</a></li><li class="dropdown-item"><!----> <a href="/front-end-doc/src/vue/elegant.html" class="nav-link">优雅写法</a></li><li class="dropdown-item"><!----> <a href="/front-end-doc/src/vue/slill.html" class="nav-link">实用骚操作</a></li><li class="dropdown-item"><!----> <a href="/front-end-doc/src/vue/standards.html" class="nav-link">代码规范</a></li></ul></div></div><div class="nav-item"><a href="/front-end-doc/src/favorites/" class="nav-link">收藏夹</a></div><div class="nav-item"><a href="/front-end-doc/src/aboutMe/" class="nav-link">关于我</a></div> <a href="https://github.com//hisey/front-end-doc" target="_blank" rel="noopener noreferrer" class="repo-link">
+    <div id="app" data-server-rendered="true"><div class="theme-container"><header class="navbar"><div class="sidebar-button"><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" role="img" viewBox="0 0 448 512" class="icon"><path fill="currentColor" d="M436 124H12c-6.627 0-12-5.373-12-12V80c0-6.627 5.373-12 12-12h424c6.627 0 12 5.373 12 12v32c0 6.627-5.373 12-12 12zm0 160H12c-6.627 0-12-5.373-12-12v-32c0-6.627 5.373-12 12-12h424c6.627 0 12 5.373 12 12v32c0 6.627-5.373 12-12 12zm0 160H12c-6.627 0-12-5.373-12-12v-32c0-6.627 5.373-12 12-12h424c6.627 0 12 5.373 12 12v32c0 6.627-5.373 12-12 12z"></path></svg></div> <a href="/front-end-doc/" class="home-link router-link-active"><!----> <span class="site-name">hisey</span></a> <div class="links"><div class="search-box"><input aria-label="Search" autocomplete="off" spellcheck="false" value=""> <!----></div> <nav class="nav-links can-hide"><div class="nav-item"><a href="/front-end-doc/" class="nav-link">
+  首页
+</a></div><div class="nav-item"><div class="dropdown-wrapper"><button type="button" aria-label="Git指南" class="dropdown-title"><span class="title">Git指南</span> <span class="arrow right"></span></button> <ul class="nav-dropdown" style="display:none;"><li class="dropdown-item"><!----> <a href="/front-end-doc/src/base/git/flow.html" class="nav-link">
+  Git工作流
+</a></li><li class="dropdown-item"><!----> <a href="/front-end-doc/src/base/git/bash.html" class="nav-link">
+  常用命令行
+</a></li></ul></div></div><div class="nav-item"><div class="dropdown-wrapper"><button type="button" aria-label="基础知识" class="dropdown-title"><span class="title">基础知识</span> <span class="arrow right"></span></button> <ul class="nav-dropdown" style="display:none;"><li class="dropdown-item"><!----> <a href="/front-end-doc/src/base/codeStyle/" class="nav-link">
+  es6代码风格
+</a></li><li class="dropdown-item"><!----> <a href="/front-end-doc/src/base/cssDoc/" class="nav-link">
+  css干货
+</a></li><li class="dropdown-item"><!----> <a href="/front-end-doc/src/base/jsDoc/" class="nav-link">
+  js干货
+</a></li><li class="dropdown-item"><!----> <a href="/front-end-doc/src/base/flexbox/" class="nav-link">
+  弹性盒子布局
+</a></li></ul></div></div><div class="nav-item"><div class="dropdown-wrapper"><button type="button" aria-label="解决方案" class="dropdown-title"><span class="title">解决方案</span> <span class="arrow right"></span></button> <ul class="nav-dropdown" style="display:none;"><li class="dropdown-item"><!----> <a href="/front-end-doc/src/case/webSplit/" class="nav-link">
+  前后端分离
+</a></li><li class="dropdown-item"><!----> <a href="/front-end-doc/src/case/autoDeploy/" class="nav-link">
+  代码部署
+</a></li><li class="dropdown-item"><!----> <a href="/front-end-doc/src/case/websocket/" class="nav-link">
+  websocket
+</a></li></ul></div></div><div class="nav-item"><div class="dropdown-wrapper"><button type="button" aria-label="小程序" class="dropdown-title"><span class="title">小程序</span> <span class="arrow right"></span></button> <ul class="nav-dropdown" style="display:none;"><li class="dropdown-item"><!----> <a href="/front-end-doc/src/smallProgram/mpvue/" class="nav-link">
+  mpvue搭建小程序
+</a></li></ul></div></div><div class="nav-item"><div class="dropdown-wrapper"><button type="button" aria-label="vue" class="dropdown-title"><span class="title">vue</span> <span class="arrow right"></span></button> <ul class="nav-dropdown" style="display:none;"><li class="dropdown-item"><!----> <a href="/front-end-doc/src/vue/" class="nav-link router-link-active">
+  基础
+</a></li><li class="dropdown-item"><!----> <a href="/front-end-doc/src/vue/vueCompont/" class="nav-link router-link-exact-active router-link-active">
+  组件示例
+</a></li><li class="dropdown-item"><!----> <a href="/front-end-doc/src/vue/debug.html" class="nav-link">
+  断点调试
+</a></li><li class="dropdown-item"><!----> <a href="/front-end-doc/src/vue/elegant.html" class="nav-link">
+  优雅写法
+</a></li><li class="dropdown-item"><!----> <a href="/front-end-doc/src/vue/slill.html" class="nav-link">
+  实用骚操作
+</a></li><li class="dropdown-item"><!----> <a href="/front-end-doc/src/vue/standards.html" class="nav-link">
+  代码规范
+</a></li></ul></div></div><div class="nav-item"><a href="/front-end-doc/src/favorites/" class="nav-link">
+  收藏夹
+</a></div><div class="nav-item"><a href="/front-end-doc/src/aboutMe/" class="nav-link">
+  关于我
+</a></div> <a href="https://github.com//hisey/front-end-doc" target="_blank" rel="noopener noreferrer" class="repo-link">
     gitHub
-    <svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg></a></nav></div></header> <div class="sidebar-mask"></div> <div class="sidebar"><nav class="nav-links"><div class="nav-item"><a href="/front-end-doc/" class="nav-link">首页</a></div><div class="nav-item"><div class="dropdown-wrapper"><a class="dropdown-title"><span class="title">Git指南</span> <span class="arrow right"></span></a> <ul class="nav-dropdown" style="display:none;"><li class="dropdown-item"><!----> <a href="/front-end-doc/src/base/git/flow.html" class="nav-link">Git工作流</a></li><li class="dropdown-item"><!----> <a href="/front-end-doc/src/base/git/bash.html" class="nav-link">常用命令行</a></li></ul></div></div><div class="nav-item"><div class="dropdown-wrapper"><a class="dropdown-title"><span class="title">基础知识</span> <span class="arrow right"></span></a> <ul class="nav-dropdown" style="display:none;"><li class="dropdown-item"><!----> <a href="/front-end-doc/src/base/codeStyle/" class="nav-link">es6代码风格</a></li><li class="dropdown-item"><!----> <a href="/front-end-doc/src/base/cssDoc/" class="nav-link">css干货</a></li><li class="dropdown-item"><!----> <a href="/front-end-doc/src/base/jsDoc/" class="nav-link">js干货</a></li><li class="dropdown-item"><!----> <a href="/front-end-doc/src/base/flexbox/" class="nav-link">弹性盒子布局</a></li></ul></div></div><div class="nav-item"><div class="dropdown-wrapper"><a class="dropdown-title"><span class="title">解决方案</span> <span class="arrow right"></span></a> <ul class="nav-dropdown" style="display:none;"><li class="dropdown-item"><!----> <a href="/front-end-doc/src/case/webSplit/" class="nav-link">前后端分离</a></li><li class="dropdown-item"><!----> <a href="/front-end-doc/src/case/autoDeploy/" class="nav-link">代码部署</a></li><li class="dropdown-item"><!----> <a href="/front-end-doc/src/case/websocket/" class="nav-link">websocket</a></li></ul></div></div><div class="nav-item"><div class="dropdown-wrapper"><a class="dropdown-title"><span class="title">小程序</span> <span class="arrow right"></span></a> <ul class="nav-dropdown" style="display:none;"><li class="dropdown-item"><!----> <a href="/front-end-doc/src/smallProgram/mpvue/" class="nav-link">mpvue搭建小程序</a></li></ul></div></div><div class="nav-item"><div class="dropdown-wrapper"><a class="dropdown-title"><span class="title">vue</span> <span class="arrow right"></span></a> <ul class="nav-dropdown" style="display:none;"><li class="dropdown-item"><!----> <a href="/front-end-doc/src/vue/" class="nav-link router-link-active">基础</a></li><li class="dropdown-item"><!----> <a href="/front-end-doc/src/vue/vueCompont/" class="nav-link router-link-exact-active router-link-active">组件示例</a></li><li class="dropdown-item"><!----> <a href="/front-end-doc/src/vue/debug.html" class="nav-link">断点调试</a></li><li class="dropdown-item"><!----> <a href="/front-end-doc/src/vue/elegant.html" class="nav-link">优雅写法</a></li><li class="dropdown-item"><!----> <a href="/front-end-doc/src/vue/slill.html" class="nav-link">实用骚操作</a></li><li class="dropdown-item"><!----> <a href="/front-end-doc/src/vue/standards.html" class="nav-link">代码规范</a></li></ul></div></div><div class="nav-item"><a href="/front-end-doc/src/favorites/" class="nav-link">收藏夹</a></div><div class="nav-item"><a href="/front-end-doc/src/aboutMe/" class="nav-link">关于我</a></div> <a href="https://github.com//hisey/front-end-doc" target="_blank" rel="noopener noreferrer" class="repo-link">
+    <svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg></a></nav></div></header> <div class="sidebar-mask"></div> <aside class="sidebar"><nav class="nav-links"><div class="nav-item"><a href="/front-end-doc/" class="nav-link">
+  首页
+</a></div><div class="nav-item"><div class="dropdown-wrapper"><button type="button" aria-label="Git指南" class="dropdown-title"><span class="title">Git指南</span> <span class="arrow right"></span></button> <ul class="nav-dropdown" style="display:none;"><li class="dropdown-item"><!----> <a href="/front-end-doc/src/base/git/flow.html" class="nav-link">
+  Git工作流
+</a></li><li class="dropdown-item"><!----> <a href="/front-end-doc/src/base/git/bash.html" class="nav-link">
+  常用命令行
+</a></li></ul></div></div><div class="nav-item"><div class="dropdown-wrapper"><button type="button" aria-label="基础知识" class="dropdown-title"><span class="title">基础知识</span> <span class="arrow right"></span></button> <ul class="nav-dropdown" style="display:none;"><li class="dropdown-item"><!----> <a href="/front-end-doc/src/base/codeStyle/" class="nav-link">
+  es6代码风格
+</a></li><li class="dropdown-item"><!----> <a href="/front-end-doc/src/base/cssDoc/" class="nav-link">
+  css干货
+</a></li><li class="dropdown-item"><!----> <a href="/front-end-doc/src/base/jsDoc/" class="nav-link">
+  js干货
+</a></li><li class="dropdown-item"><!----> <a href="/front-end-doc/src/base/flexbox/" class="nav-link">
+  弹性盒子布局
+</a></li></ul></div></div><div class="nav-item"><div class="dropdown-wrapper"><button type="button" aria-label="解决方案" class="dropdown-title"><span class="title">解决方案</span> <span class="arrow right"></span></button> <ul class="nav-dropdown" style="display:none;"><li class="dropdown-item"><!----> <a href="/front-end-doc/src/case/webSplit/" class="nav-link">
+  前后端分离
+</a></li><li class="dropdown-item"><!----> <a href="/front-end-doc/src/case/autoDeploy/" class="nav-link">
+  代码部署
+</a></li><li class="dropdown-item"><!----> <a href="/front-end-doc/src/case/websocket/" class="nav-link">
+  websocket
+</a></li></ul></div></div><div class="nav-item"><div class="dropdown-wrapper"><button type="button" aria-label="小程序" class="dropdown-title"><span class="title">小程序</span> <span class="arrow right"></span></button> <ul class="nav-dropdown" style="display:none;"><li class="dropdown-item"><!----> <a href="/front-end-doc/src/smallProgram/mpvue/" class="nav-link">
+  mpvue搭建小程序
+</a></li></ul></div></div><div class="nav-item"><div class="dropdown-wrapper"><button type="button" aria-label="vue" class="dropdown-title"><span class="title">vue</span> <span class="arrow right"></span></button> <ul class="nav-dropdown" style="display:none;"><li class="dropdown-item"><!----> <a href="/front-end-doc/src/vue/" class="nav-link router-link-active">
+  基础
+</a></li><li class="dropdown-item"><!----> <a href="/front-end-doc/src/vue/vueCompont/" class="nav-link router-link-exact-active router-link-active">
+  组件示例
+</a></li><li class="dropdown-item"><!----> <a href="/front-end-doc/src/vue/debug.html" class="nav-link">
+  断点调试
+</a></li><li class="dropdown-item"><!----> <a href="/front-end-doc/src/vue/elegant.html" class="nav-link">
+  优雅写法
+</a></li><li class="dropdown-item"><!----> <a href="/front-end-doc/src/vue/slill.html" class="nav-link">
+  实用骚操作
+</a></li><li class="dropdown-item"><!----> <a href="/front-end-doc/src/vue/standards.html" class="nav-link">
+  代码规范
+</a></li></ul></div></div><div class="nav-item"><a href="/front-end-doc/src/favorites/" class="nav-link">
+  收藏夹
+</a></div><div class="nav-item"><a href="/front-end-doc/src/aboutMe/" class="nav-link">
+  关于我
+</a></div> <a href="https://github.com//hisey/front-end-doc" target="_blank" rel="noopener noreferrer" class="repo-link">
     gitHub
-    <svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg></a></nav>  <ul class="sidebar-links"><li><div class="sidebar-group first"><p class="sidebar-heading open"><span>滚动组件</span> <!----></p> <ul class="sidebar-group-items"><li><a href="/front-end-doc/src/vue/vueCompont/#滚动组件" class="sidebar-link">滚动组件</a><ul class="sidebar-sub-headers"><li class="sidebar-sub-header"><a href="/front-end-doc/src/vue/vueCompont/#scroll-vue" class="sidebar-link">scroll.vue</a></li></ul></li><li><a href="/front-end-doc/src/vue/vueCompont/#图片上传" class="sidebar-link">图片上传</a><ul class="sidebar-sub-headers"></ul></li></ul></div></li></ul> </div> <div class="page"> <div class="content"><h2 id="滚动组件"><a href="#滚动组件" aria-hidden="true" class="header-anchor">#</a> 滚动组件</h2> <div class="demo-wrp" data-v-32a8c64b><h4 data-v-32a8c64b>demo演示</h4> <div class="scroll-demo-wrapper" data-v-59034b3f><ul class="scroll-demo-content" data-v-59034b3f> <div class="loading-wrapper" data-v-59034b3f><span class="icon iconfont iconloading" data-v-59034b3f></span></div></ul></div></div>
+    <svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg></a></nav>  <ul class="sidebar-links"><li><section class="sidebar-group depth-0"><p class="sidebar-heading open"><span>滚动组件</span> <!----></p> <ul class="sidebar-links sidebar-group-items"><li><a href="/front-end-doc/src/vue/vueCompont/#滚动组件" class="sidebar-link">滚动组件</a><ul class="sidebar-sub-headers"><li class="sidebar-sub-header"><a href="/front-end-doc/src/vue/vueCompont/#scroll-vue" class="sidebar-link">scroll.vue</a></li></ul></li><li><a href="/front-end-doc/src/vue/vueCompont/#图片上传" class="sidebar-link">图片上传</a><ul class="sidebar-sub-headers"></ul></li></ul></section></li></ul> </aside> <main class="page"> <div class="theme-default-content content__default"><h2 id="滚动组件"><a href="#滚动组件" class="header-anchor">#</a> 滚动组件</h2> <div class="demo-wrp" data-v-5c36ef92><h4 data-v-5c36ef92>demo演示</h4> <div class="scroll-demo-wrapper" data-v-0154d7a0><ul class="scroll-demo-content" data-v-0154d7a0> <div class="loading-wrapper" data-v-0154d7a0><span class="icon iconfont iconloading" data-v-0154d7a0></span></div></ul></div></div>
 该组件是基于better-scroll进行的封装，具体文档参数请参考 
-<p><a href="https://ustbhuangyi.github.io/better-scroll/doc/zh-hans/" target="_blank" rel="noopener noreferrer">这里<svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg></a></p> <h3 id="scroll-vue"><a href="#scroll-vue" aria-hidden="true" class="header-anchor">#</a> scroll.vue</h3> <div class="language-vue extra-class"><pre class="language-vue"><code><span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>template</span><span class="token punctuation">&gt;</span></span>
+<p><a href="https://ustbhuangyi.github.io/better-scroll/doc/zh-hans/" target="_blank" rel="noopener noreferrer">这里<svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg></a></p> <h3 id="scroll-vue"><a href="#scroll-vue" class="header-anchor">#</a> scroll.vue</h3> <div class="language-vue extra-class"><pre class="language-vue"><code><span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>template</span><span class="token punctuation">&gt;</span></span>
   <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>scroll</span>
     <span class="token attr-name">class</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">&quot;</span>scroll-demo-wrapper<span class="token punctuation">&quot;</span></span>
     <span class="token attr-name">:data</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">&quot;</span>data<span class="token punctuation">&quot;</span></span>
@@ -39,21 +116,21 @@
 <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>script</span><span class="token punctuation">&gt;</span></span><span class="token script"><span class="token language-javascript">
 <span class="token keyword">import</span> scroll <span class="token keyword">from</span> <span class="token string">&quot;./scroll&quot;</span><span class="token punctuation">;</span>
 <span class="token keyword">export</span> <span class="token keyword">default</span> <span class="token punctuation">{</span>
-  name<span class="token punctuation">:</span> <span class="token string">&quot;scroll-demo&quot;</span><span class="token punctuation">,</span>
-  components<span class="token punctuation">:</span> <span class="token punctuation">{</span>
+  name<span class="token operator">:</span> <span class="token string">&quot;scroll-demo&quot;</span><span class="token punctuation">,</span>
+  components<span class="token operator">:</span> <span class="token punctuation">{</span>
     scroll
   <span class="token punctuation">}</span><span class="token punctuation">,</span>
   <span class="token function">data</span><span class="token punctuation">(</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
     <span class="token keyword">return</span> <span class="token punctuation">{</span>
-      data<span class="token punctuation">:</span> <span class="token punctuation">[</span><span class="token punctuation">]</span><span class="token punctuation">,</span>
-      pulldown<span class="token punctuation">:</span> <span class="token boolean">true</span><span class="token punctuation">,</span>
-      isFinished<span class="token punctuation">:</span> <span class="token boolean">false</span>
+      data<span class="token operator">:</span> <span class="token punctuation">[</span><span class="token punctuation">]</span><span class="token punctuation">,</span>
+      pulldown<span class="token operator">:</span> <span class="token boolean">true</span><span class="token punctuation">,</span>
+      isFinished<span class="token operator">:</span> <span class="token boolean">false</span>
     <span class="token punctuation">}</span><span class="token punctuation">;</span>
   <span class="token punctuation">}</span><span class="token punctuation">,</span>
   <span class="token function">mounted</span><span class="token punctuation">(</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
     <span class="token keyword">this</span><span class="token punctuation">.</span><span class="token function">loadData</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
   <span class="token punctuation">}</span><span class="token punctuation">,</span>
-  methods<span class="token punctuation">:</span> <span class="token punctuation">{</span>
+  methods<span class="token operator">:</span> <span class="token punctuation">{</span>
     <span class="token function">loadData</span><span class="token punctuation">(</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
       <span class="token function">setTimeout</span><span class="token punctuation">(</span><span class="token punctuation">(</span><span class="token punctuation">)</span> <span class="token operator">=&gt;</span> <span class="token punctuation">{</span>
         <span class="token keyword">if</span><span class="token punctuation">(</span><span class="token keyword">this</span><span class="token punctuation">.</span>isFinished<span class="token punctuation">)</span><span class="token punctuation">{</span>
@@ -109,7 +186,7 @@
     <span class="token property">color</span><span class="token punctuation">:</span> #999<span class="token punctuation">;</span>
   <span class="token punctuation">}</span>
 <span class="token punctuation">}</span>
-</span></span><span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>style</span><span class="token punctuation">&gt;</span></span></code></pre></div><h2 id="图片上传"><a href="#图片上传" aria-hidden="true" class="header-anchor">#</a> 图片上传</h2> <div class="language-vue extra-class"><pre class="language-vue"><code><span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>template</span><span class="token punctuation">&gt;</span></span>
+</span></span><span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>style</span><span class="token punctuation">&gt;</span></span></code></pre></div><h2 id="图片上传"><a href="#图片上传" class="header-anchor">#</a> 图片上传</h2> <div class="language-vue extra-class"><pre class="language-vue"><code><span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>template</span><span class="token punctuation">&gt;</span></span>
   <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>div</span> <span class="token attr-name">class</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">&quot;</span>upload-box<span class="token punctuation">&quot;</span></span><span class="token punctuation">&gt;</span></span>
     <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>div</span> <span class="token attr-name">class</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">&quot;</span>avatar-box<span class="token punctuation">&quot;</span></span> <span class="token attr-name">:</span><span class="token style-attr language-css"><span class="token attr-name"><span class="token attr-name">style</span></span><span class="token punctuation">=&quot;</span><span class="token attr-value">avatarBoxStyle</span><span class="token punctuation">&quot;</span></span><span class="token punctuation">&gt;</span></span>
       <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>input</span> <span class="token attr-name">type</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">&quot;</span>file<span class="token punctuation">&quot;</span></span> <span class="token attr-name">class</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">&quot;</span>input-file<span class="token punctuation">&quot;</span></span> <span class="token attr-name">:</span><span class="token style-attr language-css"><span class="token attr-name"><span class="token attr-name">style</span></span><span class="token punctuation">=&quot;</span><span class="token attr-value">commonStyle</span><span class="token punctuation">&quot;</span></span> <span class="token attr-name">:name</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">&quot;</span>name<span class="token punctuation">&quot;</span></span> <span class="token attr-name">@mouseover</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">&quot;</span>handleShowCover()<span class="token punctuation">&quot;</span></span> <span class="token attr-name">:ref</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">&quot;</span>`avatarInput${name}`<span class="token punctuation">&quot;</span></span> <span class="token attr-name">@change</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">&quot;</span>changeImage($event)<span class="token punctuation">&quot;</span></span> <span class="token attr-name">accept</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">&quot;</span>image/gif, image/jpeg, image/jpg, image/png<span class="token punctuation">&quot;</span></span> <span class="token punctuation">/&gt;</span></span>
@@ -153,106 +230,106 @@
 <span class="token keyword">import</span> VueCropper <span class="token keyword">from</span> <span class="token string">&quot;vue-cropperjs&quot;</span><span class="token punctuation">;</span>
 <span class="token keyword">import</span> <span class="token string">&quot;cropperjs/dist/cropper.css&quot;</span><span class="token punctuation">;</span>
 <span class="token keyword">export</span> <span class="token keyword">default</span> <span class="token punctuation">{</span>
-  name<span class="token punctuation">:</span> <span class="token string">&quot;upload&quot;</span><span class="token punctuation">,</span>
-  components<span class="token punctuation">:</span> <span class="token punctuation">{</span>
+  name<span class="token operator">:</span> <span class="token string">&quot;upload&quot;</span><span class="token punctuation">,</span>
+  components<span class="token operator">:</span> <span class="token punctuation">{</span>
     VueCropper
   <span class="token punctuation">}</span><span class="token punctuation">,</span>
   <span class="token function">data</span><span class="token punctuation">(</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
     <span class="token keyword">return</span> <span class="token punctuation">{</span>
-      expVisible<span class="token punctuation">:</span> <span class="token boolean">false</span><span class="token punctuation">,</span>
-      avatar<span class="token punctuation">:</span> <span class="token string">&quot;&quot;</span><span class="token punctuation">,</span>
-      isLoading<span class="token punctuation">:</span> <span class="token boolean">false</span><span class="token punctuation">,</span>
-      cropedImg<span class="token punctuation">:</span> <span class="token string">&quot;&quot;</span><span class="token punctuation">,</span>
-      visible<span class="token punctuation">:</span> <span class="token boolean">false</span><span class="token punctuation">,</span>
-      isShowCover<span class="token punctuation">:</span> <span class="token boolean">false</span>
+      expVisible<span class="token operator">:</span> <span class="token boolean">false</span><span class="token punctuation">,</span>
+      avatar<span class="token operator">:</span> <span class="token string">&quot;&quot;</span><span class="token punctuation">,</span>
+      isLoading<span class="token operator">:</span> <span class="token boolean">false</span><span class="token punctuation">,</span>
+      cropedImg<span class="token operator">:</span> <span class="token string">&quot;&quot;</span><span class="token punctuation">,</span>
+      visible<span class="token operator">:</span> <span class="token boolean">false</span><span class="token punctuation">,</span>
+      isShowCover<span class="token operator">:</span> <span class="token boolean">false</span>
     <span class="token punctuation">}</span><span class="token punctuation">;</span>
   <span class="token punctuation">}</span><span class="token punctuation">,</span>
-  component<span class="token punctuation">:</span> <span class="token punctuation">{</span>
+  component<span class="token operator">:</span> <span class="token punctuation">{</span>
     VueCropper
   <span class="token punctuation">}</span><span class="token punctuation">,</span>
-  computed<span class="token punctuation">:</span> <span class="token punctuation">{</span>
+  computed<span class="token operator">:</span> <span class="token punctuation">{</span>
     <span class="token function">commonStyle</span><span class="token punctuation">(</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
       <span class="token keyword">return</span> <span class="token punctuation">{</span>
-        width<span class="token punctuation">:</span> <span class="token keyword">this</span><span class="token punctuation">.</span>imgWidth<span class="token punctuation">,</span>
-        height<span class="token punctuation">:</span> <span class="token keyword">this</span><span class="token punctuation">.</span>imgHeight<span class="token punctuation">,</span>
-        borderRadius<span class="token punctuation">:</span> <span class="token template-string"><span class="token string">`</span><span class="token interpolation"><span class="token interpolation-punctuation punctuation">${</span><span class="token keyword">this</span><span class="token punctuation">.</span>round <span class="token operator">?</span> <span class="token string">&quot;50%&quot;</span> <span class="token punctuation">:</span> <span class="token string">&quot;0&quot;</span><span class="token interpolation-punctuation punctuation">}</span></span><span class="token string">`</span></span>
+        width<span class="token operator">:</span> <span class="token keyword">this</span><span class="token punctuation">.</span>imgWidth<span class="token punctuation">,</span>
+        height<span class="token operator">:</span> <span class="token keyword">this</span><span class="token punctuation">.</span>imgHeight<span class="token punctuation">,</span>
+        borderRadius<span class="token operator">:</span> <span class="token template-string"><span class="token template-punctuation string">`</span><span class="token interpolation"><span class="token interpolation-punctuation punctuation">${</span><span class="token keyword">this</span><span class="token punctuation">.</span>round <span class="token operator">?</span> <span class="token string">&quot;50%&quot;</span> <span class="token operator">:</span> <span class="token string">&quot;0&quot;</span><span class="token interpolation-punctuation punctuation">}</span></span><span class="token template-punctuation string">`</span></span>
       <span class="token punctuation">}</span><span class="token punctuation">;</span>
     <span class="token punctuation">}</span><span class="token punctuation">,</span>
     <span class="token function">avatarBoxStyle</span><span class="token punctuation">(</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
       <span class="token keyword">return</span> <span class="token punctuation">{</span>
-        <span class="token operator">...</span>this<span class="token punctuation">.</span>commonStyle<span class="token punctuation">,</span>
-        borderWidth<span class="token punctuation">:</span> <span class="token string">&quot;1px&quot;</span><span class="token punctuation">,</span>
-        borderColor<span class="token punctuation">:</span> <span class="token keyword">this</span><span class="token punctuation">.</span>value <span class="token operator">||</span> <span class="token keyword">this</span><span class="token punctuation">.</span>defaultImg <span class="token operator">?</span> <span class="token string">&quot;#efefef&quot;</span> <span class="token punctuation">:</span> <span class="token string">&quot;#999&quot;</span><span class="token punctuation">,</span>
-        borderStyle<span class="token punctuation">:</span> <span class="token keyword">this</span><span class="token punctuation">.</span>value <span class="token operator">||</span> <span class="token keyword">this</span><span class="token punctuation">.</span>defaultImg <span class="token operator">?</span> <span class="token string">&quot;solid&quot;</span> <span class="token punctuation">:</span> <span class="token string">&quot;dashed&quot;</span>
+        <span class="token operator">...</span><span class="token keyword">this</span><span class="token punctuation">.</span>commonStyle<span class="token punctuation">,</span>
+        borderWidth<span class="token operator">:</span> <span class="token string">&quot;1px&quot;</span><span class="token punctuation">,</span>
+        borderColor<span class="token operator">:</span> <span class="token keyword">this</span><span class="token punctuation">.</span>value <span class="token operator">||</span> <span class="token keyword">this</span><span class="token punctuation">.</span>defaultImg <span class="token operator">?</span> <span class="token string">&quot;#efefef&quot;</span> <span class="token operator">:</span> <span class="token string">&quot;#999&quot;</span><span class="token punctuation">,</span>
+        borderStyle<span class="token operator">:</span> <span class="token keyword">this</span><span class="token punctuation">.</span>value <span class="token operator">||</span> <span class="token keyword">this</span><span class="token punctuation">.</span>defaultImg <span class="token operator">?</span> <span class="token string">&quot;solid&quot;</span> <span class="token operator">:</span> <span class="token string">&quot;dashed&quot;</span>
       <span class="token punctuation">}</span><span class="token punctuation">;</span>
     <span class="token punctuation">}</span>
   <span class="token punctuation">}</span><span class="token punctuation">,</span>
-  props<span class="token punctuation">:</span> <span class="token punctuation">{</span>
-    value<span class="token punctuation">:</span> String<span class="token punctuation">,</span>
-    action<span class="token punctuation">:</span> <span class="token punctuation">{</span>
-      type<span class="token punctuation">:</span> String<span class="token punctuation">,</span>
-      <span class="token keyword">default</span><span class="token punctuation">:</span> <span class="token string">&quot;&quot;</span>
+  props<span class="token operator">:</span> <span class="token punctuation">{</span>
+    value<span class="token operator">:</span> String<span class="token punctuation">,</span>
+    action<span class="token operator">:</span> <span class="token punctuation">{</span>
+      type<span class="token operator">:</span> String<span class="token punctuation">,</span>
+      <span class="token keyword">default</span><span class="token operator">:</span> <span class="token string">&quot;&quot;</span>
     <span class="token punctuation">}</span><span class="token punctuation">,</span>
-    defaultImg<span class="token punctuation">:</span> <span class="token punctuation">{</span>
-      type<span class="token punctuation">:</span> String<span class="token punctuation">,</span>
-      <span class="token keyword">default</span><span class="token punctuation">:</span> <span class="token string">&quot;&quot;</span>
+    defaultImg<span class="token operator">:</span> <span class="token punctuation">{</span>
+      type<span class="token operator">:</span> String<span class="token punctuation">,</span>
+      <span class="token keyword">default</span><span class="token operator">:</span> <span class="token string">&quot;&quot;</span>
     <span class="token punctuation">}</span><span class="token punctuation">,</span>
-    allowDelete<span class="token punctuation">:</span> <span class="token punctuation">{</span>
-      type<span class="token punctuation">:</span> Boolean<span class="token punctuation">,</span>
-      <span class="token keyword">default</span><span class="token punctuation">:</span> <span class="token boolean">true</span>
+    allowDelete<span class="token operator">:</span> <span class="token punctuation">{</span>
+      type<span class="token operator">:</span> Boolean<span class="token punctuation">,</span>
+      <span class="token keyword">default</span><span class="token operator">:</span> <span class="token boolean">true</span>
     <span class="token punctuation">}</span><span class="token punctuation">,</span>
-    standardImgUrl<span class="token punctuation">:</span> <span class="token punctuation">{</span>
-      type<span class="token punctuation">:</span> <span class="token punctuation">[</span>String<span class="token punctuation">,</span> Number<span class="token punctuation">]</span><span class="token punctuation">,</span>
-      <span class="token keyword">default</span><span class="token punctuation">:</span> <span class="token string">&quot;&quot;</span>
+    standardImgUrl<span class="token operator">:</span> <span class="token punctuation">{</span>
+      type<span class="token operator">:</span> <span class="token punctuation">[</span>String<span class="token punctuation">,</span> Number<span class="token punctuation">]</span><span class="token punctuation">,</span>
+      <span class="token keyword">default</span><span class="token operator">:</span> <span class="token string">&quot;&quot;</span>
     <span class="token punctuation">}</span><span class="token punctuation">,</span>
-    imgUrl<span class="token punctuation">:</span> <span class="token punctuation">{</span>
-      type<span class="token punctuation">:</span> <span class="token punctuation">[</span>String<span class="token punctuation">,</span> Number<span class="token punctuation">]</span><span class="token punctuation">,</span>
-      <span class="token keyword">default</span><span class="token punctuation">:</span> <span class="token string">&quot;&quot;</span>
+    imgUrl<span class="token operator">:</span> <span class="token punctuation">{</span>
+      type<span class="token operator">:</span> <span class="token punctuation">[</span>String<span class="token punctuation">,</span> Number<span class="token punctuation">]</span><span class="token punctuation">,</span>
+      <span class="token keyword">default</span><span class="token operator">:</span> <span class="token string">&quot;&quot;</span>
     <span class="token punctuation">}</span><span class="token punctuation">,</span>
-    imgWidth<span class="token punctuation">:</span> <span class="token punctuation">{</span>
-      type<span class="token punctuation">:</span> <span class="token punctuation">[</span>String<span class="token punctuation">,</span> Number<span class="token punctuation">]</span><span class="token punctuation">,</span>
-      <span class="token keyword">default</span><span class="token punctuation">:</span> <span class="token string">&quot;&quot;</span>
+    imgWidth<span class="token operator">:</span> <span class="token punctuation">{</span>
+      type<span class="token operator">:</span> <span class="token punctuation">[</span>String<span class="token punctuation">,</span> Number<span class="token punctuation">]</span><span class="token punctuation">,</span>
+      <span class="token keyword">default</span><span class="token operator">:</span> <span class="token string">&quot;&quot;</span>
     <span class="token punctuation">}</span><span class="token punctuation">,</span>
-    imgHeight<span class="token punctuation">:</span> <span class="token punctuation">{</span>
-      type<span class="token punctuation">:</span> <span class="token punctuation">[</span>String<span class="token punctuation">,</span> Number<span class="token punctuation">]</span><span class="token punctuation">,</span>
-      <span class="token keyword">default</span><span class="token punctuation">:</span> <span class="token string">&quot;&quot;</span>
+    imgHeight<span class="token operator">:</span> <span class="token punctuation">{</span>
+      type<span class="token operator">:</span> <span class="token punctuation">[</span>String<span class="token punctuation">,</span> Number<span class="token punctuation">]</span><span class="token punctuation">,</span>
+      <span class="token keyword">default</span><span class="token operator">:</span> <span class="token string">&quot;&quot;</span>
     <span class="token punctuation">}</span><span class="token punctuation">,</span>
-    tip<span class="token punctuation">:</span> <span class="token punctuation">{</span>
-      type<span class="token punctuation">:</span> <span class="token punctuation">[</span>String<span class="token punctuation">,</span> Number<span class="token punctuation">]</span><span class="token punctuation">,</span>
-      <span class="token keyword">default</span><span class="token punctuation">:</span> <span class="token string">&quot;&quot;</span>
+    tip<span class="token operator">:</span> <span class="token punctuation">{</span>
+      type<span class="token operator">:</span> <span class="token punctuation">[</span>String<span class="token punctuation">,</span> Number<span class="token punctuation">]</span><span class="token punctuation">,</span>
+      <span class="token keyword">default</span><span class="token operator">:</span> <span class="token string">&quot;&quot;</span>
     <span class="token punctuation">}</span><span class="token punctuation">,</span>
-    name<span class="token punctuation">:</span> <span class="token punctuation">{</span>
-      type<span class="token punctuation">:</span> <span class="token punctuation">[</span>String<span class="token punctuation">,</span> Number<span class="token punctuation">]</span><span class="token punctuation">,</span>
-      <span class="token keyword">default</span><span class="token punctuation">:</span> <span class="token string">&quot;&quot;</span>
+    name<span class="token operator">:</span> <span class="token punctuation">{</span>
+      type<span class="token operator">:</span> <span class="token punctuation">[</span>String<span class="token punctuation">,</span> Number<span class="token punctuation">]</span><span class="token punctuation">,</span>
+      <span class="token keyword">default</span><span class="token operator">:</span> <span class="token string">&quot;&quot;</span>
     <span class="token punctuation">}</span><span class="token punctuation">,</span>
-    round<span class="token punctuation">:</span> <span class="token punctuation">{</span>
-      type<span class="token punctuation">:</span> Boolean<span class="token punctuation">,</span>
-      <span class="token keyword">default</span><span class="token punctuation">:</span> <span class="token boolean">false</span>
+    round<span class="token operator">:</span> <span class="token punctuation">{</span>
+      type<span class="token operator">:</span> Boolean<span class="token punctuation">,</span>
+      <span class="token keyword">default</span><span class="token operator">:</span> <span class="token boolean">false</span>
     <span class="token punctuation">}</span><span class="token punctuation">,</span>
-    autoCropHeight<span class="token punctuation">:</span> <span class="token punctuation">{</span>
-      type<span class="token punctuation">:</span> <span class="token punctuation">[</span>String<span class="token punctuation">,</span> Number<span class="token punctuation">]</span><span class="token punctuation">,</span>
-      <span class="token keyword">default</span><span class="token punctuation">:</span> <span class="token number">100</span>
+    autoCropHeight<span class="token operator">:</span> <span class="token punctuation">{</span>
+      type<span class="token operator">:</span> <span class="token punctuation">[</span>String<span class="token punctuation">,</span> Number<span class="token punctuation">]</span><span class="token punctuation">,</span>
+      <span class="token keyword">default</span><span class="token operator">:</span> <span class="token number">100</span>
     <span class="token punctuation">}</span><span class="token punctuation">,</span>
-    autoCropWidth<span class="token punctuation">:</span> <span class="token punctuation">{</span>
-      type<span class="token punctuation">:</span> <span class="token punctuation">[</span>String<span class="token punctuation">,</span> Number<span class="token punctuation">]</span><span class="token punctuation">,</span>
-      <span class="token keyword">default</span><span class="token punctuation">:</span> <span class="token number">100</span>
+    autoCropWidth<span class="token operator">:</span> <span class="token punctuation">{</span>
+      type<span class="token operator">:</span> <span class="token punctuation">[</span>String<span class="token punctuation">,</span> Number<span class="token punctuation">]</span><span class="token punctuation">,</span>
+      <span class="token keyword">default</span><span class="token operator">:</span> <span class="token number">100</span>
     <span class="token punctuation">}</span><span class="token punctuation">,</span>
-    fixedNumber<span class="token punctuation">:</span> <span class="token punctuation">{</span>
-      type<span class="token punctuation">:</span> <span class="token punctuation">[</span>Array<span class="token punctuation">]</span><span class="token punctuation">,</span>
-      <span class="token function-variable function">default</span><span class="token punctuation">:</span> <span class="token punctuation">(</span><span class="token punctuation">)</span> <span class="token operator">=&gt;</span> <span class="token punctuation">{</span>
+    fixedNumber<span class="token operator">:</span> <span class="token punctuation">{</span>
+      type<span class="token operator">:</span> <span class="token punctuation">[</span>Array<span class="token punctuation">]</span><span class="token punctuation">,</span>
+      <span class="token function-variable function">default</span><span class="token operator">:</span> <span class="token punctuation">(</span><span class="token punctuation">)</span> <span class="token operator">=&gt;</span> <span class="token punctuation">{</span>
         <span class="token keyword">return</span> <span class="token punctuation">[</span><span class="token string">&quot;16:9&quot;</span><span class="token punctuation">]</span><span class="token punctuation">;</span>
       <span class="token punctuation">}</span>
     <span class="token punctuation">}</span><span class="token punctuation">,</span>
-    maxSize<span class="token punctuation">:</span> <span class="token punctuation">{</span>
-      type<span class="token punctuation">:</span> Number<span class="token punctuation">,</span>
-      <span class="token keyword">default</span><span class="token punctuation">:</span> <span class="token number">8</span>
+    maxSize<span class="token operator">:</span> <span class="token punctuation">{</span>
+      type<span class="token operator">:</span> Number<span class="token punctuation">,</span>
+      <span class="token keyword">default</span><span class="token operator">:</span> <span class="token number">8</span>
     <span class="token punctuation">}</span><span class="token punctuation">,</span>
-    isCropper<span class="token punctuation">:</span> <span class="token punctuation">{</span>
-      type<span class="token punctuation">:</span> Boolean<span class="token punctuation">,</span>
-      <span class="token keyword">default</span><span class="token punctuation">:</span> <span class="token boolean">false</span>
+    isCropper<span class="token operator">:</span> <span class="token punctuation">{</span>
+      type<span class="token operator">:</span> Boolean<span class="token punctuation">,</span>
+      <span class="token keyword">default</span><span class="token operator">:</span> <span class="token boolean">false</span>
     <span class="token punctuation">}</span>
   <span class="token punctuation">}</span><span class="token punctuation">,</span>
-  watch<span class="token punctuation">:</span> <span class="token punctuation">{</span>
+  watch<span class="token operator">:</span> <span class="token punctuation">{</span>
     <span class="token function">value</span><span class="token punctuation">(</span><span class="token parameter">val</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
       <span class="token keyword">if</span> <span class="token punctuation">(</span><span class="token operator">!</span>val<span class="token punctuation">)</span> <span class="token punctuation">{</span>
         <span class="token keyword">this</span><span class="token punctuation">.</span>cropedImg <span class="token operator">=</span> <span class="token string">&quot;&quot;</span><span class="token punctuation">;</span>
@@ -264,22 +341,22 @@
       <span class="token punctuation">}</span>
     <span class="token punctuation">}</span>
   <span class="token punctuation">}</span><span class="token punctuation">,</span>
-  methods<span class="token punctuation">:</span> <span class="token punctuation">{</span>
+  methods<span class="token operator">:</span> <span class="token punctuation">{</span>
     <span class="token function">changeCrop</span><span class="token punctuation">(</span><span class="token parameter">obj</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
       console<span class="token punctuation">.</span><span class="token function">log</span><span class="token punctuation">(</span>obj<span class="token punctuation">)</span><span class="token punctuation">;</span>
     <span class="token punctuation">}</span><span class="token punctuation">,</span>
     <span class="token function">handleInput</span><span class="token punctuation">(</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
-      <span class="token keyword">this</span><span class="token punctuation">.</span>$refs<span class="token punctuation">[</span><span class="token template-string"><span class="token string">`avatarInput</span><span class="token interpolation"><span class="token interpolation-punctuation punctuation">${</span><span class="token keyword">this</span><span class="token punctuation">.</span>name<span class="token interpolation-punctuation punctuation">}</span></span><span class="token string">`</span></span><span class="token punctuation">]</span><span class="token punctuation">.</span><span class="token function">click</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+      <span class="token keyword">this</span><span class="token punctuation">.</span>$refs<span class="token punctuation">[</span><span class="token template-string"><span class="token template-punctuation string">`</span><span class="token string">avatarInput</span><span class="token interpolation"><span class="token interpolation-punctuation punctuation">${</span><span class="token keyword">this</span><span class="token punctuation">.</span>name<span class="token interpolation-punctuation punctuation">}</span></span><span class="token template-punctuation string">`</span></span><span class="token punctuation">]</span><span class="token punctuation">.</span><span class="token function">click</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
     <span class="token punctuation">}</span><span class="token punctuation">,</span>
     <span class="token function">clearValue</span><span class="token punctuation">(</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
-      <span class="token keyword">this</span><span class="token punctuation">.</span>$refs<span class="token punctuation">[</span><span class="token template-string"><span class="token string">`avatarInput</span><span class="token interpolation"><span class="token interpolation-punctuation punctuation">${</span><span class="token keyword">this</span><span class="token punctuation">.</span>name<span class="token interpolation-punctuation punctuation">}</span></span><span class="token string">`</span></span><span class="token punctuation">]</span><span class="token punctuation">.</span>value <span class="token operator">=</span> <span class="token string">&quot;&quot;</span><span class="token punctuation">;</span>
+      <span class="token keyword">this</span><span class="token punctuation">.</span>$refs<span class="token punctuation">[</span><span class="token template-string"><span class="token template-punctuation string">`</span><span class="token string">avatarInput</span><span class="token interpolation"><span class="token interpolation-punctuation punctuation">${</span><span class="token keyword">this</span><span class="token punctuation">.</span>name<span class="token interpolation-punctuation punctuation">}</span></span><span class="token template-punctuation string">`</span></span><span class="token punctuation">]</span><span class="token punctuation">.</span>value <span class="token operator">=</span> <span class="token string">&quot;&quot;</span><span class="token punctuation">;</span>
     <span class="token punctuation">}</span><span class="token punctuation">,</span>
-    <span class="token function-variable function">changeImage</span><span class="token punctuation">:</span> <span class="token keyword">function</span><span class="token punctuation">(</span><span class="token parameter">e</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
+    <span class="token function-variable function">changeImage</span><span class="token operator">:</span> <span class="token keyword">function</span><span class="token punctuation">(</span><span class="token parameter">e</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
       <span class="token keyword">let</span> file <span class="token operator">=</span> e<span class="token punctuation">.</span>target<span class="token punctuation">.</span>files<span class="token punctuation">[</span><span class="token number">0</span><span class="token punctuation">]</span><span class="token punctuation">;</span>
       <span class="token keyword">if</span> <span class="token punctuation">(</span>file<span class="token punctuation">)</span> <span class="token punctuation">{</span>
         <span class="token keyword">const</span> isLt8M <span class="token operator">=</span> file<span class="token punctuation">.</span>size <span class="token operator">/</span> <span class="token number">1024</span> <span class="token operator">/</span> <span class="token number">1024</span> <span class="token operator">&lt;</span> <span class="token keyword">this</span><span class="token punctuation">.</span>maxSize<span class="token punctuation">;</span>
         <span class="token keyword">if</span> <span class="token punctuation">(</span><span class="token operator">!</span>isLt8M<span class="token punctuation">)</span> <span class="token punctuation">{</span>
-          <span class="token keyword">this</span><span class="token punctuation">.</span>$message<span class="token punctuation">.</span><span class="token function">error</span><span class="token punctuation">(</span><span class="token template-string"><span class="token string">`上传的图片大小不能超过 </span><span class="token interpolation"><span class="token interpolation-punctuation punctuation">${</span><span class="token keyword">this</span><span class="token punctuation">.</span>maxSize<span class="token interpolation-punctuation punctuation">}</span></span><span class="token string">MB!`</span></span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+          <span class="token keyword">this</span><span class="token punctuation">.</span>$message<span class="token punctuation">.</span><span class="token function">error</span><span class="token punctuation">(</span><span class="token template-string"><span class="token template-punctuation string">`</span><span class="token string">上传的图片大小不能超过 </span><span class="token interpolation"><span class="token interpolation-punctuation punctuation">${</span><span class="token keyword">this</span><span class="token punctuation">.</span>maxSize<span class="token interpolation-punctuation punctuation">}</span></span><span class="token string">MB!</span><span class="token template-punctuation string">`</span></span><span class="token punctuation">)</span><span class="token punctuation">;</span>
           <span class="token keyword">return</span> <span class="token boolean">false</span><span class="token punctuation">;</span>
         <span class="token punctuation">}</span>
         <span class="token comment">// 文件对象</span>
@@ -310,7 +387,7 @@
       formData<span class="token punctuation">.</span><span class="token function">append</span><span class="token punctuation">(</span><span class="token string">&quot;file&quot;</span><span class="token punctuation">,</span> file<span class="token punctuation">)</span><span class="token punctuation">;</span>
       axios
         <span class="token punctuation">.</span><span class="token function">post</span><span class="token punctuation">(</span><span class="token keyword">this</span><span class="token punctuation">.</span>action<span class="token punctuation">,</span> formData<span class="token punctuation">,</span> <span class="token punctuation">{</span>
-          <span class="token string">&quot;Content-Type&quot;</span><span class="token punctuation">:</span> <span class="token string">&quot;multipart/form-data&quot;</span>
+          <span class="token string">&quot;Content-Type&quot;</span><span class="token operator">:</span> <span class="token string">&quot;multipart/form-data&quot;</span>
         <span class="token punctuation">}</span><span class="token punctuation">)</span>
         <span class="token punctuation">.</span><span class="token function">then</span><span class="token punctuation">(</span><span class="token parameter">res</span> <span class="token operator">=&gt;</span> <span class="token punctuation">{</span>
           <span class="token keyword">this</span><span class="token punctuation">.</span>isLoading <span class="token operator">=</span> <span class="token boolean">false</span><span class="token punctuation">;</span>
@@ -340,7 +417,7 @@
       <span class="token keyword">while</span> <span class="token punctuation">(</span>n<span class="token operator">--</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
         u8arr<span class="token punctuation">[</span>n<span class="token punctuation">]</span> <span class="token operator">=</span> bstr<span class="token punctuation">.</span><span class="token function">charCodeAt</span><span class="token punctuation">(</span>n<span class="token punctuation">)</span><span class="token punctuation">;</span>
       <span class="token punctuation">}</span>
-      <span class="token keyword">return</span> <span class="token keyword">new</span> <span class="token class-name">Blob</span><span class="token punctuation">(</span><span class="token punctuation">[</span>u8arr<span class="token punctuation">]</span><span class="token punctuation">,</span> <span class="token punctuation">{</span> type<span class="token punctuation">:</span> mime <span class="token punctuation">}</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+      <span class="token keyword">return</span> <span class="token keyword">new</span> <span class="token class-name">Blob</span><span class="token punctuation">(</span><span class="token punctuation">[</span>u8arr<span class="token punctuation">]</span><span class="token punctuation">,</span> <span class="token punctuation">{</span> type<span class="token operator">:</span> mime <span class="token punctuation">}</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
     <span class="token punctuation">}</span><span class="token punctuation">,</span>
     <span class="token function">handleRemove</span><span class="token punctuation">(</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
       <span class="token keyword">this</span><span class="token punctuation">.</span>isShowCover <span class="token operator">=</span> <span class="token boolean">false</span><span class="token punctuation">;</span>
@@ -446,7 +523,7 @@
   <span class="token property">cursor</span><span class="token punctuation">:</span> pointer<span class="token punctuation">;</span>
 <span class="token punctuation">}</span>
 </span></span><span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>style</span><span class="token punctuation">&gt;</span></span>
-</code></pre></div></div> <div class="page-edit"><!----> <div class="last-updated"><span class="prefix">Last Updated: </span> <span class="time">2/26/2020, 10:51:01 AM</span></div></div> <!----> </div> <!----></div></div>
-    <script src="/front-end-doc/assets/js/app.7926626f.js" defer></script><script src="/front-end-doc/assets/js/27.a93324cd.js" defer></script><script src="/front-end-doc/assets/js/6.47ca6ee2.js" defer></script><script src="/front-end-doc/assets/js/4.dd026023.js" defer></script>
+</code></pre></div></div> <footer class="page-edit"><!----> <div class="last-updated"><span class="prefix">Last Updated:</span> <span class="time">2/26/2020, 10:51:01 AM</span></div></footer> <!----> </main></div><div class="global-ui"></div></div>
+    <script src="/front-end-doc/assets/js/app.5739d68f.js" defer></script><script src="/front-end-doc/assets/js/3.ed1cc3f0.js" defer></script><script src="/front-end-doc/assets/js/29.c7368d6b.js" defer></script><script src="/front-end-doc/assets/js/6.6b14627d.js" defer></script><script src="/front-end-doc/assets/js/5.f7859594.js" defer></script>
   </body>
 </html>
