@@ -79,6 +79,15 @@ module.exports = {
         ]
       },
       {
+        text:"react",
+        items:[
+          {
+            text:"基础知识整理",
+            link:"/src/react/"
+          }
+        ]
+      },
+      {
         text: "vue",
         items: [
           {
