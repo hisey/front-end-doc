@@ -12,12 +12,14 @@ Vue 2.0 的桌面端组件库
 [filepond](https://github.com/pqina/filepond)一个小巧的文件上传库  
 [awesome-bookmarks](https://panjiachen.github.io/awesome-bookmarks/)一个内容很全的个人收藏夹 beta  
 [vue-element-admin](https://panjiachen.github.io/vue-element-admin-site/zh/)A magical vue admin  
-[awesome-bookmarks](https://panjiachen.github.io/awesome-bookmarks/repository/#%E5%89%8D%E7%AB%AF%E5%B8%B8%E7%94%A8)厉害的前端推荐库收藏夹  
+[tui-calendar](https://ui.toast.com/tui-calendar/) 功能全面的日程安排日历控件，还支持拖拽   
 [big.js](https://github.com/MikeMcl/big.js)解决 js 浮点数问题。 主要就是 Big Number 或者小数点温柔  
 [cleave.js](https://github.com/nosir/cleave.js)用于在输入时格式化输入内容（信用卡格式、日期等）  
 [FileSaver.js](https://github.com/eligrey/FileSaver.js)文件下载插件 很多时候下载会有兼容性问题，它能帮你解决这些问题  
 [hammer](https://github.com/hammerjs/hammer.js)移动端手势库  
 [grade](https://github.com/benhowdle89/grade)一个可以根据你的 图片 调整底色的插件  
+[compressorjs](https://github.com/fengyuanchen/compressorjs) 压缩图片神器
+[text-mask](https://github.com/text-mask/text-mask) 可以让 input 按照规则输入(如电话,email,日期,信用卡等)，特殊格式 input
 
 ## Css && 动画
 [animate.css](https://github.com/daneden/animate.css)最有名的动画效果库    
@@ -48,7 +50,9 @@ Vue 2.0 的桌面端组件库
 [scroll-out](https://github.com/scroll-out/scroll-out)滚动效果（滚动视差）的框架，框架大小不到 1KB,使用回调的方式将相关动画元素的属性进行实时分配  
 [grade](https://github.com/benhowdle89/grade) 一个可以根据你的 图片 调整底色的插件  
 [photoswipe](https://github.com/dimsemenov/photoswipe) 图片预览组件，支持移动端  
-
+[chancejs](https://github.com/chancejs/chancejs)生成随机数据的库  
+[stickybits](https://github.com/dollarshaveclub/stickybits)CSS 的 position: sticky 是一个很有用的设置，但是老的浏览器不支持。这个 JS 库是该功能的垫片库。  
+[fuse.js](https://github.com/krisk/fuse)轻量级前端模糊查询库 非常的好用
 ## webpack
 [prerender-spa-plugin](https://github.com/chrisvfritz/prerender-spa-plugin) vue预渲染，vue 解决seo优化  
 [npkill](https://github.com/voidcosmos/npkill) 列出并可以删除无用的 node_modules  
