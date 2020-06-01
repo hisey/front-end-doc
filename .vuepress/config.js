@@ -44,7 +44,7 @@ module.exports = {
           },
           {
             text: 'js干货',
-            link: '/src/base/jsDoc/'
+            link: '/src/base/jsDoc/dryGoods.md'
           },
           {
             text: '常用工具',
@@ -74,6 +74,10 @@ module.exports = {
           {
             text: 'websocket',
             link: '/src/case/websocket/'
+          },
+          {
+            text: '移动端',
+            link: '/src/case/mobile/'
           }
         ]
       },
