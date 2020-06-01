@@ -47,6 +47,10 @@ module.exports = {
             link: '/src/base/jsDoc/'
           },
           {
+            text: '常用工具',
+            link: '/src/base/jsDoc/tools.md'
+          },
+          {
             text: '弹性盒子布局',
             link: '/src/base/flexbox/'
           }
@@ -117,6 +121,10 @@ module.exports = {
           {
             text: '代码规范',
             link: '/src/vue/standards.md'
+          },
+          {
+            text:'常见考点',
+            link:'/src/vue/testCenter.md'
           }
         ]
       },
