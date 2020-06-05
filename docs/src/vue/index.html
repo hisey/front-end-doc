@@ -5,18 +5,115 @@
     <meta name="viewport" content="width=device-width,initial-scale=1">
     <title>异步组件 实现 | hisey</title>
     <meta name="description" content="不一样的世界，等你去发现">
+    <meta name="generator" content="VuePress 1.3.1">
     <link rel="stylesheet" href="/front-end-doc/font/iconfont.css">
   <link rel="stylesheet" href="/front-end-doc/style/index.css">
     
-    <link rel="preload" href="/front-end-doc/assets/css/0.styles.047a64fa.css" as="style"><link rel="preload" href="/front-end-doc/assets/js/app.a40c9194.js" as="script"><link rel="preload" href="/front-end-doc/assets/js/22.f3abc10e.js" as="script"><link rel="prefetch" href="/front-end-doc/assets/js/1.80fa799c.js"><link rel="prefetch" href="/front-end-doc/assets/js/10.7787f290.js"><link rel="prefetch" href="/front-end-doc/assets/js/11.12573a5f.js"><link rel="prefetch" href="/front-end-doc/assets/js/12.9326d3b4.js"><link rel="prefetch" href="/front-end-doc/assets/js/13.3bffb7f0.js"><link rel="prefetch" href="/front-end-doc/assets/js/14.7d9360c3.js"><link rel="prefetch" href="/front-end-doc/assets/js/15.379c0b6f.js"><link rel="prefetch" href="/front-end-doc/assets/js/16.b5c28c25.js"><link rel="prefetch" href="/front-end-doc/assets/js/17.f0e220fd.js"><link rel="prefetch" href="/front-end-doc/assets/js/18.e4e6827d.js"><link rel="prefetch" href="/front-end-doc/assets/js/19.e120eb8c.js"><link rel="prefetch" href="/front-end-doc/assets/js/20.bdca3adb.js"><link rel="prefetch" href="/front-end-doc/assets/js/21.c6e5c6f6.js"><link rel="prefetch" href="/front-end-doc/assets/js/23.13df7863.js"><link rel="prefetch" href="/front-end-doc/assets/js/24.883a0aa1.js"><link rel="prefetch" href="/front-end-doc/assets/js/25.922f5b3a.js"><link rel="prefetch" href="/front-end-doc/assets/js/26.c4b50634.js"><link rel="prefetch" href="/front-end-doc/assets/js/27.a93324cd.js"><link rel="prefetch" href="/front-end-doc/assets/js/28.a0512ec7.js"><link rel="prefetch" href="/front-end-doc/assets/js/3.c88ea40f.js"><link rel="prefetch" href="/front-end-doc/assets/js/4.dd026023.js"><link rel="prefetch" href="/front-end-doc/assets/js/5.27760a19.js"><link rel="prefetch" href="/front-end-doc/assets/js/6.47ca6ee2.js"><link rel="prefetch" href="/front-end-doc/assets/js/7.4655b2ef.js"><link rel="prefetch" href="/front-end-doc/assets/js/8.135b63aa.js"><link rel="prefetch" href="/front-end-doc/assets/js/9.1c04ae80.js">
-    <link rel="stylesheet" href="/front-end-doc/assets/css/0.styles.047a64fa.css">
+    <link rel="preload" href="/front-end-doc/assets/css/0.styles.20f77ef8.css" as="style"><link rel="preload" href="/front-end-doc/assets/js/app.84f7ee84.js" as="script"><link rel="preload" href="/front-end-doc/assets/js/3.6a1b549d.js" as="script"><link rel="preload" href="/front-end-doc/assets/js/28.ab1055a2.js" as="script"><link rel="prefetch" href="/front-end-doc/assets/js/1.844a4c4e.js"><link rel="prefetch" href="/front-end-doc/assets/js/10.b1e0ee03.js"><link rel="prefetch" href="/front-end-doc/assets/js/11.5cb73eb0.js"><link rel="prefetch" href="/front-end-doc/assets/js/12.c3c4b526.js"><link rel="prefetch" href="/front-end-doc/assets/js/13.fe996165.js"><link rel="prefetch" href="/front-end-doc/assets/js/14.261f73e3.js"><link rel="prefetch" href="/front-end-doc/assets/js/15.508ce08f.js"><link rel="prefetch" href="/front-end-doc/assets/js/16.acf65e99.js"><link rel="prefetch" href="/front-end-doc/assets/js/17.5ed4d192.js"><link rel="prefetch" href="/front-end-doc/assets/js/18.03e91f1b.js"><link rel="prefetch" href="/front-end-doc/assets/js/19.e1ca3877.js"><link rel="prefetch" href="/front-end-doc/assets/js/20.d10ac012.js"><link rel="prefetch" href="/front-end-doc/assets/js/21.3aeaab08.js"><link rel="prefetch" href="/front-end-doc/assets/js/22.6d4c0be3.js"><link rel="prefetch" href="/front-end-doc/assets/js/23.88364faf.js"><link rel="prefetch" href="/front-end-doc/assets/js/24.4b3921ab.js"><link rel="prefetch" href="/front-end-doc/assets/js/25.73f82d04.js"><link rel="prefetch" href="/front-end-doc/assets/js/26.660d115b.js"><link rel="prefetch" href="/front-end-doc/assets/js/27.914ea6a1.js"><link rel="prefetch" href="/front-end-doc/assets/js/29.c4fbab62.js"><link rel="prefetch" href="/front-end-doc/assets/js/30.0cd827cc.js"><link rel="prefetch" href="/front-end-doc/assets/js/31.3f33d61e.js"><link rel="prefetch" href="/front-end-doc/assets/js/32.2f37ee38.js"><link rel="prefetch" href="/front-end-doc/assets/js/33.032f80fe.js"><link rel="prefetch" href="/front-end-doc/assets/js/34.05242204.js"><link rel="prefetch" href="/front-end-doc/assets/js/35.4098cf19.js"><link rel="prefetch" href="/front-end-doc/assets/js/4.8525905e.js"><link rel="prefetch" href="/front-end-doc/assets/js/5.1d2b49eb.js"><link rel="prefetch" href="/front-end-doc/assets/js/6.4be845da.js"><link rel="prefetch" href="/front-end-doc/assets/js/7.a21bdd41.js"><link rel="prefetch" href="/front-end-doc/assets/js/8.558a9f0e.js"><link rel="prefetch" href="/front-end-doc/assets/js/9.92f3d637.js">
+    <link rel="stylesheet" href="/front-end-doc/assets/css/0.styles.20f77ef8.css">
   </head>
   <body>
-    <div id="app" data-server-rendered="true"><div class="theme-container"><header class="navbar"><div class="sidebar-button"><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" role="img" viewBox="0 0 448 512" class="icon"><path fill="currentColor" d="M436 124H12c-6.627 0-12-5.373-12-12V80c0-6.627 5.373-12 12-12h424c6.627 0 12 5.373 12 12v32c0 6.627-5.373 12-12 12zm0 160H12c-6.627 0-12-5.373-12-12v-32c0-6.627 5.373-12 12-12h424c6.627 0 12 5.373 12 12v32c0 6.627-5.373 12-12 12zm0 160H12c-6.627 0-12-5.373-12-12v-32c0-6.627 5.373-12 12-12h424c6.627 0 12 5.373 12 12v32c0 6.627-5.373 12-12 12z"></path></svg></div> <a href="/front-end-doc/" class="home-link router-link-active"><!----> <span class="site-name">hisey</span></a> <div class="links" style="max-width:nullpx;"><div class="search-box"><input aria-label="Search" autocomplete="off" spellcheck="false" value=""> <!----></div> <nav class="nav-links can-hide"><div class="nav-item"><a href="/front-end-doc/" class="nav-link">首页</a></div><div class="nav-item"><div class="dropdown-wrapper"><a class="dropdown-title"><span class="title">Git指南</span> <span class="arrow right"></span></a> <ul class="nav-dropdown" style="display:none;"><li class="dropdown-item"><!----> <a href="/front-end-doc/src/base/git/flow.html" class="nav-link">Git工作流</a></li><li class="dropdown-item"><!----> <a href="/front-end-doc/src/base/git/bash.html" class="nav-link">常用命令行</a></li></ul></div></div><div class="nav-item"><div class="dropdown-wrapper"><a class="dropdown-title"><span class="title">基础知识</span> <span class="arrow right"></span></a> <ul class="nav-dropdown" style="display:none;"><li class="dropdown-item"><!----> <a href="/front-end-doc/src/base/codeStyle/" class="nav-link">es6代码风格</a></li><li class="dropdown-item"><!----> <a href="/front-end-doc/src/base/cssDoc/" class="nav-link">css干货</a></li><li class="dropdown-item"><!----> <a href="/front-end-doc/src/base/jsDoc/" class="nav-link">js干货</a></li><li class="dropdown-item"><!----> <a href="/front-end-doc/src/base/flexbox/" class="nav-link">弹性盒子布局</a></li></ul></div></div><div class="nav-item"><div class="dropdown-wrapper"><a class="dropdown-title"><span class="title">解决方案</span> <span class="arrow right"></span></a> <ul class="nav-dropdown" style="display:none;"><li class="dropdown-item"><!----> <a href="/front-end-doc/src/case/webSplit/" class="nav-link">前后端分离</a></li><li class="dropdown-item"><!----> <a href="/front-end-doc/src/case/autoDeploy/" class="nav-link">代码部署</a></li><li class="dropdown-item"><!----> <a href="/front-end-doc/src/case/websocket/" class="nav-link">websocket</a></li></ul></div></div><div class="nav-item"><div class="dropdown-wrapper"><a class="dropdown-title"><span class="title">小程序</span> <span class="arrow right"></span></a> <ul class="nav-dropdown" style="display:none;"><li class="dropdown-item"><!----> <a href="/front-end-doc/src/smallProgram/mpvue/" class="nav-link">mpvue搭建小程序</a></li></ul></div></div><div class="nav-item"><div class="dropdown-wrapper"><a class="dropdown-title"><span class="title">vue</span> <span class="arrow right"></span></a> <ul class="nav-dropdown" style="display:none;"><li class="dropdown-item"><!----> <a href="/front-end-doc/src/vue/" class="nav-link router-link-exact-active router-link-active">基础</a></li><li class="dropdown-item"><!----> <a href="/front-end-doc/src/vue/vueCompont/" class="nav-link">组件示例</a></li><li class="dropdown-item"><!----> <a href="/front-end-doc/src/vue/debug.html" class="nav-link">断点调试</a></li><li class="dropdown-item"><!----> <a href="/front-end-doc/src/vue/elegant.html" class="nav-link">优雅写法</a></li><li class="dropdown-item"><!----> <a href="/front-end-doc/src/vue/slill.html" class="nav-link">实用骚操作</a></li><li class="dropdown-item"><!----> <a href="/front-end-doc/src/vue/standards.html" class="nav-link">代码规范</a></li></ul></div></div><div class="nav-item"><a href="/front-end-doc/src/favorites/" class="nav-link">收藏夹</a></div><div class="nav-item"><a href="/front-end-doc/src/aboutMe/" class="nav-link">关于我</a></div> <a href="https://github.com//hisey/front-end-doc" target="_blank" rel="noopener noreferrer" class="repo-link">
+    <div id="app" data-server-rendered="true"><div class="theme-container"><header class="navbar"><div class="sidebar-button"><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" role="img" viewBox="0 0 448 512" class="icon"><path fill="currentColor" d="M436 124H12c-6.627 0-12-5.373-12-12V80c0-6.627 5.373-12 12-12h424c6.627 0 12 5.373 12 12v32c0 6.627-5.373 12-12 12zm0 160H12c-6.627 0-12-5.373-12-12v-32c0-6.627 5.373-12 12-12h424c6.627 0 12 5.373 12 12v32c0 6.627-5.373 12-12 12zm0 160H12c-6.627 0-12-5.373-12-12v-32c0-6.627 5.373-12 12-12h424c6.627 0 12 5.373 12 12v32c0 6.627-5.373 12-12 12z"></path></svg></div> <a href="/front-end-doc/" class="home-link router-link-active"><!----> <span class="site-name">hisey</span></a> <div class="links"><div class="search-box"><input aria-label="Search" autocomplete="off" spellcheck="false" value=""> <!----></div> <nav class="nav-links can-hide"><div class="nav-item"><a href="/front-end-doc/" class="nav-link">
+  首页
+</a></div><div class="nav-item"><div class="dropdown-wrapper"><button type="button" aria-label="Git指南" class="dropdown-title"><span class="title">Git指南</span> <span class="arrow right"></span></button> <ul class="nav-dropdown" style="display:none;"><li class="dropdown-item"><!----> <a href="/front-end-doc/src/base/git/flow.html" class="nav-link">
+  Git工作流
+</a></li><li class="dropdown-item"><!----> <a href="/front-end-doc/src/base/git/bash.html" class="nav-link">
+  常用命令行
+</a></li></ul></div></div><div class="nav-item"><div class="dropdown-wrapper"><button type="button" aria-label="基础知识" class="dropdown-title"><span class="title">基础知识</span> <span class="arrow right"></span></button> <ul class="nav-dropdown" style="display:none;"><li class="dropdown-item"><!----> <a href="/front-end-doc/src/base/codeStyle/" class="nav-link">
+  es6代码风格
+</a></li><li class="dropdown-item"><!----> <a href="/front-end-doc/src/base/cssDoc/" class="nav-link">
+  css干货
+</a></li><li class="dropdown-item"><!----> <a href="/front-end-doc/src/base/jsDoc/dryGoods.html" class="nav-link">
+  js干货
+</a></li><li class="dropdown-item"><!----> <a href="/front-end-doc/src/base/jsDoc/tools.html" class="nav-link">
+  常用工具
+</a></li><li class="dropdown-item"><!----> <a href="/front-end-doc/src/base/flexbox/" class="nav-link">
+  弹性盒子布局
+</a></li></ul></div></div><div class="nav-item"><div class="dropdown-wrapper"><button type="button" aria-label="开发技巧" class="dropdown-title"><span class="title">开发技巧</span> <span class="arrow right"></span></button> <ul class="nav-dropdown" style="display:none;"><li class="dropdown-item"><!----> <a href="/front-end-doc/src/skill/" class="nav-link">
+  css篇
+</a></li></ul></div></div><div class="nav-item"><div class="dropdown-wrapper"><button type="button" aria-label="解决方案" class="dropdown-title"><span class="title">解决方案</span> <span class="arrow right"></span></button> <ul class="nav-dropdown" style="display:none;"><li class="dropdown-item"><!----> <a href="/front-end-doc/src/case/webSplit/" class="nav-link">
+  前后端分离
+</a></li><li class="dropdown-item"><!----> <a href="/front-end-doc/src/case/autoDeploy/" class="nav-link">
+  代码部署
+</a></li><li class="dropdown-item"><!----> <a href="/front-end-doc/src/case/websocket/" class="nav-link">
+  websocket
+</a></li><li class="dropdown-item"><!----> <a href="/front-end-doc/src/case/mobile/" class="nav-link">
+  移动端
+</a></li></ul></div></div><div class="nav-item"><div class="dropdown-wrapper"><button type="button" aria-label="小程序" class="dropdown-title"><span class="title">小程序</span> <span class="arrow right"></span></button> <ul class="nav-dropdown" style="display:none;"><li class="dropdown-item"><!----> <a href="/front-end-doc/src/smallProgram/mpvue/" class="nav-link">
+  mpvue搭建小程序
+</a></li></ul></div></div><div class="nav-item"><div class="dropdown-wrapper"><button type="button" aria-label="react" class="dropdown-title"><span class="title">react</span> <span class="arrow right"></span></button> <ul class="nav-dropdown" style="display:none;"><li class="dropdown-item"><!----> <a href="/front-end-doc/src/react/" class="nav-link">
+  基础知识整理
+</a></li></ul></div></div><div class="nav-item"><div class="dropdown-wrapper"><button type="button" aria-label="vue" class="dropdown-title"><span class="title">vue</span> <span class="arrow right"></span></button> <ul class="nav-dropdown" style="display:none;"><li class="dropdown-item"><!----> <a href="/front-end-doc/src/vue/" class="nav-link router-link-exact-active router-link-active">
+  基础
+</a></li><li class="dropdown-item"><!----> <a href="/front-end-doc/src/vue/vueCompont/" class="nav-link">
+  组件示例
+</a></li><li class="dropdown-item"><!----> <a href="/front-end-doc/src/vue/debug.html" class="nav-link">
+  断点调试
+</a></li><li class="dropdown-item"><!----> <a href="/front-end-doc/src/vue/elegant.html" class="nav-link">
+  优雅写法
+</a></li><li class="dropdown-item"><!----> <a href="/front-end-doc/src/vue/slill.html" class="nav-link">
+  实用骚操作
+</a></li><li class="dropdown-item"><!----> <a href="/front-end-doc/src/vue/standards.html" class="nav-link">
+  代码规范
+</a></li><li class="dropdown-item"><!----> <a href="/front-end-doc/src/vue/testCenter.html" class="nav-link">
+  常见考点
+</a></li></ul></div></div><div class="nav-item"><a href="/front-end-doc/src/favorites/" class="nav-link">
+  收藏夹
+</a></div><div class="nav-item"><a href="/front-end-doc/src/aboutMe/" class="nav-link">
+  关于我
+</a></div> <a href="https://github.com//hisey/front-end-doc" target="_blank" rel="noopener noreferrer" class="repo-link">
     gitHub
-    <svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg></a></nav></div></header> <div class="sidebar-mask"></div> <div class="sidebar"><nav class="nav-links"><div class="nav-item"><a href="/front-end-doc/" class="nav-link">首页</a></div><div class="nav-item"><div class="dropdown-wrapper"><a class="dropdown-title"><span class="title">Git指南</span> <span class="arrow right"></span></a> <ul class="nav-dropdown" style="display:none;"><li class="dropdown-item"><!----> <a href="/front-end-doc/src/base/git/flow.html" class="nav-link">Git工作流</a></li><li class="dropdown-item"><!----> <a href="/front-end-doc/src/base/git/bash.html" class="nav-link">常用命令行</a></li></ul></div></div><div class="nav-item"><div class="dropdown-wrapper"><a class="dropdown-title"><span class="title">基础知识</span> <span class="arrow right"></span></a> <ul class="nav-dropdown" style="display:none;"><li class="dropdown-item"><!----> <a href="/front-end-doc/src/base/codeStyle/" class="nav-link">es6代码风格</a></li><li class="dropdown-item"><!----> <a href="/front-end-doc/src/base/cssDoc/" class="nav-link">css干货</a></li><li class="dropdown-item"><!----> <a href="/front-end-doc/src/base/jsDoc/" class="nav-link">js干货</a></li><li class="dropdown-item"><!----> <a href="/front-end-doc/src/base/flexbox/" class="nav-link">弹性盒子布局</a></li></ul></div></div><div class="nav-item"><div class="dropdown-wrapper"><a class="dropdown-title"><span class="title">解决方案</span> <span class="arrow right"></span></a> <ul class="nav-dropdown" style="display:none;"><li class="dropdown-item"><!----> <a href="/front-end-doc/src/case/webSplit/" class="nav-link">前后端分离</a></li><li class="dropdown-item"><!----> <a href="/front-end-doc/src/case/autoDeploy/" class="nav-link">代码部署</a></li><li class="dropdown-item"><!----> <a href="/front-end-doc/src/case/websocket/" class="nav-link">websocket</a></li></ul></div></div><div class="nav-item"><div class="dropdown-wrapper"><a class="dropdown-title"><span class="title">小程序</span> <span class="arrow right"></span></a> <ul class="nav-dropdown" style="display:none;"><li class="dropdown-item"><!----> <a href="/front-end-doc/src/smallProgram/mpvue/" class="nav-link">mpvue搭建小程序</a></li></ul></div></div><div class="nav-item"><div class="dropdown-wrapper"><a class="dropdown-title"><span class="title">vue</span> <span class="arrow right"></span></a> <ul class="nav-dropdown" style="display:none;"><li class="dropdown-item"><!----> <a href="/front-end-doc/src/vue/" class="nav-link router-link-exact-active router-link-active">基础</a></li><li class="dropdown-item"><!----> <a href="/front-end-doc/src/vue/vueCompont/" class="nav-link">组件示例</a></li><li class="dropdown-item"><!----> <a href="/front-end-doc/src/vue/debug.html" class="nav-link">断点调试</a></li><li class="dropdown-item"><!----> <a href="/front-end-doc/src/vue/elegant.html" class="nav-link">优雅写法</a></li><li class="dropdown-item"><!----> <a href="/front-end-doc/src/vue/slill.html" class="nav-link">实用骚操作</a></li><li class="dropdown-item"><!----> <a href="/front-end-doc/src/vue/standards.html" class="nav-link">代码规范</a></li></ul></div></div><div class="nav-item"><a href="/front-end-doc/src/favorites/" class="nav-link">收藏夹</a></div><div class="nav-item"><a href="/front-end-doc/src/aboutMe/" class="nav-link">关于我</a></div> <a href="https://github.com//hisey/front-end-doc" target="_blank" rel="noopener noreferrer" class="repo-link">
+    <svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg></a></nav></div></header> <div class="sidebar-mask"></div> <aside class="sidebar"><nav class="nav-links"><div class="nav-item"><a href="/front-end-doc/" class="nav-link">
+  首页
+</a></div><div class="nav-item"><div class="dropdown-wrapper"><button type="button" aria-label="Git指南" class="dropdown-title"><span class="title">Git指南</span> <span class="arrow right"></span></button> <ul class="nav-dropdown" style="display:none;"><li class="dropdown-item"><!----> <a href="/front-end-doc/src/base/git/flow.html" class="nav-link">
+  Git工作流
+</a></li><li class="dropdown-item"><!----> <a href="/front-end-doc/src/base/git/bash.html" class="nav-link">
+  常用命令行
+</a></li></ul></div></div><div class="nav-item"><div class="dropdown-wrapper"><button type="button" aria-label="基础知识" class="dropdown-title"><span class="title">基础知识</span> <span class="arrow right"></span></button> <ul class="nav-dropdown" style="display:none;"><li class="dropdown-item"><!----> <a href="/front-end-doc/src/base/codeStyle/" class="nav-link">
+  es6代码风格
+</a></li><li class="dropdown-item"><!----> <a href="/front-end-doc/src/base/cssDoc/" class="nav-link">
+  css干货
+</a></li><li class="dropdown-item"><!----> <a href="/front-end-doc/src/base/jsDoc/dryGoods.html" class="nav-link">
+  js干货
+</a></li><li class="dropdown-item"><!----> <a href="/front-end-doc/src/base/jsDoc/tools.html" class="nav-link">
+  常用工具
+</a></li><li class="dropdown-item"><!----> <a href="/front-end-doc/src/base/flexbox/" class="nav-link">
+  弹性盒子布局
+</a></li></ul></div></div><div class="nav-item"><div class="dropdown-wrapper"><button type="button" aria-label="开发技巧" class="dropdown-title"><span class="title">开发技巧</span> <span class="arrow right"></span></button> <ul class="nav-dropdown" style="display:none;"><li class="dropdown-item"><!----> <a href="/front-end-doc/src/skill/" class="nav-link">
+  css篇
+</a></li></ul></div></div><div class="nav-item"><div class="dropdown-wrapper"><button type="button" aria-label="解决方案" class="dropdown-title"><span class="title">解决方案</span> <span class="arrow right"></span></button> <ul class="nav-dropdown" style="display:none;"><li class="dropdown-item"><!----> <a href="/front-end-doc/src/case/webSplit/" class="nav-link">
+  前后端分离
+</a></li><li class="dropdown-item"><!----> <a href="/front-end-doc/src/case/autoDeploy/" class="nav-link">
+  代码部署
+</a></li><li class="dropdown-item"><!----> <a href="/front-end-doc/src/case/websocket/" class="nav-link">
+  websocket
+</a></li><li class="dropdown-item"><!----> <a href="/front-end-doc/src/case/mobile/" class="nav-link">
+  移动端
+</a></li></ul></div></div><div class="nav-item"><div class="dropdown-wrapper"><button type="button" aria-label="小程序" class="dropdown-title"><span class="title">小程序</span> <span class="arrow right"></span></button> <ul class="nav-dropdown" style="display:none;"><li class="dropdown-item"><!----> <a href="/front-end-doc/src/smallProgram/mpvue/" class="nav-link">
+  mpvue搭建小程序
+</a></li></ul></div></div><div class="nav-item"><div class="dropdown-wrapper"><button type="button" aria-label="react" class="dropdown-title"><span class="title">react</span> <span class="arrow right"></span></button> <ul class="nav-dropdown" style="display:none;"><li class="dropdown-item"><!----> <a href="/front-end-doc/src/react/" class="nav-link">
+  基础知识整理
+</a></li></ul></div></div><div class="nav-item"><div class="dropdown-wrapper"><button type="button" aria-label="vue" class="dropdown-title"><span class="title">vue</span> <span class="arrow right"></span></button> <ul class="nav-dropdown" style="display:none;"><li class="dropdown-item"><!----> <a href="/front-end-doc/src/vue/" class="nav-link router-link-exact-active router-link-active">
+  基础
+</a></li><li class="dropdown-item"><!----> <a href="/front-end-doc/src/vue/vueCompont/" class="nav-link">
+  组件示例
+</a></li><li class="dropdown-item"><!----> <a href="/front-end-doc/src/vue/debug.html" class="nav-link">
+  断点调试
+</a></li><li class="dropdown-item"><!----> <a href="/front-end-doc/src/vue/elegant.html" class="nav-link">
+  优雅写法
+</a></li><li class="dropdown-item"><!----> <a href="/front-end-doc/src/vue/slill.html" class="nav-link">
+  实用骚操作
+</a></li><li class="dropdown-item"><!----> <a href="/front-end-doc/src/vue/standards.html" class="nav-link">
+  代码规范
+</a></li><li class="dropdown-item"><!----> <a href="/front-end-doc/src/vue/testCenter.html" class="nav-link">
+  常见考点
+</a></li></ul></div></div><div class="nav-item"><a href="/front-end-doc/src/favorites/" class="nav-link">
+  收藏夹
+</a></div><div class="nav-item"><a href="/front-end-doc/src/aboutMe/" class="nav-link">
+  关于我
+</a></div> <a href="https://github.com//hisey/front-end-doc" target="_blank" rel="noopener noreferrer" class="repo-link">
     gitHub
-    <svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg></a></nav>  <ul class="sidebar-links"><li><div class="sidebar-group first"><p class="sidebar-heading open"><span>异步组件 实现</span> <!----></p> <ul class="sidebar-group-items"><li><a href="/front-end-doc/src/vue/#异步组件-实现" class="sidebar-link">异步组件 实现</a><ul class="sidebar-sub-headers"></ul></li></ul></div></li></ul> </div> <div class="page"> <div class="content"><h2 id="异步组件-实现"><a href="#异步组件-实现" aria-hidden="true" class="header-anchor">#</a> 异步组件 实现</h2> <div class="language-javascript extra-class"><pre class="language-javascript"><code><span class="token operator">&lt;</span>template<span class="token operator">&gt;</span>
+    <svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg></a></nav>  <ul class="sidebar-links"><li><section class="sidebar-group depth-0"><p class="sidebar-heading open"><span>异步组件 实现</span> <!----></p> <ul class="sidebar-links sidebar-group-items"><li><a href="/front-end-doc/src/vue/#异步组件-实现" class="sidebar-link">异步组件 实现</a><ul class="sidebar-sub-headers"></ul></li></ul></section></li></ul> </aside> <main class="page"> <div class="theme-default-content content__default"><h2 id="异步组件-实现"><a href="#异步组件-实现" class="header-anchor">#</a> 异步组件 实现</h2> <div class="language-javascript extra-class"><pre class="language-javascript"><code><span class="token operator">&lt;</span>template<span class="token operator">&gt;</span>
 <span class="token operator">&lt;</span>div<span class="token operator">&gt;</span>
     异步组件测试
     点击按钮后
@@ -40,23 +137,23 @@
     <span class="token function">require</span><span class="token punctuation">(</span><span class="token punctuation">[</span><span class="token string">'./later2.vue'</span><span class="token punctuation">]</span><span class="token punctuation">,</span> resolve<span class="token punctuation">)</span>
 <span class="token punctuation">}</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
 <span class="token keyword">export</span> <span class="token keyword">default</span><span class="token punctuation">{</span>
-    <span class="token function-variable function">data</span><span class="token punctuation">:</span> <span class="token keyword">function</span> <span class="token punctuation">(</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
+    <span class="token function-variable function">data</span><span class="token operator">:</span> <span class="token keyword">function</span> <span class="token punctuation">(</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
         <span class="token keyword">return</span> <span class="token punctuation">{</span>
-            show<span class="token punctuation">:</span> <span class="token boolean">false</span>
+            show<span class="token operator">:</span> <span class="token boolean">false</span>
         <span class="token punctuation">}</span><span class="token punctuation">;</span>
     <span class="token punctuation">}</span><span class="token punctuation">,</span>
-    components<span class="token punctuation">:</span> <span class="token punctuation">{</span>
+    components<span class="token operator">:</span> <span class="token punctuation">{</span>
         later<span class="token punctuation">,</span>
         later2<span class="token punctuation">,</span>
     <span class="token punctuation">}</span><span class="token punctuation">,</span>
-    <span class="token function-variable function">created</span><span class="token punctuation">:</span> <span class="token keyword">function</span> <span class="token punctuation">(</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
+    <span class="token function-variable function">created</span><span class="token operator">:</span> <span class="token keyword">function</span> <span class="token punctuation">(</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
 
     <span class="token punctuation">}</span><span class="token punctuation">,</span>
-    <span class="token function-variable function">mounted</span><span class="token punctuation">:</span> <span class="token keyword">function</span> <span class="token punctuation">(</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
+    <span class="token function-variable function">mounted</span><span class="token operator">:</span> <span class="token keyword">function</span> <span class="token punctuation">(</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
     <span class="token punctuation">}</span><span class="token punctuation">,</span>
-    computed<span class="token punctuation">:</span> <span class="token punctuation">{</span><span class="token punctuation">}</span><span class="token punctuation">,</span>
-    methods<span class="token punctuation">:</span> <span class="token punctuation">{</span>
-        <span class="token function-variable function">toggle</span><span class="token punctuation">:</span><span class="token keyword">function</span> <span class="token punctuation">(</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
+    computed<span class="token operator">:</span> <span class="token punctuation">{</span><span class="token punctuation">}</span><span class="token punctuation">,</span>
+    methods<span class="token operator">:</span> <span class="token punctuation">{</span>
+        <span class="token function-variable function">toggle</span><span class="token operator">:</span><span class="token keyword">function</span> <span class="token punctuation">(</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
             <span class="token keyword">this</span><span class="token punctuation">.</span>show <span class="token operator">=</span> <span class="token operator">!</span><span class="token keyword">this</span><span class="token punctuation">.</span>show<span class="token punctuation">;</span>
         <span class="token punctuation">}</span>
     <span class="token punctuation">}</span><span class="token punctuation">,</span>
@@ -64,7 +161,7 @@
 <span class="token operator">&lt;</span><span class="token operator">/</span>script<span class="token operator">&gt;</span>
 <span class="token operator">&lt;</span>style<span class="token operator">&gt;</span>
 <span class="token operator">&lt;</span><span class="token operator">/</span>style<span class="token operator">&gt;</span>
-</code></pre></div></div> <div class="page-edit"><!----> <div class="last-updated"><span class="prefix">Last Updated: </span> <span class="time">5/17/2019, 10:17:57 AM</span></div></div> <!----> </div> <!----></div></div>
-    <script src="/front-end-doc/assets/js/app.a40c9194.js" defer></script><script src="/front-end-doc/assets/js/22.f3abc10e.js" defer></script>
+</code></pre></div></div> <footer class="page-edit"><!----> <div class="last-updated"><span class="prefix">Last Updated:</span> <span class="time">5/17/2019, 10:17:57 AM</span></div></footer> <!----> </main></div><div class="global-ui"></div></div>
+    <script src="/front-end-doc/assets/js/app.84f7ee84.js" defer></script><script src="/front-end-doc/assets/js/3.6a1b549d.js" defer></script><script src="/front-end-doc/assets/js/28.ab1055a2.js" defer></script>
   </body>
 </html>
