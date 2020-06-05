@@ -29,11 +29,33 @@
 
 # 原理与实践
 
-之前两篇文章已经详细的论述了**1px** 问题与 **响应式布局**问题，并给出了原理和解决方案。
-> 防止丢失，**点赞收藏**后跳转至快捷通道：[**1px**](https://juejin.im/entry/5df32ffd6fb9a016194afb5e)通道与[响应式布局](https://juejin.im/entry/5df613c3f265da33ca400e72)通道
+## 1px问题
+### 表现
+在移动端web开发中，UI设计稿中设置边框为1像素，前端在开发过程中如果出现border:1px，测试会发现在retina屏机型中，1px会比较粗，即是较经典的移动端1px像素问题
+### 原因
+在retina屏的手机上, dpr为2或3，css里写的1px宽度映射到物理像素上就有2px或3px宽度。
+### 解决方案
+``` javascript
+ var viewport = document.querySelector("meta[name=viewport]");
+        var dpr = window.devicePixelRatio || 1;
+        var scale = 1 / dpr;
+        //下面是根据设备dpr设置viewport
+        viewport.setAttribute(
+            "content", +
+            "width=device-width," +
+            "initial-scale=" +
+            scale +
+            ", maximum-scale=" +
+            scale +
+            ", minimum-scale=" +
+            scale +
+            ", user-scalable=no"
+        );
 
-接下来呢，我们看看其他问题的原理和解决方案吧。
-> 以下解决方案，均经过我测试成功，健康安全，请放下食用。由于篇幅原因，某些非核心解决方案的实现细节暂未谈论，需要自行研究。
+        var docEl = document.documentElement;
+        var fontsize = 10 * (docEl.clientWidth / 320) + "px";
+        docEl.style.fontSize = fontsize;
+```
 
 ## iOS 滑动不流畅
 
