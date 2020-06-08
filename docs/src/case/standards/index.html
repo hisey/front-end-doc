@@ -1,0 +1,438 @@
+<!DOCTYPE html>
+<html lang="en-US">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <title>一、代码静态检查工具 | hisey</title>
+    <meta name="description" content="不一样的世界，等你去发现">
+    <meta name="generator" content="VuePress 1.3.1">
+    <link rel="stylesheet" href="/front-end-doc/font/iconfont.css">
+  <link rel="stylesheet" href="/front-end-doc/style/index.css">
+    
+    <link rel="preload" href="/front-end-doc/assets/css/0.styles.46df3d32.css" as="style"><link rel="preload" href="/front-end-doc/assets/js/app.a0bd3a26.js" as="script"><link rel="preload" href="/front-end-doc/assets/js/3.6a1b549d.js" as="script"><link rel="preload" href="/front-end-doc/assets/js/22.b0323704.js" as="script"><link rel="prefetch" href="/front-end-doc/assets/js/1.f100aa9d.js"><link rel="prefetch" href="/front-end-doc/assets/js/10.a48a0454.js"><link rel="prefetch" href="/front-end-doc/assets/js/11.5cb73eb0.js"><link rel="prefetch" href="/front-end-doc/assets/js/12.592ec808.js"><link rel="prefetch" href="/front-end-doc/assets/js/13.8b742d42.js"><link rel="prefetch" href="/front-end-doc/assets/js/14.468ea87b.js"><link rel="prefetch" href="/front-end-doc/assets/js/15.7f3a4a46.js"><link rel="prefetch" href="/front-end-doc/assets/js/16.b781c53b.js"><link rel="prefetch" href="/front-end-doc/assets/js/17.a499ff62.js"><link rel="prefetch" href="/front-end-doc/assets/js/18.9ef6feb2.js"><link rel="prefetch" href="/front-end-doc/assets/js/19.e50cb5fc.js"><link rel="prefetch" href="/front-end-doc/assets/js/20.0334f30d.js"><link rel="prefetch" href="/front-end-doc/assets/js/21.92fc994f.js"><link rel="prefetch" href="/front-end-doc/assets/js/23.31f874da.js"><link rel="prefetch" href="/front-end-doc/assets/js/24.b482836e.js"><link rel="prefetch" href="/front-end-doc/assets/js/25.31bac7f3.js"><link rel="prefetch" href="/front-end-doc/assets/js/26.e1a7b376.js"><link rel="prefetch" href="/front-end-doc/assets/js/27.57c63336.js"><link rel="prefetch" href="/front-end-doc/assets/js/28.c47f7445.js"><link rel="prefetch" href="/front-end-doc/assets/js/29.20765f06.js"><link rel="prefetch" href="/front-end-doc/assets/js/30.bf796144.js"><link rel="prefetch" href="/front-end-doc/assets/js/31.d37275e1.js"><link rel="prefetch" href="/front-end-doc/assets/js/32.f40d6b6b.js"><link rel="prefetch" href="/front-end-doc/assets/js/33.471a6655.js"><link rel="prefetch" href="/front-end-doc/assets/js/34.80b26c81.js"><link rel="prefetch" href="/front-end-doc/assets/js/35.7f5d1468.js"><link rel="prefetch" href="/front-end-doc/assets/js/36.73ca058f.js"><link rel="prefetch" href="/front-end-doc/assets/js/4.3732f64e.js"><link rel="prefetch" href="/front-end-doc/assets/js/5.0d8afd27.js"><link rel="prefetch" href="/front-end-doc/assets/js/6.d6e3d614.js"><link rel="prefetch" href="/front-end-doc/assets/js/7.f03e90d2.js"><link rel="prefetch" href="/front-end-doc/assets/js/8.2560fe09.js"><link rel="prefetch" href="/front-end-doc/assets/js/9.92f3d637.js">
+    <link rel="stylesheet" href="/front-end-doc/assets/css/0.styles.46df3d32.css">
+  </head>
+  <body>
+    <div id="app" data-server-rendered="true"><div class="theme-container"><header class="navbar"><div class="sidebar-button"><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" role="img" viewBox="0 0 448 512" class="icon"><path fill="currentColor" d="M436 124H12c-6.627 0-12-5.373-12-12V80c0-6.627 5.373-12 12-12h424c6.627 0 12 5.373 12 12v32c0 6.627-5.373 12-12 12zm0 160H12c-6.627 0-12-5.373-12-12v-32c0-6.627 5.373-12 12-12h424c6.627 0 12 5.373 12 12v32c0 6.627-5.373 12-12 12zm0 160H12c-6.627 0-12-5.373-12-12v-32c0-6.627 5.373-12 12-12h424c6.627 0 12 5.373 12 12v32c0 6.627-5.373 12-12 12z"></path></svg></div> <a href="/front-end-doc/" class="home-link router-link-active"><!----> <span class="site-name">hisey</span></a> <div class="links"><div class="search-box"><input aria-label="Search" autocomplete="off" spellcheck="false" value=""> <!----></div> <nav class="nav-links can-hide"><div class="nav-item"><a href="/front-end-doc/" class="nav-link">
+  首页
+</a></div><div class="nav-item"><div class="dropdown-wrapper"><button type="button" aria-label="Git指南" class="dropdown-title"><span class="title">Git指南</span> <span class="arrow right"></span></button> <ul class="nav-dropdown" style="display:none;"><li class="dropdown-item"><!----> <a href="/front-end-doc/src/base/git/flow.html" class="nav-link">
+  Git工作流
+</a></li><li class="dropdown-item"><!----> <a href="/front-end-doc/src/base/git/bash.html" class="nav-link">
+  常用命令行
+</a></li></ul></div></div><div class="nav-item"><div class="dropdown-wrapper"><button type="button" aria-label="基础知识" class="dropdown-title"><span class="title">基础知识</span> <span class="arrow right"></span></button> <ul class="nav-dropdown" style="display:none;"><li class="dropdown-item"><!----> <a href="/front-end-doc/src/base/codeStyle/" class="nav-link">
+  es6代码风格
+</a></li><li class="dropdown-item"><!----> <a href="/front-end-doc/src/base/cssDoc/" class="nav-link">
+  css干货
+</a></li><li class="dropdown-item"><!----> <a href="/front-end-doc/src/base/jsDoc/dryGoods.html" class="nav-link">
+  js干货
+</a></li><li class="dropdown-item"><!----> <a href="/front-end-doc/src/base/jsDoc/tools.html" class="nav-link">
+  常用工具
+</a></li><li class="dropdown-item"><!----> <a href="/front-end-doc/src/base/flexbox/" class="nav-link">
+  弹性盒子布局
+</a></li></ul></div></div><div class="nav-item"><div class="dropdown-wrapper"><button type="button" aria-label="开发技巧" class="dropdown-title"><span class="title">开发技巧</span> <span class="arrow right"></span></button> <ul class="nav-dropdown" style="display:none;"><li class="dropdown-item"><!----> <a href="/front-end-doc/src/skill/" class="nav-link">
+  css篇
+</a></li></ul></div></div><div class="nav-item"><div class="dropdown-wrapper"><button type="button" aria-label="解决方案" class="dropdown-title"><span class="title">解决方案</span> <span class="arrow right"></span></button> <ul class="nav-dropdown" style="display:none;"><li class="dropdown-item"><!----> <a href="/front-end-doc/src/case/webSplit/" class="nav-link">
+  前后端分离
+</a></li><li class="dropdown-item"><!----> <a href="/front-end-doc/src/case/autoDeploy/" class="nav-link">
+  代码部署
+</a></li><li class="dropdown-item"><!----> <a href="/front-end-doc/src/case/websocket/" class="nav-link">
+  websocket
+</a></li><li class="dropdown-item"><!----> <a href="/front-end-doc/src/case/mobile/" class="nav-link">
+  移动端
+</a></li><li class="dropdown-item"><!----> <a href="/front-end-doc/src/case/standards/" class="nav-link router-link-exact-active router-link-active">
+  代码规范
+</a></li></ul></div></div><div class="nav-item"><div class="dropdown-wrapper"><button type="button" aria-label="小程序" class="dropdown-title"><span class="title">小程序</span> <span class="arrow right"></span></button> <ul class="nav-dropdown" style="display:none;"><li class="dropdown-item"><!----> <a href="/front-end-doc/src/smallProgram/mpvue/" class="nav-link">
+  mpvue搭建小程序
+</a></li></ul></div></div><div class="nav-item"><div class="dropdown-wrapper"><button type="button" aria-label="react" class="dropdown-title"><span class="title">react</span> <span class="arrow right"></span></button> <ul class="nav-dropdown" style="display:none;"><li class="dropdown-item"><!----> <a href="/front-end-doc/src/react/" class="nav-link">
+  基础知识整理
+</a></li></ul></div></div><div class="nav-item"><div class="dropdown-wrapper"><button type="button" aria-label="vue" class="dropdown-title"><span class="title">vue</span> <span class="arrow right"></span></button> <ul class="nav-dropdown" style="display:none;"><li class="dropdown-item"><!----> <a href="/front-end-doc/src/vue/" class="nav-link">
+  基础
+</a></li><li class="dropdown-item"><!----> <a href="/front-end-doc/src/vue/vueCompont/" class="nav-link">
+  组件示例
+</a></li><li class="dropdown-item"><!----> <a href="/front-end-doc/src/vue/debug.html" class="nav-link">
+  断点调试
+</a></li><li class="dropdown-item"><!----> <a href="/front-end-doc/src/vue/elegant.html" class="nav-link">
+  优雅写法
+</a></li><li class="dropdown-item"><!----> <a href="/front-end-doc/src/vue/slill.html" class="nav-link">
+  实用骚操作
+</a></li><li class="dropdown-item"><!----> <a href="/front-end-doc/src/vue/standards.html" class="nav-link">
+  代码规范
+</a></li><li class="dropdown-item"><!----> <a href="/front-end-doc/src/vue/testCenter.html" class="nav-link">
+  常见考点
+</a></li></ul></div></div><div class="nav-item"><a href="/front-end-doc/src/favorites/" class="nav-link">
+  收藏夹
+</a></div><div class="nav-item"><a href="/front-end-doc/src/aboutMe/" class="nav-link">
+  关于我
+</a></div> <a href="https://github.com//hisey/front-end-doc" target="_blank" rel="noopener noreferrer" class="repo-link">
+    gitHub
+    <svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg></a></nav></div></header> <div class="sidebar-mask"></div> <aside class="sidebar"><nav class="nav-links"><div class="nav-item"><a href="/front-end-doc/" class="nav-link">
+  首页
+</a></div><div class="nav-item"><div class="dropdown-wrapper"><button type="button" aria-label="Git指南" class="dropdown-title"><span class="title">Git指南</span> <span class="arrow right"></span></button> <ul class="nav-dropdown" style="display:none;"><li class="dropdown-item"><!----> <a href="/front-end-doc/src/base/git/flow.html" class="nav-link">
+  Git工作流
+</a></li><li class="dropdown-item"><!----> <a href="/front-end-doc/src/base/git/bash.html" class="nav-link">
+  常用命令行
+</a></li></ul></div></div><div class="nav-item"><div class="dropdown-wrapper"><button type="button" aria-label="基础知识" class="dropdown-title"><span class="title">基础知识</span> <span class="arrow right"></span></button> <ul class="nav-dropdown" style="display:none;"><li class="dropdown-item"><!----> <a href="/front-end-doc/src/base/codeStyle/" class="nav-link">
+  es6代码风格
+</a></li><li class="dropdown-item"><!----> <a href="/front-end-doc/src/base/cssDoc/" class="nav-link">
+  css干货
+</a></li><li class="dropdown-item"><!----> <a href="/front-end-doc/src/base/jsDoc/dryGoods.html" class="nav-link">
+  js干货
+</a></li><li class="dropdown-item"><!----> <a href="/front-end-doc/src/base/jsDoc/tools.html" class="nav-link">
+  常用工具
+</a></li><li class="dropdown-item"><!----> <a href="/front-end-doc/src/base/flexbox/" class="nav-link">
+  弹性盒子布局
+</a></li></ul></div></div><div class="nav-item"><div class="dropdown-wrapper"><button type="button" aria-label="开发技巧" class="dropdown-title"><span class="title">开发技巧</span> <span class="arrow right"></span></button> <ul class="nav-dropdown" style="display:none;"><li class="dropdown-item"><!----> <a href="/front-end-doc/src/skill/" class="nav-link">
+  css篇
+</a></li></ul></div></div><div class="nav-item"><div class="dropdown-wrapper"><button type="button" aria-label="解决方案" class="dropdown-title"><span class="title">解决方案</span> <span class="arrow right"></span></button> <ul class="nav-dropdown" style="display:none;"><li class="dropdown-item"><!----> <a href="/front-end-doc/src/case/webSplit/" class="nav-link">
+  前后端分离
+</a></li><li class="dropdown-item"><!----> <a href="/front-end-doc/src/case/autoDeploy/" class="nav-link">
+  代码部署
+</a></li><li class="dropdown-item"><!----> <a href="/front-end-doc/src/case/websocket/" class="nav-link">
+  websocket
+</a></li><li class="dropdown-item"><!----> <a href="/front-end-doc/src/case/mobile/" class="nav-link">
+  移动端
+</a></li><li class="dropdown-item"><!----> <a href="/front-end-doc/src/case/standards/" class="nav-link router-link-exact-active router-link-active">
+  代码规范
+</a></li></ul></div></div><div class="nav-item"><div class="dropdown-wrapper"><button type="button" aria-label="小程序" class="dropdown-title"><span class="title">小程序</span> <span class="arrow right"></span></button> <ul class="nav-dropdown" style="display:none;"><li class="dropdown-item"><!----> <a href="/front-end-doc/src/smallProgram/mpvue/" class="nav-link">
+  mpvue搭建小程序
+</a></li></ul></div></div><div class="nav-item"><div class="dropdown-wrapper"><button type="button" aria-label="react" class="dropdown-title"><span class="title">react</span> <span class="arrow right"></span></button> <ul class="nav-dropdown" style="display:none;"><li class="dropdown-item"><!----> <a href="/front-end-doc/src/react/" class="nav-link">
+  基础知识整理
+</a></li></ul></div></div><div class="nav-item"><div class="dropdown-wrapper"><button type="button" aria-label="vue" class="dropdown-title"><span class="title">vue</span> <span class="arrow right"></span></button> <ul class="nav-dropdown" style="display:none;"><li class="dropdown-item"><!----> <a href="/front-end-doc/src/vue/" class="nav-link">
+  基础
+</a></li><li class="dropdown-item"><!----> <a href="/front-end-doc/src/vue/vueCompont/" class="nav-link">
+  组件示例
+</a></li><li class="dropdown-item"><!----> <a href="/front-end-doc/src/vue/debug.html" class="nav-link">
+  断点调试
+</a></li><li class="dropdown-item"><!----> <a href="/front-end-doc/src/vue/elegant.html" class="nav-link">
+  优雅写法
+</a></li><li class="dropdown-item"><!----> <a href="/front-end-doc/src/vue/slill.html" class="nav-link">
+  实用骚操作
+</a></li><li class="dropdown-item"><!----> <a href="/front-end-doc/src/vue/standards.html" class="nav-link">
+  代码规范
+</a></li><li class="dropdown-item"><!----> <a href="/front-end-doc/src/vue/testCenter.html" class="nav-link">
+  常见考点
+</a></li></ul></div></div><div class="nav-item"><a href="/front-end-doc/src/favorites/" class="nav-link">
+  收藏夹
+</a></div><div class="nav-item"><a href="/front-end-doc/src/aboutMe/" class="nav-link">
+  关于我
+</a></div> <a href="https://github.com//hisey/front-end-doc" target="_blank" rel="noopener noreferrer" class="repo-link">
+    gitHub
+    <svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg></a></nav>  <ul class="sidebar-links"><li><section class="sidebar-group depth-0"><p class="sidebar-heading open"><span>一、代码静态检查工具</span> <!----></p> <ul class="sidebar-links sidebar-group-items"><li><a href="/front-end-doc/src/case/standards/#一、代码静态检查工具" class="sidebar-link">一、代码静态检查工具</a><ul class="sidebar-sub-headers"><li class="sidebar-sub-header"><a href="/front-end-doc/src/case/standards/#_1-1、使用-eslint-工具对-javascript-代码进行检查" class="sidebar-link">1.1、使用 eslint 工具对 javascript 代码进行检查</a></li></ul></li><li><a href="/front-end-doc/src/case/standards/#_1-2、使用-stylelint-工具对-css-样式代码进行检查" class="sidebar-link">1.2、使用 stylelint 工具对 css 样式代码进行检查</a><ul class="sidebar-sub-headers"></ul></li><li><a href="/front-end-doc/src/case/standards/#二、命名" class="sidebar-link">二、命名</a><ul class="sidebar-sub-headers"><li class="sidebar-sub-header"><a href="/front-end-doc/src/case/standards/#_2-1、js-采用-camel-case-小驼峰式命名" class="sidebar-link">2.1、JS 采用 Camel Case 小驼峰式命名</a></li><li class="sidebar-sub-header"><a href="/front-end-doc/src/case/standards/#_2-2、避免名称冗余" class="sidebar-link">2.2、避免名称冗余</a></li><li class="sidebar-sub-header"><a href="/front-end-doc/src/case/standards/#_2-3、css-类名采用-bem-命名规范" class="sidebar-link">2.3、CSS 类名采用 BEM 命名规范</a></li><li class="sidebar-sub-header"><a href="/front-end-doc/src/case/standards/#_2-4、命名符合语义化" class="sidebar-link">2.4、命名符合语义化</a></li></ul></li><li><a href="/front-end-doc/src/case/standards/#三、js-推荐写法" class="sidebar-link">三、JS 推荐写法</a><ul class="sidebar-sub-headers"><li class="sidebar-sub-header"><a href="/front-end-doc/src/case/standards/#_3-1、每个常量都需命名" class="sidebar-link">3.1、每个常量都需命名</a></li><li class="sidebar-sub-header"><a href="/front-end-doc/src/case/standards/#_3-2、推荐使用字面量" class="sidebar-link">3.2、推荐使用字面量</a></li><li class="sidebar-sub-header"><a href="/front-end-doc/src/case/standards/#_3-3、对象设置默认属性的推荐写法" class="sidebar-link">3.3、对象设置默认属性的推荐写法</a></li><li class="sidebar-sub-header"><a href="/front-end-doc/src/case/standards/#_3-4、将对象的属性值保存为局部变量" class="sidebar-link">3.4、将对象的属性值保存为局部变量</a></li><li class="sidebar-sub-header"><a href="/front-end-doc/src/case/standards/#_3-5、字符串转为整型" class="sidebar-link">3.5、字符串转为整型</a></li><li class="sidebar-sub-header"><a href="/front-end-doc/src/case/standards/#_3-6、函数参数" class="sidebar-link">3.6、函数参数</a></li><li class="sidebar-sub-header"><a href="/front-end-doc/src/case/standards/#_3-7、使用参数默认值" class="sidebar-link">3.7、使用参数默认值</a></li><li class="sidebar-sub-header"><a href="/front-end-doc/src/case/standards/#_3-8、最小函数准则" class="sidebar-link">3.8、最小函数准则</a></li><li class="sidebar-sub-header"><a href="/front-end-doc/src/case/standards/#_3-9、不要写全局方法" class="sidebar-link">3.9、不要写全局方法</a></li><li class="sidebar-sub-header"><a href="/front-end-doc/src/case/standards/#_3-10、推荐函数式编程" class="sidebar-link">3.10、推荐函数式编程</a></li><li class="sidebar-sub-header"><a href="/front-end-doc/src/case/standards/#_3-11、使用多态替换条件语句" class="sidebar-link">3.11、使用多态替换条件语句</a></li><li class="sidebar-sub-header"><a href="/front-end-doc/src/case/standards/#_3-12、定时器是否清除" class="sidebar-link">3.12、定时器是否清除</a></li></ul></li><li><a href="/front-end-doc/src/case/standards/#四、scss-推荐写法" class="sidebar-link">四、SCSS 推荐写法</a><ul class="sidebar-sub-headers"><li class="sidebar-sub-header"><a href="/front-end-doc/src/case/standards/#_4-1、变量-使用" class="sidebar-link">4.1、变量 $ 使用</a></li><li class="sidebar-sub-header"><a href="/front-end-doc/src/case/standards/#_4-2、-import-导入样式文件" class="sidebar-link">4.2、@import 导入样式文件</a></li><li class="sidebar-sub-header"><a href="/front-end-doc/src/case/standards/#_4-3、局部文件命名的使用" class="sidebar-link">4.3、局部文件命名的使用</a></li><li class="sidebar-sub-header"><a href="/front-end-doc/src/case/standards/#_4-4、父选择器标识符-实现bem-命令规范" class="sidebar-link">4.4、父选择器标识符 &amp; 实现BEM 命令规范</a></li><li class="sidebar-sub-header"><a href="/front-end-doc/src/case/standards/#scss的嵌套和父选择器标识符-能解决bem命名的冗长，且使样式可读性更高。" class="sidebar-link">scss的嵌套和父选择器标识符&amp;能解决BEM命名的冗长，且使样式可读性更高。</a></li><li class="sidebar-sub-header"><a href="/front-end-doc/src/case/standards/#_4-5、-mixin-混合器的使用" class="sidebar-link">4.5、@mixin 混合器的使用</a></li><li class="sidebar-sub-header"><a href="/front-end-doc/src/case/standards/#_4-6、-extend-指令的使用" class="sidebar-link">4.6、@extend 指令的使用</a></li><li class="sidebar-sub-header"><a href="/front-end-doc/src/case/standards/#_4-7、-插值的使用" class="sidebar-link">4.7、#{} 插值的使用</a></li><li class="sidebar-sub-header"><a href="/front-end-doc/src/case/standards/#_4-8、each遍历、map数据类型、-mixin-include混合器、-插值-结合使用" class="sidebar-link">4.8、each遍历、map数据类型、@mixin/@include混合器、#{}插值 结合使用</a></li><li class="sidebar-sub-header"><a href="/front-end-doc/src/case/standards/#_4-9、scss-自带函数的应用" class="sidebar-link">4.9、scss 自带函数的应用</a></li><li class="sidebar-sub-header"><a href="/front-end-doc/src/case/standards/#_4-10、gulp-sass的使用" class="sidebar-link">4.10、gulp-sass的使用</a></li></ul></li><li><a href="/front-end-doc/src/case/standards/#五、团队其它规范" class="sidebar-link">五、团队其它规范</a><ul class="sidebar-sub-headers"><li class="sidebar-sub-header"><a href="/front-end-doc/src/case/standards/#_5-1、尽量不手动操作-dom" class="sidebar-link">5.1、尽量不手动操作 DOM</a></li><li class="sidebar-sub-header"><a href="/front-end-doc/src/case/standards/#_5-2、删除弃用代码" class="sidebar-link">5.2、删除弃用代码</a></li><li class="sidebar-sub-header"><a href="/front-end-doc/src/case/standards/#_5-3、保持必要的注释" class="sidebar-link">5.3、保持必要的注释</a></li></ul></li></ul></section></li></ul> </aside> <main class="page"> <div class="theme-default-content content__default"><h2 id="一、代码静态检查工具"><a href="#一、代码静态检查工具" class="header-anchor">#</a> 一、代码静态检查工具</h2> <h3 id="_1-1、使用-eslint-工具对-javascript-代码进行检查"><a href="#_1-1、使用-eslint-工具对-javascript-代码进行检查" class="header-anchor">#</a> 1.1、使用 eslint 工具对 javascript 代码进行检查</h3> <p>​ eslint 检查的规范继承自 eslint-config-standard 检验规则，具体的规则介绍参照链接：https://cn.eslint.org/docs/rules/ ，这里及以下部分不再重复介绍这些检验规则。</p> <h2 id="_1-2、使用-stylelint-工具对-css-样式代码进行检查"><a href="#_1-2、使用-stylelint-工具对-css-样式代码进行检查" class="header-anchor">#</a> 1.2、使用 stylelint 工具对 css 样式代码进行检查</h2> <p>​ stylelint 检查的规范继承自 stylelint-config-standard 检验规则，具体的规则介绍参照链接：https://www.npmjs.com/package/stylelint-config-standard ，这里及以下部分不再重复介绍这些检验规则。</p> <h2 id="二、命名"><a href="#二、命名" class="header-anchor">#</a> 二、命名</h2> <h3 id="_2-1、js-采用-camel-case-小驼峰式命名"><a href="#_2-1、js-采用-camel-case-小驼峰式命名" class="header-anchor">#</a> 2.1、JS 采用 Camel Case 小驼峰式命名</h3> <p>推荐：</p> <div class="language-javascript extra-class"><pre class="language-javascript"><code>    studentInfot
+</code></pre></div><h3 id="_2-2、避免名称冗余"><a href="#_2-2、避免名称冗余" class="header-anchor">#</a> 2.2、避免名称冗余</h3> <p>推荐：</p> <div class="language-javascript extra-class"><pre class="language-javascript"><code><span class="token keyword">const</span> Car <span class="token operator">=</span> <span class="token punctuation">{</span>
+  make<span class="token operator">:</span> <span class="token string">&quot;Honda&quot;</span><span class="token punctuation">,</span>
+  model<span class="token operator">:</span> <span class="token string">&quot;Accord&quot;</span><span class="token punctuation">,</span>
+  color<span class="token operator">:</span> <span class="token string">&quot;Blue&quot;</span>
+<span class="token punctuation">}</span><span class="token punctuation">;</span>
+</code></pre></div><p>不推荐：</p> <div class="language-javascript extra-class"><pre class="language-javascript"><code><span class="token keyword">const</span> Car <span class="token operator">=</span> <span class="token punctuation">{</span>
+  carMake<span class="token operator">:</span> <span class="token string">&quot;Honda&quot;</span><span class="token punctuation">,</span>
+  carModel<span class="token operator">:</span> <span class="token string">&quot;Accord&quot;</span><span class="token punctuation">,</span>
+  carColor<span class="token operator">:</span> <span class="token string">&quot;Blue&quot;</span>
+<span class="token punctuation">}</span><span class="token punctuation">;</span>
+</code></pre></div><h3 id="_2-3、css-类名采用-bem-命名规范"><a href="#_2-3、css-类名采用-bem-命名规范" class="header-anchor">#</a> 2.3、CSS 类名采用 BEM 命名规范</h3> <p>推荐：</p> <div class="language-javascript extra-class"><pre class="language-javascript"><code><span class="token punctuation">.</span>block__element<span class="token punctuation">{</span><span class="token punctuation">}</span> 
+<span class="token punctuation">.</span>block<span class="token operator">--</span>modifier<span class="token punctuation">{</span><span class="token punctuation">}</span>
+</code></pre></div><h3 id="_2-4、命名符合语义化"><a href="#_2-4、命名符合语义化" class="header-anchor">#</a> 2.4、命名符合语义化</h3> <p>命名需要符合语义化，如果函数命名，可以采用加上动词前缀：</p> <table><thead><tr><th>动词</th> <th style="text-align:right;">含义</th></tr></thead> <tbody><tr><td>can</td> <td style="text-align:right;">判断是否可执行某个动作</td></tr> <tr><td>has</td> <td style="text-align:right;">判断是否含有某个值</td></tr> <tr><td>is</td> <td style="text-align:right;">判断是否为某个值</td></tr> <tr><td>get</td> <td style="text-align:right;">获取某个值</td></tr> <tr><td>set</td> <td style="text-align:right;">设置某个值</td></tr></tbody></table> <p>推荐：</p> <div class="language-javascript extra-class"><pre class="language-javascript"><code><span class="token comment">//是否可阅读 </span>
+<span class="token keyword">function</span> <span class="token function">canRead</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">{</span> 
+   <span class="token keyword">return</span> <span class="token boolean">true</span><span class="token punctuation">;</span> 
+<span class="token punctuation">}</span> 
+<span class="token comment">//获取姓名 </span>
+<span class="token keyword">function</span> getName<span class="token punctuation">{</span>
+   <span class="token keyword">return</span> <span class="token keyword">this</span><span class="token punctuation">.</span>name 
+<span class="token punctuation">}</span> 
+</code></pre></div><h2 id="三、js-推荐写法"><a href="#三、js-推荐写法" class="header-anchor">#</a> 三、JS 推荐写法</h2> <h3 id="_3-1、每个常量都需命名"><a href="#_3-1、每个常量都需命名" class="header-anchor">#</a> 3.1、每个常量都需命名</h3> <p>每个常量应该命名，不然看代码的人不知道这个常量表示什么意思。</p> <p>推荐：</p> <div class="language-javascript extra-class"><pre class="language-javascript"><code><span class="token keyword">const</span> <span class="token constant">COL_NUM</span> <span class="token operator">=</span> <span class="token number">10</span><span class="token punctuation">;</span>
+<span class="token keyword">let</span> row <span class="token operator">=</span> Math<span class="token punctuation">.</span><span class="token function">ceil</span><span class="token punctuation">(</span>num<span class="token operator">/</span><span class="token constant">COL_NUM</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+</code></pre></div><p>不推荐：</p> <div class="language-javascript extra-class"><pre class="language-javascript"><code><span class="token keyword">let</span> row <span class="token operator">=</span> Math<span class="token punctuation">.</span><span class="token function">ceil</span><span class="token punctuation">(</span>num<span class="token operator">/</span><span class="token number">10</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+</code></pre></div><h3 id="_3-2、推荐使用字面量"><a href="#_3-2、推荐使用字面量" class="header-anchor">#</a> 3.2、推荐使用字面量</h3> <p>创建对象和数组推荐使用字面量，因为这不仅是性能最优也有助于节省代码量。</p> <p>推荐：</p> <div class="language-javascript extra-class"><pre class="language-javascript"><code><span class="token keyword">let</span> obj <span class="token operator">=</span> <span class="token punctuation">{</span>   
+     name<span class="token operator">:</span><span class="token string">'tom'</span><span class="token punctuation">,</span>     
+     age<span class="token operator">:</span><span class="token number">15</span><span class="token punctuation">,</span>     
+     sex<span class="token operator">:</span><span class="token string">'男'</span> 
+<span class="token punctuation">}</span> 
+</code></pre></div><p>不推荐：</p> <div class="language-javascript extra-class"><pre class="language-javascript"><code>
+<span class="token keyword">let</span> obj <span class="token operator">=</span> <span class="token punctuation">{</span><span class="token punctuation">}</span><span class="token punctuation">;</span>
+obj<span class="token punctuation">.</span>name <span class="token operator">=</span> <span class="token string">'tom'</span><span class="token punctuation">;</span>
+obj<span class="token punctuation">.</span>age <span class="token operator">=</span> <span class="token number">15</span><span class="token punctuation">;</span>
+obj<span class="token punctuation">.</span>sex <span class="token operator">=</span> <span class="token string">'男'</span><span class="token punctuation">;</span>
+</code></pre></div><h3 id="_3-3、对象设置默认属性的推荐写法"><a href="#_3-3、对象设置默认属性的推荐写法" class="header-anchor">#</a> 3.3、对象设置默认属性的推荐写法</h3> <p>推荐：</p> <div class="language-javascript extra-class"><pre class="language-javascript"><code>
+<span class="token keyword">const</span> menuConfig <span class="token operator">=</span> <span class="token punctuation">{</span>
+  title<span class="token operator">:</span> <span class="token string">&quot;Order&quot;</span><span class="token punctuation">,</span>
+  <span class="token comment">// User did not include 'body' key</span>
+  buttonText<span class="token operator">:</span> <span class="token string">&quot;Send&quot;</span><span class="token punctuation">,</span>
+  cancellable<span class="token operator">:</span> <span class="token boolean">true</span>
+<span class="token punctuation">}</span><span class="token punctuation">;</span>
+
+<span class="token keyword">function</span> <span class="token function">createMenu</span><span class="token punctuation">(</span><span class="token parameter">config</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
+  config <span class="token operator">=</span> Object<span class="token punctuation">.</span><span class="token function">assign</span><span class="token punctuation">(</span>
+    <span class="token punctuation">{</span>
+      title<span class="token operator">:</span> <span class="token string">&quot;Foo&quot;</span><span class="token punctuation">,</span>
+      body<span class="token operator">:</span> <span class="token string">&quot;Bar&quot;</span><span class="token punctuation">,</span>
+      buttonText<span class="token operator">:</span> <span class="token string">&quot;Baz&quot;</span><span class="token punctuation">,</span>
+      cancellable<span class="token operator">:</span> <span class="token boolean">true</span>
+    <span class="token punctuation">}</span><span class="token punctuation">,</span>
+    config
+  <span class="token punctuation">)</span><span class="token punctuation">;</span>
+
+  <span class="token comment">// config now equals: {title: &quot;Order&quot;, body: &quot;Bar&quot;, buttonText: &quot;Send&quot;, cancellable: true}</span>
+  <span class="token comment">// ...</span>
+<span class="token punctuation">}</span>
+
+<span class="token function">createMenu</span><span class="token punctuation">(</span>menuConfig<span class="token punctuation">)</span><span class="token punctuation">;</span>
+</code></pre></div><p>不推荐：</p> <div class="language-javascript extra-class"><pre class="language-javascript"><code>
+<span class="token keyword">const</span> menuConfig <span class="token operator">=</span> <span class="token punctuation">{</span>
+  title<span class="token operator">:</span> <span class="token keyword">null</span><span class="token punctuation">,</span>
+  body<span class="token operator">:</span> <span class="token string">&quot;Bar&quot;</span><span class="token punctuation">,</span>
+  buttonText<span class="token operator">:</span> <span class="token keyword">null</span><span class="token punctuation">,</span>
+  cancellable<span class="token operator">:</span> <span class="token boolean">true</span>
+<span class="token punctuation">}</span><span class="token punctuation">;</span>
+
+<span class="token keyword">function</span> <span class="token function">createMenu</span><span class="token punctuation">(</span><span class="token parameter">config</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
+  config<span class="token punctuation">.</span>title <span class="token operator">=</span> config<span class="token punctuation">.</span>title <span class="token operator">||</span> <span class="token string">&quot;Foo&quot;</span><span class="token punctuation">;</span>
+  config<span class="token punctuation">.</span>body <span class="token operator">=</span> config<span class="token punctuation">.</span>body <span class="token operator">||</span> <span class="token string">&quot;Bar&quot;</span><span class="token punctuation">;</span>
+  config<span class="token punctuation">.</span>buttonText <span class="token operator">=</span> config<span class="token punctuation">.</span>buttonText <span class="token operator">||</span> <span class="token string">&quot;Baz&quot;</span><span class="token punctuation">;</span>
+  config<span class="token punctuation">.</span>cancellable <span class="token operator">=</span>
+    config<span class="token punctuation">.</span>cancellable <span class="token operator">!==</span> <span class="token keyword">undefined</span> <span class="token operator">?</span> config<span class="token punctuation">.</span>cancellable <span class="token operator">:</span> <span class="token boolean">true</span><span class="token punctuation">;</span>
+<span class="token punctuation">}</span>
+
+<span class="token function">createMenu</span><span class="token punctuation">(</span>menuConfig<span class="token punctuation">)</span><span class="token punctuation">;</span>
+</code></pre></div><h3 id="_3-4、将对象的属性值保存为局部变量"><a href="#_3-4、将对象的属性值保存为局部变量" class="header-anchor">#</a> 3.4、将对象的属性值保存为局部变量</h3> <p>对象成员嵌套越深，读取速度也就越慢。所以好的经验法则是：如果在函数中需要多次读取一个对象属性，最佳做法是将该属性值保存在局部变量中，避免多次查找带来的性能开销。</p> <p>推荐：</p> <div class="language-javascript extra-class"><pre class="language-javascript"><code>
+<span class="token keyword">let</span> person <span class="token operator">=</span> <span class="token punctuation">{</span>
+    info<span class="token operator">:</span><span class="token punctuation">{</span>
+        sex<span class="token operator">:</span><span class="token string">'男'</span>
+    <span class="token punctuation">}</span>
+<span class="token punctuation">}</span>
+<span class="token keyword">function</span>  <span class="token function">getMaleSex</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">{</span>
+    <span class="token keyword">let</span> sex <span class="token operator">=</span> person<span class="token punctuation">.</span>info<span class="token punctuation">.</span>sex<span class="token punctuation">;</span>
+    <span class="token keyword">if</span><span class="token punctuation">(</span>sex <span class="token operator">===</span> <span class="token string">'男'</span><span class="token punctuation">)</span><span class="token punctuation">{</span>
+        console<span class="token punctuation">.</span><span class="token function">log</span><span class="token punctuation">(</span>sex<span class="token punctuation">)</span>
+    <span class="token punctuation">}</span>
+<span class="token punctuation">}</span> 
+</code></pre></div><p>不推荐：</p> <div class="language-javascript extra-class"><pre class="language-javascript"><code>
+<span class="token keyword">let</span> person <span class="token operator">=</span> <span class="token punctuation">{</span>
+    info<span class="token operator">:</span><span class="token punctuation">{</span>
+        sex<span class="token operator">:</span><span class="token string">'男'</span>
+    <span class="token punctuation">}</span>
+<span class="token punctuation">}</span>
+<span class="token keyword">function</span>  <span class="token function">getMaleSex</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">{</span>
+    <span class="token keyword">if</span><span class="token punctuation">(</span>person<span class="token punctuation">.</span>info<span class="token punctuation">.</span>sex <span class="token operator">===</span> <span class="token string">'男'</span><span class="token punctuation">)</span><span class="token punctuation">{</span>
+        console<span class="token punctuation">.</span><span class="token function">log</span><span class="token punctuation">(</span>person<span class="token punctuation">.</span>info<span class="token punctuation">.</span>sex<span class="token punctuation">)</span>
+    <span class="token punctuation">}</span>
+<span class="token punctuation">}</span>
+</code></pre></div><h3 id="_3-5、字符串转为整型"><a href="#_3-5、字符串转为整型" class="header-anchor">#</a> 3.5、字符串转为整型</h3> <p>当需要将浮点数转换成整型时，应该使用Math.floor()或者Math.round()，而不是使用parseInt()将字符串转换成数字。Math是内部对象，所以Math.floor()`其实并没有多少查询方法和调用时间，速度是最快的。</p> <p>推荐：</p> <div class="language-javascript extra-class"><pre class="language-javascript"><code><span class="token keyword">let</span> num <span class="token operator">=</span> Math<span class="token punctuation">.</span><span class="token function">floor</span><span class="token punctuation">(</span><span class="token string">'1.6'</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+</code></pre></div><p>不推荐：</p> <div class="language-javascript extra-class"><pre class="language-javascript"><code><span class="token keyword">let</span> num <span class="token operator">=</span> <span class="token function">parseInt</span><span class="token punctuation">(</span><span class="token string">'1.6'</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+</code></pre></div><h3 id="_3-6、函数参数"><a href="#_3-6、函数参数" class="header-anchor">#</a> 3.6、函数参数</h3> <p>函数参数越少越好，如果参数超过两个，要使用 ES6的解构语法，不用考虑参数的顺序。</p> <p>推荐：</p> <div class="language-javascript extra-class"><pre class="language-javascript"><code><span class="token keyword">function</span> <span class="token function">createMenu</span><span class="token punctuation">(</span><span class="token parameter"><span class="token punctuation">{</span> title<span class="token punctuation">,</span> body<span class="token punctuation">,</span> buttonText<span class="token punctuation">,</span> cancellable <span class="token punctuation">}</span></span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
+  <span class="token comment">// ...</span>
+<span class="token punctuation">}</span>
+
+<span class="token function">createMenu</span><span class="token punctuation">(</span><span class="token punctuation">{</span>
+  title<span class="token operator">:</span> <span class="token string">'Foo'</span><span class="token punctuation">,</span>
+  body<span class="token operator">:</span> <span class="token string">'Bar'</span><span class="token punctuation">,</span>
+  buttonText<span class="token operator">:</span> <span class="token string">'Baz'</span><span class="token punctuation">,</span>
+  cancellable<span class="token operator">:</span> <span class="token boolean">true</span>
+<span class="token punctuation">}</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+</code></pre></div><p>不推荐：</p> <div class="language-javascript extra-class"><pre class="language-javascript"><code><span class="token keyword">function</span> <span class="token function">createMenu</span><span class="token punctuation">(</span><span class="token parameter">title<span class="token punctuation">,</span> body<span class="token punctuation">,</span> buttonText<span class="token punctuation">,</span> cancellable</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
+  <span class="token comment">// ...</span>
+<span class="token punctuation">}</span>
+</code></pre></div><h3 id="_3-7、使用参数默认值"><a href="#_3-7、使用参数默认值" class="header-anchor">#</a> 3.7、使用参数默认值</h3> <p>使用参数默认值 替代 使用条件语句进行赋值。</p> <p>推荐：</p> <div class="language-javascript extra-class"><pre class="language-javascript"><code><span class="token keyword">function</span> <span class="token function">createMicrobrewery</span><span class="token punctuation">(</span>name <span class="token operator">=</span> <span class="token string">&quot;Hipster Brew Co.&quot;</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
+  <span class="token comment">// ...</span>
+<span class="token punctuation">}</span>
+</code></pre></div><p>不推荐：</p> <div class="language-javascript extra-class"><pre class="language-javascript"><code><span class="token keyword">function</span> <span class="token function">createMicrobrewery</span><span class="token punctuation">(</span><span class="token parameter">name</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
+  <span class="token keyword">const</span> breweryName <span class="token operator">=</span> name <span class="token operator">||</span> <span class="token string">&quot;Hipster Brew Co.&quot;</span><span class="token punctuation">;</span>
+  <span class="token comment">// ...</span>
+<span class="token punctuation">}</span>
+</code></pre></div><h3 id="_3-8、最小函数准则"><a href="#_3-8、最小函数准则" class="header-anchor">#</a> 3.8、最小函数准则</h3> <p>这是一条在软件工程领域流传久远的规则。严格遵守这条规则会让你的代码可读性更好，也更容易重构。如果违反这个规则，那么代码会很难被测试或者重用 。</p> <h3 id="_3-9、不要写全局方法"><a href="#_3-9、不要写全局方法" class="header-anchor">#</a> 3.9、不要写全局方法</h3> <p>在 JavaScript 中，永远不要污染全局，会在生产环境中产生难以预料的 bug。举个例子，比如你在 Array.prototype 上新增一个 diff 方法来判断两个数组的不同。而你同事也打算做类似的事情，不过他的 diff 方法是用来判断两个数组首位元素的不同。很明显你们方法会产生冲突，遇到这类问题我们可以用 ES2015/ES6 的语法来对 Array 进行扩展。</p> <p>推荐:</p> <div class="language-javascript extra-class"><pre class="language-javascript"><code>
+<span class="token keyword">class</span> <span class="token class-name">SuperArray</span> <span class="token keyword">extends</span> <span class="token class-name">Array</span> <span class="token punctuation">{</span>
+  <span class="token function">diff</span><span class="token punctuation">(</span><span class="token parameter">comparisonArray</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
+    <span class="token keyword">const</span> hash <span class="token operator">=</span> <span class="token keyword">new</span> <span class="token class-name">Set</span><span class="token punctuation">(</span>comparisonArray<span class="token punctuation">)</span><span class="token punctuation">;</span>
+    <span class="token keyword">return</span> <span class="token keyword">this</span><span class="token punctuation">.</span><span class="token function">filter</span><span class="token punctuation">(</span><span class="token parameter">elem</span> <span class="token operator">=&gt;</span> <span class="token operator">!</span>hash<span class="token punctuation">.</span><span class="token function">has</span><span class="token punctuation">(</span>elem<span class="token punctuation">)</span><span class="token punctuation">)</span><span class="token punctuation">;</span>        
+  <span class="token punctuation">}</span>
+<span class="token punctuation">}</span>
+</code></pre></div><p>不推荐：</p> <div class="language-javascript extra-class"><pre class="language-javascript"><code><span class="token class-name">Array</span><span class="token punctuation">.</span>prototype<span class="token punctuation">.</span><span class="token function-variable function">diff</span> <span class="token operator">=</span> <span class="token keyword">function</span> <span class="token function">diff</span><span class="token punctuation">(</span><span class="token parameter">comparisonArray</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
+  <span class="token keyword">const</span> hash <span class="token operator">=</span> <span class="token keyword">new</span> <span class="token class-name">Set</span><span class="token punctuation">(</span>comparisonArray<span class="token punctuation">)</span><span class="token punctuation">;</span>
+  <span class="token keyword">return</span> <span class="token keyword">this</span><span class="token punctuation">.</span><span class="token function">filter</span><span class="token punctuation">(</span><span class="token parameter">elem</span> <span class="token operator">=&gt;</span> <span class="token operator">!</span>hash<span class="token punctuation">.</span><span class="token function">has</span><span class="token punctuation">(</span>elem<span class="token punctuation">)</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+<span class="token punctuation">}</span><span class="token punctuation">;</span>
+</code></pre></div><h3 id="_3-10、推荐函数式编程"><a href="#_3-10、推荐函数式编程" class="header-anchor">#</a> 3.10、推荐函数式编程</h3> <p>函数式变编程可以让代码的逻辑更清晰更优雅，方便测试。</p> <p>推荐：</p> <div class="language-javascript extra-class"><pre class="language-javascript"><code><span class="token keyword">const</span> programmerOutput <span class="token operator">=</span> <span class="token punctuation">[</span>
+  <span class="token punctuation">{</span>
+    name<span class="token operator">:</span> <span class="token string">'Uncle Bobby'</span><span class="token punctuation">,</span>
+    linesOfCode<span class="token operator">:</span> <span class="token number">500</span>
+  <span class="token punctuation">}</span><span class="token punctuation">,</span> <span class="token punctuation">{</span>
+    name<span class="token operator">:</span> <span class="token string">'Suzie Q'</span><span class="token punctuation">,</span>
+    linesOfCode<span class="token operator">:</span> <span class="token number">1500</span>
+  <span class="token punctuation">}</span><span class="token punctuation">,</span> <span class="token punctuation">{</span>
+    name<span class="token operator">:</span> <span class="token string">'Jimmy Gosling'</span><span class="token punctuation">,</span>
+    linesOfCode<span class="token operator">:</span> <span class="token number">150</span>
+  <span class="token punctuation">}</span><span class="token punctuation">,</span> <span class="token punctuation">{</span>
+    name<span class="token operator">:</span> <span class="token string">'Gracie Hopper'</span><span class="token punctuation">,</span>
+    linesOfCode<span class="token operator">:</span> <span class="token number">1000</span>
+  <span class="token punctuation">}</span>
+<span class="token punctuation">]</span><span class="token punctuation">;</span>
+<span class="token keyword">let</span> totalOutput <span class="token operator">=</span> programmerOutput
+  <span class="token punctuation">.</span><span class="token function">map</span><span class="token punctuation">(</span><span class="token parameter">output</span> <span class="token operator">=&gt;</span> output<span class="token punctuation">.</span>linesOfCode<span class="token punctuation">)</span>
+  <span class="token punctuation">.</span><span class="token function">reduce</span><span class="token punctuation">(</span><span class="token punctuation">(</span><span class="token parameter">totalLines<span class="token punctuation">,</span> lines</span><span class="token punctuation">)</span> <span class="token operator">=&gt;</span> totalLines <span class="token operator">+</span> lines<span class="token punctuation">,</span> <span class="token number">0</span><span class="token punctuation">)</span>
+</code></pre></div><p>不推荐：</p> <div class="language-javascript extra-class"><pre class="language-javascript"><code> <span class="token keyword">const</span> programmerOutput <span class="token operator">=</span> <span class="token punctuation">[</span>
+  <span class="token punctuation">{</span>
+    name<span class="token operator">:</span> <span class="token string">'Uncle Bobby'</span><span class="token punctuation">,</span>
+    linesOfCode<span class="token operator">:</span> <span class="token number">500</span>
+  <span class="token punctuation">}</span><span class="token punctuation">,</span> <span class="token punctuation">{</span>
+    name<span class="token operator">:</span> <span class="token string">'Suzie Q'</span><span class="token punctuation">,</span>
+    linesOfCode<span class="token operator">:</span> <span class="token number">1500</span>
+  <span class="token punctuation">}</span><span class="token punctuation">,</span> <span class="token punctuation">{</span>
+    name<span class="token operator">:</span> <span class="token string">'Jimmy Gosling'</span><span class="token punctuation">,</span>
+    linesOfCode<span class="token operator">:</span> <span class="token number">150</span>
+  <span class="token punctuation">}</span><span class="token punctuation">,</span> <span class="token punctuation">{</span>
+    name<span class="token operator">:</span> <span class="token string">'Gracie Hopper'</span><span class="token punctuation">,</span>
+    linesOfCode<span class="token operator">:</span> <span class="token number">1000</span>
+  <span class="token punctuation">}</span>
+<span class="token punctuation">]</span><span class="token punctuation">;</span>
+
+<span class="token keyword">let</span> totalOutput <span class="token operator">=</span> <span class="token number">0</span><span class="token punctuation">;</span>
+
+<span class="token keyword">for</span> <span class="token punctuation">(</span><span class="token keyword">let</span> i <span class="token operator">=</span> <span class="token number">0</span><span class="token punctuation">;</span> i <span class="token operator">&lt;</span> programmerOutput<span class="token punctuation">.</span>length<span class="token punctuation">;</span> i<span class="token operator">++</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
+  totalOutput <span class="token operator">+=</span> programmerOutput<span class="token punctuation">[</span>i<span class="token punctuation">]</span><span class="token punctuation">.</span>linesOfCode<span class="token punctuation">;</span>
+<span class="token punctuation">}</span>
+</code></pre></div><h3 id="_3-11、使用多态替换条件语句"><a href="#_3-11、使用多态替换条件语句" class="header-anchor">#</a> 3.11、使用多态替换条件语句</h3> <p>为了让代码更简洁易读，如果你的函数中出现了条件判断，那么说明你的函数不止干了一件事情，违反了函数单一原则 ；并且绝大数场景可以使用多态替代</p> <p>推荐：</p> <div class="language-javascript extra-class"><pre class="language-javascript"><code><span class="token keyword">class</span> <span class="token class-name">Airplane</span> <span class="token punctuation">{</span>
+  <span class="token comment">// ...</span>
+<span class="token punctuation">}</span>
+<span class="token comment">// 波音777</span>
+<span class="token keyword">class</span> <span class="token class-name">Boeing777</span> <span class="token keyword">extends</span> <span class="token class-name">Airplane</span> <span class="token punctuation">{</span>
+  <span class="token comment">// ...</span>
+  <span class="token function">getCruisingAltitude</span><span class="token punctuation">(</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
+    <span class="token keyword">return</span> <span class="token keyword">this</span><span class="token punctuation">.</span><span class="token function">getMaxAltitude</span><span class="token punctuation">(</span><span class="token punctuation">)</span> <span class="token operator">-</span> <span class="token keyword">this</span><span class="token punctuation">.</span><span class="token function">getPassengerCount</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+  <span class="token punctuation">}</span>
+<span class="token punctuation">}</span>
+<span class="token comment">// 空军一号</span>
+<span class="token keyword">class</span> <span class="token class-name">AirForceOne</span> <span class="token keyword">extends</span> <span class="token class-name">Airplane</span> <span class="token punctuation">{</span>
+  <span class="token comment">// ...</span>
+  <span class="token function">getCruisingAltitude</span><span class="token punctuation">(</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
+    <span class="token keyword">return</span> <span class="token keyword">this</span><span class="token punctuation">.</span><span class="token function">getMaxAltitude</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+  <span class="token punctuation">}</span>
+<span class="token punctuation">}</span>
+<span class="token comment">// 赛纳斯飞机</span>
+<span class="token keyword">class</span> <span class="token class-name">Cessna</span> <span class="token keyword">extends</span> <span class="token class-name">Airplane</span> <span class="token punctuation">{</span>
+  <span class="token comment">// ...</span>
+  <span class="token function">getCruisingAltitude</span><span class="token punctuation">(</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
+    <span class="token keyword">return</span> <span class="token keyword">this</span><span class="token punctuation">.</span><span class="token function">getMaxAltitude</span><span class="token punctuation">(</span><span class="token punctuation">)</span> <span class="token operator">-</span> <span class="token keyword">this</span><span class="token punctuation">.</span><span class="token function">getFuelExpenditure</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+  <span class="token punctuation">}</span>
+<span class="token punctuation">}</span>
+</code></pre></div><p>不推荐：</p> <div class="language-javascript extra-class"><pre class="language-javascript"><code>
+<span class="token keyword">class</span> <span class="token class-name">Airplane</span> <span class="token punctuation">{</span>
+  <span class="token comment">// ...</span>
+
+  <span class="token comment">// 获取巡航高度</span>
+  <span class="token function">getCruisingAltitude</span><span class="token punctuation">(</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
+    <span class="token keyword">switch</span> <span class="token punctuation">(</span><span class="token keyword">this</span><span class="token punctuation">.</span>type<span class="token punctuation">)</span> <span class="token punctuation">{</span>
+      <span class="token keyword">case</span> <span class="token string">'777'</span><span class="token operator">:</span>
+        <span class="token keyword">return</span> <span class="token keyword">this</span><span class="token punctuation">.</span><span class="token function">getMaxAltitude</span><span class="token punctuation">(</span><span class="token punctuation">)</span> <span class="token operator">-</span> <span class="token keyword">this</span><span class="token punctuation">.</span><span class="token function">getPassengerCount</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+      <span class="token keyword">case</span> <span class="token string">'Air Force One'</span><span class="token operator">:</span>
+        <span class="token keyword">return</span> <span class="token keyword">this</span><span class="token punctuation">.</span><span class="token function">getMaxAltitude</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+      <span class="token keyword">case</span> <span class="token string">'Cessna'</span><span class="token operator">:</span>
+        <span class="token keyword">return</span> <span class="token keyword">this</span><span class="token punctuation">.</span><span class="token function">getMaxAltitude</span><span class="token punctuation">(</span><span class="token punctuation">)</span> <span class="token operator">-</span> <span class="token keyword">this</span><span class="token punctuation">.</span><span class="token function">getFuelExpenditure</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+    <span class="token punctuation">}</span>
+  <span class="token punctuation">}</span>
+<span class="token punctuation">}</span>
+</code></pre></div><h3 id="_3-12、定时器是否清除"><a href="#_3-12、定时器是否清除" class="header-anchor">#</a> 3.12、定时器是否清除</h3> <p>代码中使用了定时器 setTimeout 和 setInterval，需要在不使用时进行清除。</p> <h2 id="四、scss-推荐写法"><a href="#四、scss-推荐写法" class="header-anchor">#</a> 四、SCSS 推荐写法</h2> <h3 id="_4-1、变量-使用"><a href="#_4-1、变量-使用" class="header-anchor">#</a> 4.1、变量 $ 使用</h3> <p>利用scss中的变量配置，可以进行项目的颜色、字体大小统一更改（换肤），有利于后期项目的维护。</p> <p>推荐：</p> <div class="language-css extra-class"><pre class="language-css"><code>$<span class="token property">--color-success</span><span class="token punctuation">:</span> #67C23A<span class="token punctuation">;</span>
+$<span class="token property">--color-warning</span><span class="token punctuation">:</span> #E6A23C<span class="token punctuation">;</span>
+$<span class="token property">--color-danger</span><span class="token punctuation">:</span> #F56C6C<span class="token punctuation">;</span>
+$<span class="token property">--color-info</span><span class="token punctuation">:</span> #909399<span class="token punctuation">;</span>
+</code></pre></div><h3 id="_4-2、-import-导入样式文件"><a href="#_4-2、-import-导入样式文件" class="header-anchor">#</a> 4.2、@import 导入样式文件</h3> <p>scss中的@import规则在生成css文件时就把相关文件导入进来。这意味着所有相关的样式被归纳到了同一个css文件中，而无需发起额外的下载请求，在构建我们自己的组件库时推荐使用。</p> <div class="language-css extra-class"><pre class="language-css"><code><span class="token atrule"><span class="token rule">@import</span> <span class="token string">&quot;./base.scss&quot;</span><span class="token punctuation">;</span></span>
+<span class="token atrule"><span class="token rule">@import</span> <span class="token string">&quot;./pagination.scss&quot;</span><span class="token punctuation">;</span></span>
+<span class="token atrule"><span class="token rule">@import</span> <span class="token string">&quot;./dialog.scss&quot;</span><span class="token punctuation">;</span></span>
+<span class="token atrule"><span class="token rule">@import</span> <span class="token string">&quot;./autocomplete.scss&quot;</span><span class="token punctuation">;</span></span>
+<span class="token atrule"><span class="token rule">@import</span> <span class="token string">&quot;./dropdown.scss&quot;</span><span class="token punctuation">;</span></span>
+<span class="token atrule"><span class="token rule">@import</span> <span class="token string">&quot;./dropdown-menu.scss&quot;</span><span class="token punctuation">;</span></span>
+</code></pre></div><h3 id="_4-3、局部文件命名的使用"><a href="#_4-3、局部文件命名的使用" class="header-anchor">#</a> 4.3、局部文件命名的使用</h3> <p>scss局部文件的文件名以下划线开头。这样，scss就不会在编译时单独编译这个文件输出css，而只把这个文件用作导入。</p> <p>推荐：</p> <h3 id="_4-4、父选择器标识符-实现bem-命令规范"><a href="#_4-4、父选择器标识符-实现bem-命令规范" class="header-anchor">#</a> 4.4、父选择器标识符 &amp; 实现BEM 命令规范</h3> <h3 id="scss的嵌套和父选择器标识符-能解决bem命名的冗长，且使样式可读性更高。"><a href="#scss的嵌套和父选择器标识符-能解决bem命名的冗长，且使样式可读性更高。" class="header-anchor">#</a> scss的嵌套和父选择器标识符&amp;能解决BEM命名的冗长，且使样式可读性更高。</h3> <p>推荐：</p> <div class="language-css extra-class"><pre class="language-css"><code><span class="token selector">.el-input</span> <span class="token punctuation">{</span>
+  <span class="token property">display</span><span class="token punctuation">:</span> block<span class="token selector">;
+  &amp;__inner</span> <span class="token punctuation">{</span>
+     <span class="token property">text-align</span><span class="token punctuation">:</span> center<span class="token punctuation">;</span>
+  <span class="token punctuation">}</span>
+ <span class="token punctuation">}</span>
+</code></pre></div><h3 id="_4-5、-mixin-混合器的使用"><a href="#_4-5、-mixin-混合器的使用" class="header-anchor">#</a> 4.5、@mixin 混合器的使用</h3> <p>mixin混合器用来实现大段样式的重用，减少代码的冗余，且支持传参。</p> <div class="language-css extra-class"><pre class="language-css"><code><span class="token atrule"><span class="token rule">@mixin</span> <span class="token function">button-size</span><span class="token punctuation">(</span>$padding-vertical<span class="token punctuation">,</span> $padding-horizontal<span class="token punctuation">,</span> $font-size<span class="token punctuation">,</span> $border-radius<span class="token punctuation">)</span></span> <span class="token punctuation">{</span>
+  <span class="token property">padding</span><span class="token punctuation">:</span> $padding-vertical $padding-horizontal<span class="token punctuation">;</span>
+  <span class="token property">font-size</span><span class="token punctuation">:</span> $font-size<span class="token punctuation">;</span>
+  <span class="token property">border-radius</span><span class="token punctuation">:</span> $border-radius<span class="token selector">;
+  &amp;.is-round</span> <span class="token punctuation">{</span>
+    <span class="token property">padding</span><span class="token punctuation">:</span> $padding-vertical $padding-horizontal<span class="token punctuation">;</span>
+  <span class="token punctuation">}</span>
+<span class="token punctuation">}</span>
+
+  <span class="token atrule"><span class="token rule">@include</span> <span class="token function">m</span><span class="token punctuation">(</span>medium<span class="token punctuation">)</span></span> <span class="token punctuation">{</span>
+    <span class="token atrule"><span class="token rule">@include</span> <span class="token function">button-size</span><span class="token punctuation">(</span>$--button-medium-padding-vertical<span class="token punctuation">,</span> $--button-medium-padding-horizontal<span class="token punctuation">,</span> $--button-medium-font-size<span class="token punctuation">,</span> $--button-medium-border-radius<span class="token punctuation">)</span><span class="token punctuation">;</span></span>   
+  <span class="token punctuation">}</span>
+
+  <span class="token atrule"><span class="token rule">@include</span> <span class="token function">m</span><span class="token punctuation">(</span>small<span class="token punctuation">)</span></span> <span class="token punctuation">{</span>
+    <span class="token atrule"><span class="token rule">@include</span> <span class="token function">button-size</span><span class="token punctuation">(</span>$--button-small-padding-vertical<span class="token punctuation">,</span> $--button-small-padding-horizontal<span class="token punctuation">,</span> $--button-small-font-size<span class="token punctuation">,</span> $--button-small-border-radius<span class="token punctuation">)</span><span class="token punctuation">;</span></span>
+  <span class="token punctuation">}</span>
+</code></pre></div><h3 id="_4-6、-extend-指令的使用"><a href="#_4-6、-extend-指令的使用" class="header-anchor">#</a> 4.6、@extend 指令的使用</h3> <p>（1）使用@extend产生 DRY CSS风格的代码（Don't repeat yourself）</p> <p>（2）@mixin主要的优势就是它能够接受参数。如果想传递参数，你会很自然地选择@mixin而不是@extend</p> <p>推荐：</p> <div class="language-css extra-class"><pre class="language-css"><code><span class="token selector">.common-mod</span> <span class="token punctuation">{</span>
+  <span class="token property">height</span><span class="token punctuation">:</span> 250px<span class="token punctuation">;</span>
+  <span class="token property">width</span><span class="token punctuation">:</span> 50%<span class="token punctuation">;</span>
+  <span class="token property">background-color</span><span class="token punctuation">:</span> #fff<span class="token punctuation">;</span>
+  <span class="token property">text-align</span><span class="token punctuation">:</span> center<span class="token punctuation">;</span>
+<span class="token punctuation">}</span>
+
+ <span class="token selector">.show-mod--right</span> <span class="token punctuation">{</span>
+   <span class="token atrule"><span class="token rule">@extend</span> .common-mod<span class="token punctuation">;</span></span>
+   <span class="token property">float</span><span class="token punctuation">:</span> right<span class="token punctuation">;</span>
+ <span class="token punctuation">}</span>
+
+<span class="token selector">.show-mod--left</span> <span class="token punctuation">{</span>
+   <span class="token atrule"><span class="token rule">@extend</span> .common-mod<span class="token punctuation">;</span></span>
+<span class="token punctuation">}</span>
+</code></pre></div><h3 id="_4-7、-插值的使用"><a href="#_4-7、-插值的使用" class="header-anchor">#</a> 4.7、#{} 插值的使用</h3> <p>插值能动态定义类名的名称，当有两个页面的样式类似时，我们会将类似的样式抽取成页面混合器，但两个不同的页面样式的命名名称根据BEM命名规范不能一样，这时我们可使用插值进行动态命名。</p> <p>推荐：</p> <div class="language-css extra-class"><pre class="language-css"><code><span class="token atrule"><span class="token rule">@mixin</span> <span class="token function">home-content</span><span class="token punctuation">(</span>$class<span class="token punctuation">)</span></span> <span class="token punctuation">{</span>
+  <span class="token selector">.#</span><span class="token punctuation">{</span>$class<span class="token punctuation">}</span> <span class="token punctuation">{</span>
+    <span class="token property">position</span><span class="token punctuation">:</span> relative<span class="token punctuation">;</span>
+    <span class="token property">background-color</span><span class="token punctuation">:</span> #fff<span class="token punctuation">;</span>
+    <span class="token property">overflow-x</span><span class="token punctuation">:</span> hidden<span class="token punctuation">;</span>
+    <span class="token property">overflow-y</span><span class="token punctuation">:</span> hidden<span class="token selector">;
+
+    &amp;--left</span> <span class="token punctuation">{</span>
+      <span class="token property">margin-left</span><span class="token punctuation">:</span> 160px<span class="token punctuation">;</span>
+    <span class="token punctuation">}</span>
+
+    <span class="token selector">&amp;--noleft</span> <span class="token punctuation">{</span>
+      <span class="token property">margin-left</span><span class="token punctuation">:</span> 0<span class="token punctuation">;</span>
+    <span class="token punctuation">}</span>
+  <span class="token punctuation">}</span>
+<span class="token punctuation">}</span>
+</code></pre></div><h3 id="_4-8、each遍历、map数据类型、-mixin-include混合器、-插值-结合使用"><a href="#_4-8、each遍历、map数据类型、-mixin-include混合器、-插值-结合使用" class="header-anchor">#</a> 4.8、each遍历、map数据类型、@mixin/@include混合器、#{}插值 结合使用</h3> <p>可通过each遍历、map数据类型、@mixin/@include混合器、#{}插值 结合使用，从而减少冗余代码，使代码更精简。</p> <p>推荐：</p> <div class="language-css extra-class"><pre class="language-css"><code>$<span class="token property">img-list</span><span class="token punctuation">:</span> <span class="token punctuation">(</span>
+   <span class="token punctuation">(</span>xlsimg<span class="token punctuation">,</span> $papers-excel<span class="token punctuation">)</span><span class="token punctuation">,</span>
+   <span class="token punctuation">(</span>xlsximg<span class="token punctuation">,</span> $papers-excel<span class="token punctuation">)</span><span class="token punctuation">,</span>
+   <span class="token punctuation">(</span>gifimg<span class="token punctuation">,</span> $papers-gif<span class="token punctuation">)</span><span class="token punctuation">,</span>
+   <span class="token punctuation">(</span>jpgimg<span class="token punctuation">,</span> $papers-jpg<span class="token punctuation">)</span><span class="token punctuation">,</span>
+   <span class="token punctuation">(</span>mp3img<span class="token punctuation">,</span> $papers-mp3<span class="token punctuation">)</span><span class="token punctuation">,</span>
+   <span class="token punctuation">(</span>mp4img<span class="token punctuation">,</span> $papers-mp3<span class="token punctuation">)</span><span class="token punctuation">,</span>
+   <span class="token punctuation">(</span>docimg<span class="token punctuation">,</span> $papers-word<span class="token punctuation">)</span><span class="token punctuation">,</span>
+   <span class="token punctuation">(</span>docximg<span class="token punctuation">,</span> $papers-word<span class="token punctuation">)</span><span class="token punctuation">,</span>
+   <span class="token punctuation">(</span>rarimg<span class="token punctuation">,</span> $papers-zip<span class="token punctuation">)</span><span class="token punctuation">,</span>
+   <span class="token punctuation">(</span>zipimg<span class="token punctuation">,</span> $papers-zip<span class="token punctuation">)</span><span class="token punctuation">,</span>
+   <span class="token punctuation">(</span>unknownimg<span class="token punctuation">,</span> $papers-unknown<span class="token punctuation">)</span>
+<span class="token punctuation">)</span><span class="token punctuation">;</span>
+
+<span class="token atrule"><span class="token rule">@each</span> $label<span class="token punctuation">,</span> $value in $img-list</span> <span class="token punctuation">{</span>
+  <span class="token selector">.com-hwicon__#</span><span class="token punctuation">{</span>$label<span class="token punctuation">}</span> <span class="token punctuation">{</span>
+    <span class="token atrule"><span class="token rule">@include</span> <span class="token function">commonImg</span><span class="token punctuation">(</span>$value<span class="token punctuation">)</span><span class="token punctuation">;</span></span>
+  <span class="token punctuation">}</span>
+<span class="token punctuation">}</span>
+</code></pre></div><h3 id="_4-9、scss-自带函数的应用"><a href="#_4-9、scss-自带函数的应用" class="header-anchor">#</a> 4.9、scss 自带函数的应用</h3> <p>scss自带函数的应用，从而进行相关的计算，例如 mix函数的使用如下。</p> <div class="language-css extra-class"><pre class="language-css"><code> <span class="token atrule"><span class="token rule">@include</span> <span class="token function">m</span><span class="token punctuation">(</span>text<span class="token punctuation">)</span></span> <span class="token punctuation">{</span>
+    <span class="token selector">&amp;:hover,
+    &amp;:focus</span> <span class="token punctuation">{</span>
+      <span class="token property">color</span><span class="token punctuation">:</span> <span class="token function">mix</span><span class="token punctuation">(</span>$--color-white<span class="token punctuation">,</span> $--color-primary<span class="token punctuation">,</span> $--button-hover-tint-percent<span class="token punctuation">)</span><span class="token punctuation">;</span>
+      <span class="token property">border-color</span><span class="token punctuation">:</span> transparent<span class="token punctuation">;</span>
+      <span class="token property">background-color</span><span class="token punctuation">:</span> transparent<span class="token punctuation">;</span>
+    <span class="token punctuation">}</span>
+
+    <span class="token selector">&amp;:active</span> <span class="token punctuation">{</span>
+      <span class="token property">color</span><span class="token punctuation">:</span> <span class="token function">mix</span><span class="token punctuation">(</span>$--color-black<span class="token punctuation">,</span> $--color-primary<span class="token punctuation">,</span> $--button-active-shade-percent<span class="token punctuation">)</span><span class="token punctuation">;</span>
+      <span class="token property">border-color</span><span class="token punctuation">:</span> transparent<span class="token punctuation">;</span>
+      <span class="token property">background-color</span><span class="token punctuation">:</span> transparent<span class="token punctuation">;</span>
+    <span class="token punctuation">}</span>
+<span class="token punctuation">}</span>
+</code></pre></div><h3 id="_4-10、gulp-sass的使用"><a href="#_4-10、gulp-sass的使用" class="header-anchor">#</a> 4.10、gulp-sass的使用</h3> <p>gulp-sass插件能实时监测scss代码检查其语法错误并将其编译成css代码，帮助开发人员检查scss语法的准确性，且其是否符合我们的预期，相关配置如下：</p> <div class="language-css extra-class"><pre class="language-css"><code><span class="token selector">gulp.task('gulpsass', function()</span> <span class="token punctuation">{</span>
+  return gulp.<span class="token function">src</span><span class="token punctuation">(</span><span class="token string">'src/style/components/hwIcon.scss'</span><span class="token punctuation">)</span>
+    .<span class="token function">pipe</span><span class="token punctuation">(</span><span class="token function">gulpsass</span><span class="token punctuation">(</span><span class="token punctuation">)</span>.<span class="token function">on</span><span class="token punctuation">(</span><span class="token string">'error'</span><span class="token punctuation">,</span> gulpsass.logError<span class="token punctuation">)</span><span class="token punctuation">)</span>
+    .<span class="token function">pipe</span><span class="token punctuation">(</span>gulp.<span class="token function">dest</span><span class="token punctuation">(</span><span class="token string">'src/style/dest'</span><span class="token punctuation">)</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+<span class="token punctuation">}</span><span class="token punctuation">)</span><span class="token selector">;
+
+gulp.task('watch', function()</span> <span class="token punctuation">{</span>
+  gulp.<span class="token function">watch</span><span class="token punctuation">(</span><span class="token string">'src/style/components/hwIcon.scss'</span><span class="token punctuation">,</span> [<span class="token string">'gulpsass'</span>]<span class="token punctuation">)</span><span class="token punctuation">;</span>
+<span class="token punctuation">}</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+</code></pre></div><h2 id="五、团队其它规范"><a href="#五、团队其它规范" class="header-anchor">#</a> 五、团队其它规范</h2> <h3 id="_5-1、尽量不手动操作-dom"><a href="#_5-1、尽量不手动操作-dom" class="header-anchor">#</a> 5.1、尽量不手动操作 DOM</h3> <p>因为团队现在使用 vue 框架，所以在项目开发中尽量使用 vue 的特性去满足我们的需求，尽量（不到万不得已）不要手动操作DOM，包括：增删改dom元素、以及更改样式、添加事件等。</p> <h3 id="_5-2、删除弃用代码"><a href="#_5-2、删除弃用代码" class="header-anchor">#</a> 5.2、删除弃用代码</h3> <p>很多时候有些代码已经没有用了，但是没有及时去删除，这样导致代码里面包括很多注释的代码块，好的习惯是提交代码前记得删除已经确认弃用的代码，例如：一些调试的console语句、无用的弃用代码。</p> <h3 id="_5-3、保持必要的注释"><a href="#_5-3、保持必要的注释" class="header-anchor">#</a> 5.3、保持必要的注释</h3> <p>代码注释不是越多越好，保持必要的业务逻辑注释，至于函数的用途、代码逻辑等，要通过语义化的命令、简单明了的代码逻辑，来让阅读代码的人快速看懂。</p></div> <footer class="page-edit"><!----> <!----></footer> <!----> </main></div><div class="global-ui"></div></div>
+    <script src="/front-end-doc/assets/js/app.a0bd3a26.js" defer></script><script src="/front-end-doc/assets/js/3.6a1b549d.js" defer></script><script src="/front-end-doc/assets/js/22.b0323704.js" defer></script>
+  </body>
+</html>

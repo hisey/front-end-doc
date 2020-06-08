@@ -78,6 +78,10 @@ module.exports = {
           {
             text: '移动端',
             link: '/src/case/mobile/'
+          },
+          {
+            text:"代码规范",
+            link:'/src/case/standards/'
           }
         ]
       },
