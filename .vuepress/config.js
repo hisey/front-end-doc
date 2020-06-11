@@ -91,7 +91,15 @@ module.exports = {
           {
             text: 'mpvue搭建小程序',
             link: '/src/smallProgram/mpvue/'
-          }
+          },
+          {
+            text:'webview问题',
+            link:'/src/smallProgram/webview/problem'
+          },
+          {
+            text:'遇到的问题',
+            link:'/src/smallProgram/problem/'
+          },
         ]
       },
       {
